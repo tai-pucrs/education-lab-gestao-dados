@@ -1,0 +1,37 @@
+{
+  "rules": [
+    {
+      "name": "Language",
+      "description": "All content in Brazilian Portuguese. Keep technical terms in English: pipeline, deploy, sprint, stakeholder, backlog, data engineer, ML, BI, ETL, KPI"
+    },
+    {
+      "name": "Code Style",
+      "description": "HTML: Vanilla JS only, no frameworks. CSS: Mobile-first with custom properties. JS: ES6+, camelCase functions, UPPER_SNAKE_CASE constants"
+    },
+    {
+      "name": "Project Context",
+      "description": "Educational content for postgraduate course in Data Management. Module 6: Project and Team Management. 30 hours total."
+    },
+    {
+      "name": "Target Audience",
+      "description": "Dual audience: (1) Technical professionals becoming managers (2) Managers taking over data teams"
+    },
+    {
+      "name": "Examples",
+      "description": "Prefer Brazilian companies: Nubank, iFood, Mercado Livre, Magazine Luiza. Also use: Uber, Netflix, Airbnb, Spotify"
+    },
+    {
+      "name": "HTML Files",
+      "description": "Must work offline. Use localStorage for persistence. No external API calls. Mobile responsive."
+    },
+    {
+      "name": "Markdown",
+      "description": "ATX headers (#). Fenced code blocks with language. Max 5 lines per paragraph. Max 7 items per list."
+    }
+  ],
+  "filePatterns": {
+    "docs/**/*.md": "Educational content - Brazilian Portuguese, practical examples required",
+    "assets/html/*.html": "Standalone HTML apps - Vanilla JS, localStorage, mobile-first",
+    "templates/*.md": "Reusable templates - Include usage instructions"
+  }
+}

@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Aluno â€¢ MÃ³dulo 6</title>
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --secondary: #6B4C9A;
+            --accent: #F39C12;
+            --success: #27AE60;
+            --warning: #E67E22;
+            --danger: #E74C3C;
+            --light: #F5F6FA;
+            --dark: #2C3E50;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .header p {
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .student-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .student-info span {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .stat-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .stat-card .label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .overall-progress {
+            margin-bottom: 2rem;
+        }
+
+        .progress-bar-container {
+            background: var(--light);
+            border-radius: 10px;
+            height: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+            position: relative;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-text {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* Submodule Cards */
+        .submodules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .submodule-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .submodule-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .submodule-header {
+            padding: 1.5rem;
+            color: white;
+            position: relative;
+        }
+
+        .submodule-header.mod61 { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .submodule-header.mod62 { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .submodule-header.mod63 { background: linear-gradient(135deg, #e67e22, #d35400); }
+        .submodule-header.mod64 { background: linear-gradient(135deg, #27ae60, #229954); }
+        .submodule-header.mod65 { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+
+        .submodule-header h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .submodule-header .duration {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .submodule-header .status-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .submodule-body {
+            padding: 1.5rem;
+        }
+
+        .video-list {
+            list-style: none;
+        }
+
+        .video-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .video-item:hover {
+            background: var(--light);
+            margin: 0 -1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .video-item:last-child {
+            border-bottom: none;
+        }
+
+        .video-checkbox {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s;
+        }
+
+        .video-item.completed .video-checkbox {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .video-item.completed .video-checkbox::after {
+            content: 'âœ“';
+            font-size: 12px;
+        }
+
+        .video-title {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .video-item.completed .video-title {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        .video-duration {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .submodule-progress {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .mini-progress {
+            background: #eee;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .mini-progress-fill {
+            height: 100%;
+            background: var(--success);
+            transition: width 0.3s;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        /* Badges Section */
+        .badges-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .badge-card {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-radius: 12px;
+            background: var(--light);
+            transition: all 0.3s;
+        }
+
+        .badge-card.unlocked {
+            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+        }
+
+        .badge-card.locked {
+            opacity: 0.5;
+            filter: grayscale(100%);
+        }
+
+        .badge-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-name {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+
+        .badge-desc {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--primary);
+            background: white;
+            color: var(--primary);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Resources Section */
+        .resources-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .resource-item:hover {
+            background: #e8e9ed;
+            transform: translateX(5px);
+        }
+
+        .resource-icon {
+            font-size: 2rem;
+        }
+
+        .resource-info h4 {
+            font-size: 0.95rem;
+            color: var(--dark);
+        }
+
+        .resource-info p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Study Timer */
+        .timer-section {
+            background: var(--gradient);
+            border-radius: 16px;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .timer-display {
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+        }
+
+        .timer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .timer-btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .timer-btn.start {
+            background: var(--success);
+            color: white;
+        }
+
+        .timer-btn.pause {
+            background: var(--warning);
+            color: white;
+        }
+
+        .timer-btn.reset {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .timer-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Weekly Goals */
+        .goals-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .goal-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .goal-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .goal-checkbox {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .goal-checkbox.checked {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .goal-checkbox.checked::after {
+            content: 'âœ“';
+            font-weight: bold;
+        }
+
+        .goal-text {
+            flex: 1;
+        }
+
+        .goal-item.completed .goal-text {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .timer-display {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        /* Notification Toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--success);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transform: translateX(150%);
+            transition: transform 0.3s;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 1.5rem;
+            z-index: 100;
+        }
+
+        body.dark {
+            --light: #1a1a2e;
+            --dark: #eee;
+            background: #0f0f1a;
+        }
+
+        body.dark .stat-card,
+        body.dark .progress-section,
+        body.dark .badges-section,
+        body.dark .resources-section,
+        body.dark .goals-section {
+            background: #1a1a2e;
+        }
+
+        body.dark .submodule-card {
+            background: #1a1a2e;
+        }
+
+        body.dark .video-item:hover {
+            background: #252542;
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Alternar modo escuro">ðŸŒ™</button>
+
+    <header class="header">
+        <h1>ðŸ“Š MÃ³dulo 6: GestÃ£o de Projetos e Equipes de Dados</h1>
+        <p>PÃ³s-GraduaÃ§Ã£o em GestÃ£o EstratÃ©gica de Dados</p>
+        <div class="student-info">
+            <span>ðŸ‘¤ <span id="studentName">Aluno</span></span>
+            <span>ðŸ“… InÃ­cio: <span id="startDate">01/01/2026</span></span>
+            <span>ðŸŽ¯ Meta: <span id="targetDate">01/03/2026</span></span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Stats Cards -->
+        <div class="stats-grid animate-in">
+            <div class="stat-card">
+                <div class="icon">ðŸ“º</div>
+                <div class="value" id="videosWatched">0</div>
+                <div class="label">de 60 vÃ­deos assistidos</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">â±ï¸</div>
+                <div class="value" id="hoursStudied">0h</div>
+                <div class="label">de 30h estudadas</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">ðŸ†</div>
+                <div class="value" id="badgesEarned">0</div>
+                <div class="label">de 8 badges conquistados</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">ðŸ”¥</div>
+                <div class="value" id="streakDays">0</div>
+                <div class="label">dias consecutivos</div>
+            </div>
+        </div>
+
+        <!-- Study Timer -->
+        <div class="timer-section animate-in">
+            <h2>â±ï¸ CronÃ´metro de Estudo</h2>
+            <div class="timer-display" id="timerDisplay">00:00:00</div>
+            <div class="timer-buttons">
+                <button class="timer-btn start" onclick="startTimer()">â–¶ï¸ Iniciar</button>
+                <button class="timer-btn pause" onclick="pauseTimer()">â¸ï¸ Pausar</button>
+                <button class="timer-btn reset" onclick="resetTimer()">ðŸ”„ Resetar</button>
+            </div>
+        </div>
+
+        <!-- Overall Progress -->
+        <div class="progress-section animate-in">
+            <h2 class="section-title">ðŸ“ˆ Progresso Geral</h2>
+            <div class="overall-progress">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="overallProgressBar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text"><span id="overallProgressText">0</span>% concluÃ­do</div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterVideos('all')">Todos</button>
+                <button class="filter-btn" onclick="filterVideos('pending')">Pendentes</button>
+                <button class="filter-btn" onclick="filterVideos('completed')">ConcluÃ­dos</button>
+            </div>
+
+            <!-- Submodules -->
+            <div class="submodules-grid" id="submodulesContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="badges-section animate-in">
+            <h2 class="section-title">ðŸ† Conquistas</h2>
+            <div class="badges-grid" id="badgesContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="resources-section animate-in">
+            <h2 class="section-title">ðŸ“š Recursos do MÃ³dulo</h2>
+            <div class="resources-grid">
+                <div class="resource-item" onclick="openResource('templates')">
+                    <div class="resource-icon">ðŸ“</div>
+                    <div class="resource-info">
+                        <h4>12 Templates EditÃ¡veis</h4>
+                        <p>RACI, Charter, OKR, PDI...</p>
+                    </div>
+                </div>
+                <div class="resource-item" onclick="openResource('checklists')">
+                    <div class="resource-icon">âœ…</div>
+                    <div class="resource-info">
+                        <h4>10 Checklists</h4>
+                        <p>Processos e validaÃ§Ãµes</p>
+                    </div>
+                </div>
+                <div class="resource-item" onclick="openResource('glossary')">
+                    <div class="resource-icon">ðŸ“–</div>
+                    <div class="resource-info">
+                        <h4>GlossÃ¡rio (75 termos)</h4>
+                        <p>Termos tÃ©cnicos essenciais</p>
+                    </div>
+                </div>
+                <div class="resource-item" onclick="openResource('tools')">
+                    <div class="resource-icon">ðŸ› ï¸</div>
+                    <div class="resource-info">
+                        <h4>Guia de Ferramentas</h4>
+                        <p>15 ferramentas essenciais</p>
+                    </div>
+                </div>
+                <div class="resource-item" onclick="openResource('cases')">
+                    <div class="resource-icon">ðŸ’¼</div>
+                    <div class="resource-info">
+                        <h4>Cases e PBL</h4>
+                        <p>3 casos prÃ¡ticos completos</p>
+                    </div>
+                </div>
+                <div class="resource-item" onclick="openResource('prompts')">
+                    <div class="resource-icon">ðŸ¤–</div>
+                    <div class="resource-info">
+                        <h4>Simuladores IA</h4>
+                        <p>Prompts para ChatGPT/Claude</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Goals -->
+        <div class="goals-section animate-in">
+            <h2 class="section-title">ðŸŽ¯ Metas da Semana</h2>
+            <div id="goalsContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">ðŸŽ‰ ParabÃ©ns! Conquista desbloqueada!</div>
+
+    <footer class="footer">
+        <p>MÃ³dulo 6 â€¢ GestÃ£o de Projetos e Equipes de Dados â€¢ PÃ³s-GraduaÃ§Ã£o em GestÃ£o EstratÃ©gica de Dados</p>
+        <p>Ãšltima atualizaÃ§Ã£o: <span id="lastUpdate"></span></p>
+    </footer>
+
+    <script>
+        // Data
+        const submodules = [
+            {
+                id: '6.1',
+                name: 'PapÃ©is e Carreira em Dados',
+                duration: '6 horas',
+                color: 'mod61',
+                videos: [
+                    { id: 'v1', title: 'IntroduÃ§Ã£o aos papÃ©is em dados', duration: '12min' },
+                    { id: 'v2', title: 'Data Engineer vs Data Scientist', duration: '15min' },
+                    { id: 'v3', title: 'Analytics Engineer: o novo papel', duration: '12min' },
+                    { id: 'v4', title: 'ML Engineer e MLOps', duration: '14min' },
+                    { id: 'v5', title: 'Data Product Manager', duration: '12min' },
+                    { id: 'v6', title: 'Modelos organizacionais', duration: '15min' },
+                    { id: 'v7', title: 'Hub & Spoke vs Data Mesh', duration: '14min' },
+                    { id: 'v8', title: 'Trilhas de carreira IC vs Manager', duration: '12min' },
+                    { id: 'v9', title: 'PDI: Plano de Desenvolvimento', duration: '10min' },
+                    { id: 'v10', title: 'O profissional T-Shaped', duration: '10min' },
+                    { id: 'v11', title: 'CDO e governanÃ§a executiva', duration: '12min' },
+                    { id: 'v12', title: 'Caso prÃ¡tico: estruturando time', duration: '15min' }
+                ]
+            },
+            {
+                id: '6.2',
+                name: 'Metodologias Ãgeis para Dados',
+                duration: '6 horas',
+                color: 'mod62',
+                videos: [
+                    { id: 'v13', title: 'Agile aplicado a dados', duration: '12min' },
+                    { id: 'v14', title: 'Scrum para times de dados', duration: '15min' },
+                    { id: 'v15', title: 'Kanban e gestÃ£o de fluxo', duration: '12min' },
+                    { id: 'v16', title: 'CerimÃ´nias essenciais', duration: '14min' },
+                    { id: 'v17', title: 'Daily stand-up efetivo', duration: '10min' },
+                    { id: 'v18', title: 'Sprint planning para dados', duration: '12min' },
+                    { id: 'v19', title: 'Retrospectivas que funcionam', duration: '12min' },
+                    { id: 'v20', title: 'DataOps: conceitos', duration: '15min' },
+                    { id: 'v21', title: 'MLOps: ciclo de vida de ML', duration: '15min' },
+                    { id: 'v22', title: 'Feature Store e Model Registry', duration: '12min' },
+                    { id: 'v23', title: 'CI/CD para pipelines', duration: '14min' },
+                    { id: 'v24', title: 'MÃ©tricas Ã¡geis: velocity e lead time', duration: '12min' }
+                ]
+            },
+            {
+                id: '6.3',
+                name: 'GestÃ£o de Projetos de Dados',
+                duration: '6 horas',
+                color: 'mod63',
+                videos: [
+                    { id: 'v25', title: 'Ciclo de vida de projeto de dados', duration: '12min' },
+                    { id: 'v26', title: 'Discovery e viabilidade', duration: '14min' },
+                    { id: 'v27', title: 'Project Charter para dados', duration: '12min' },
+                    { id: 'v28', title: 'Matriz RACI aplicada', duration: '10min' },
+                    { id: 'v29', title: 'MoSCoW: priorizaÃ§Ã£o de escopo', duration: '12min' },
+                    { id: 'v30', title: 'RICE Score para backlog', duration: '12min' },
+                    { id: 'v31', title: 'GestÃ£o de riscos em dados', duration: '14min' },
+                    { id: 'v32', title: 'Stakeholder management', duration: '15min' },
+                    { id: 'v33', title: 'ComunicaÃ§Ã£o de projeto', duration: '12min' },
+                    { id: 'v34', title: 'Data Quality em projetos', duration: '12min' },
+                    { id: 'v35', title: 'Change requests e scope creep', duration: '10min' },
+                    { id: 'v36', title: 'Case: projeto de DW', duration: '15min' }
+                ]
+            },
+            {
+                id: '6.4',
+                name: 'LideranÃ§a de Equipes de Dados',
+                duration: '6 horas',
+                color: 'mod64',
+                videos: [
+                    { id: 'v37', title: 'De IC a gestor: a transiÃ§Ã£o', duration: '12min' },
+                    { id: 'v38', title: 'LideranÃ§a situacional', duration: '14min' },
+                    { id: 'v39', title: 'Servant leadership em tech', duration: '12min' },
+                    { id: 'v40', title: '1:1s que desenvolvem', duration: '15min' },
+                    { id: 'v41', title: 'Feedback: modelo SBI', duration: '12min' },
+                    { id: 'v42', title: 'Radical Candor aplicado', duration: '12min' },
+                    { id: 'v43', title: 'PDI na prÃ¡tica', duration: '10min' },
+                    { id: 'v44', title: 'OKRs para times de dados', duration: '14min' },
+                    { id: 'v45', title: 'Psychological safety', duration: '12min' },
+                    { id: 'v46', title: 'GestÃ£o de conflitos', duration: '12min' },
+                    { id: 'v47', title: 'RetenÃ§Ã£o de talentos', duration: '14min' },
+                    { id: 'v48', title: 'Case: 1:1 difÃ­cil', duration: '12min' }
+                ]
+            },
+            {
+                id: '6.5',
+                name: 'Cultura Data-Driven',
+                duration: '6 horas',
+                color: 'mod65',
+                videos: [
+                    { id: 'v49', title: 'O que Ã© cultura data-driven', duration: '12min' },
+                    { id: 'v50', title: 'NÃ­veis de maturidade', duration: '14min' },
+                    { id: 'v51', title: 'Data literacy: por onde comeÃ§ar', duration: '12min' },
+                    { id: 'v52', title: 'Self-service analytics', duration: '15min' },
+                    { id: 'v53', title: 'Data governance essencial', duration: '14min' },
+                    { id: 'v54', title: 'Data catalog e descoberta', duration: '12min' },
+                    { id: 'v55', title: 'Single source of truth', duration: '10min' },
+                    { id: 'v56', title: 'Change management: ADKAR', duration: '14min' },
+                    { id: 'v57', title: 'Champions e evangelistas', duration: '12min' },
+                    { id: 'v58', title: 'MÃ©tricas de adoÃ§Ã£o', duration: '12min' },
+                    { id: 'v59', title: 'Quick wins que engajam', duration: '10min' },
+                    { id: 'v60', title: 'Case: transformaÃ§Ã£o cultural', duration: '15min' }
+                ]
+            }
+        ];
+
+        const badges = [
+            { id: 'b1', icon: 'ðŸš€', name: 'Primeiro Passo', desc: 'Assistiu o primeiro vÃ­deo', condition: (stats) => stats.videosWatched >= 1 },
+            { id: 'b2', icon: 'ðŸ“š', name: 'Estudioso', desc: 'Completou 10 vÃ­deos', condition: (stats) => stats.videosWatched >= 10 },
+            { id: 'b3', icon: 'â­', name: 'Dedicado', desc: 'Completou um submÃ³dulo', condition: (stats) => stats.submodulesCompleted >= 1 },
+            { id: 'b4', icon: 'ðŸ”¥', name: 'Em Chamas', desc: '7 dias consecutivos', condition: (stats) => stats.streak >= 7 },
+            { id: 'b5', icon: 'ðŸŽ¯', name: 'Focado', desc: 'Estudou 10 horas', condition: (stats) => stats.hoursStudied >= 10 },
+            { id: 'b6', icon: 'ðŸ’ª', name: 'Persistente', desc: 'Completou 50% do mÃ³dulo', condition: (stats) => stats.progress >= 50 },
+            { id: 'b7', icon: 'ðŸ…', name: 'Quase LÃ¡', desc: 'Completou 80% do mÃ³dulo', condition: (stats) => stats.progress >= 80 },
+            { id: 'b8', icon: 'ðŸ†', name: 'Mestre', desc: 'Completou todo o mÃ³dulo', condition: (stats) => stats.progress >= 100 }
+        ];
+
+        const weeklyGoals = [
+            { id: 'g1', text: 'Assistir 5 vÃ­deos do submÃ³dulo atual' },
+            { id: 'g2', text: 'Preencher 1 template na prÃ¡tica' },
+            { id: 'g3', text: 'Testar 1 prompt de IA' },
+            { id: 'g4', text: 'Estudar pelo menos 3 horas' },
+            { id: 'g5', text: 'Revisar glossÃ¡rio de termos' }
+        ];
+
+        // State
+        let state = {
+            completedVideos: JSON.parse(localStorage.getItem('completedVideos') || '[]'),
+            completedGoals: JSON.parse(localStorage.getItem('completedGoals') || '[]'),
+            timerSeconds: parseInt(localStorage.getItem('timerSeconds') || '0'),
+            totalStudySeconds: parseInt(localStorage.getItem('totalStudySeconds') || '0'),
+            streak: parseInt(localStorage.getItem('streak') || '0'),
+            lastStudyDate: localStorage.getItem('lastStudyDate') || '',
+            darkMode: localStorage.getItem('darkMode') === 'true'
+        };
+
+        let timerInterval = null;
+
+        // Initialize
+        function init() {
+            if (state.darkMode) {
+                document.body.classList.add('dark');
+            }
+            renderSubmodules();
+            renderBadges();
+            renderGoals();
+            updateStats();
+            updateTimerDisplay();
+            updateLastUpdate();
+            checkStreak();
+        }
+
+        // Render Submodules
+        function renderSubmodules(filter = 'all') {
+            const container = document.getElementById('submodulesContainer');
+            container.innerHTML = '';
+
+            submodules.forEach(submodule => {
+                const completedCount = submodule.videos.filter(v => state.completedVideos.includes(v.id)).length;
+                const progress = (completedCount / submodule.videos.length) * 100;
+                const status = progress === 100 ? 'âœ“ ConcluÃ­do' : progress > 0 ? 'Em progresso' : 'NÃ£o iniciado';
+
+                let filteredVideos = submodule.videos;
+                if (filter === 'completed') {
+                    filteredVideos = submodule.videos.filter(v => state.completedVideos.includes(v.id));
+                } else if (filter === 'pending') {
+                    filteredVideos = submodule.videos.filter(v => !state.completedVideos.includes(v.id));
+                }
+
+                if (filter !== 'all' && filteredVideos.length === 0) return;
+
+                const card = document.createElement('div');
+                card.className = 'submodule-card';
+                card.innerHTML = `
+                    <div class="submodule-header ${submodule.color}">
+                        <h3>${submodule.id} ${submodule.name}</h3>
+                        <div class="duration">â±ï¸ ${submodule.duration}</div>
+                        <div class="status-badge">${status}</div>
+                    </div>
+                    <div class="submodule-body">
+                        <ul class="video-list">
+                            ${filteredVideos.map(video => `
+                                <li class="video-item ${state.completedVideos.includes(video.id) ? 'completed' : ''}" 
+                                    onclick="toggleVideo('${video.id}')">
+                                    <div class="video-checkbox"></div>
+                                    <span class="video-title">${video.title}</span>
+                                    <span class="video-duration">${video.duration}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        <div class="submodule-progress">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" style="width: ${progress}%"></div>
+                            </div>
+                            <div class="progress-label">
+                                <span>${completedCount}/${submodule.videos.length} vÃ­deos</span>
+                                <span>${Math.round(progress)}%</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Toggle Video
+        function toggleVideo(videoId) {
+            if (state.completedVideos.includes(videoId)) {
+                state.completedVideos = state.completedVideos.filter(id => id !== videoId);
+            } else {
+                state.completedVideos.push(videoId);
+                checkBadges();
+            }
+            localStorage.setItem('completedVideos', JSON.stringify(state.completedVideos));
+            renderSubmodules();
+            updateStats();
+            renderBadges();
+            updateLastStudyDate();
+        }
+
+        // Render Badges
+        function renderBadges() {
+            const container = document.getElementById('badgesContainer');
+            const stats = getStats();
+            
+            container.innerHTML = badges.map(badge => {
+                const unlocked = badge.condition(stats);
+                return `
+                    <div class="badge-card ${unlocked ? 'unlocked' : 'locked'}">
+                        <div class="badge-icon">${badge.icon}</div>
+                        <div class="badge-name">${badge.name}</div>
+                        <div class="badge-desc">${badge.desc}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Render Goals
+        function renderGoals() {
+            const container = document.getElementById('goalsContainer');
+            container.innerHTML = weeklyGoals.map(goal => `
+                <div class="goal-item ${state.completedGoals.includes(goal.id) ? 'completed' : ''}">
+                    <div class="goal-checkbox ${state.completedGoals.includes(goal.id) ? 'checked' : ''}"
+                         onclick="toggleGoal('${goal.id}')"></div>
+                    <span class="goal-text">${goal.text}</span>
+                </div>
+            `).join('');
+        }
+
+        // Toggle Goal
+        function toggleGoal(goalId) {
+            if (state.completedGoals.includes(goalId)) {
+                state.completedGoals = state.completedGoals.filter(id => id !== goalId);
+            } else {
+                state.completedGoals.push(goalId);
+            }
+            localStorage.setItem('completedGoals', JSON.stringify(state.completedGoals));
+            renderGoals();
+        }
+
+        // Get Stats
+        function getStats() {
+            const totalVideos = submodules.reduce((sum, s) => sum + s.videos.length, 0);
+            const videosWatched = state.completedVideos.length;
+            const progress = (videosWatched / totalVideos) * 100;
+            const hoursStudied = state.totalStudySeconds / 3600;
+            const submodulesCompleted = submodules.filter(s => 
+                s.videos.every(v => state.completedVideos.includes(v.id))
+            ).length;
+            const badgesEarned = badges.filter(b => b.condition({
+                videosWatched, progress, hoursStudied, submodulesCompleted, streak: state.streak
+            })).length;
+
+            return {
+                videosWatched,
+                totalVideos,
+                progress,
+                hoursStudied,
+                submodulesCompleted,
+                badgesEarned,
+                streak: state.streak
+            };
+        }
+
+        // Update Stats Display
+        function updateStats() {
+            const stats = getStats();
+            document.getElementById('videosWatched').textContent = stats.videosWatched;
+            document.getElementById('hoursStudied').textContent = stats.hoursStudied.toFixed(1) + 'h';
+            document.getElementById('badgesEarned').textContent = stats.badgesEarned;
+            document.getElementById('streakDays').textContent = stats.streak;
+            document.getElementById('overallProgressBar').style.width = stats.progress + '%';
+            document.getElementById('overallProgressText').textContent = Math.round(stats.progress);
+        }
+
+        // Timer Functions
+        function startTimer() {
+            if (timerInterval) return;
+            timerInterval = setInterval(() => {
+                state.timerSeconds++;
+                state.totalStudySeconds++;
+                localStorage.setItem('timerSeconds', state.timerSeconds);
+                localStorage.setItem('totalStudySeconds', state.totalStudySeconds);
+                updateTimerDisplay();
+                updateStats();
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+
+        function resetTimer() {
+            pauseTimer();
+            state.timerSeconds = 0;
+            localStorage.setItem('timerSeconds', state.timerSeconds);
+            updateTimerDisplay();
+        }
+
+        function updateTimerDisplay() {
+            const hours = Math.floor(state.timerSeconds / 3600);
+            const minutes = Math.floor((state.timerSeconds % 3600) / 60);
+            const seconds = state.timerSeconds % 60;
+            document.getElementById('timerDisplay').textContent = 
+                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        // Filter Videos
+        function filterVideos(filter) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            renderSubmodules(filter);
+        }
+
+        // Check Badges
+        function checkBadges() {
+            const stats = getStats();
+            const previousBadges = badges.filter(b => {
+                const prevStats = {...stats, videosWatched: stats.videosWatched - 1};
+                return b.condition(prevStats);
+            }).length;
+            const currentBadges = badges.filter(b => b.condition(stats)).length;
+            
+            if (currentBadges > previousBadges) {
+                showToast('ðŸŽ‰ ParabÃ©ns! Nova conquista desbloqueada!');
+            }
+        }
+
+        // Show Toast
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        // Check Streak
+        function checkStreak() {
+            const today = new Date().toDateString();
+            const yesterday = new Date(Date.now() - 86400000).toDateString();
+            
+            if (state.lastStudyDate === yesterday) {
+                // Continue streak
+            } else if (state.lastStudyDate !== today) {
+                state.streak = 0;
+                localStorage.setItem('streak', state.streak);
+            }
+        }
+
+        // Update Last Study Date
+        function updateLastStudyDate() {
+            const today = new Date().toDateString();
+            if (state.lastStudyDate !== today) {
+                if (state.lastStudyDate === new Date(Date.now() - 86400000).toDateString()) {
+                    state.streak++;
+                } else {
+                    state.streak = 1;
+                }
+                state.lastStudyDate = today;
+                localStorage.setItem('lastStudyDate', today);
+                localStorage.setItem('streak', state.streak);
+                updateStats();
+            }
+        }
+
+        // Update Last Update
+        function updateLastUpdate() {
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleDateString('pt-BR');
+        }
+
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            state.darkMode = !state.darkMode;
+            document.body.classList.toggle('dark');
+            localStorage.setItem('darkMode', state.darkMode);
+        }
+
+        // Open Resource (placeholder)
+        function openResource(resource) {
+            const resources = {
+                templates: 'modulo6_templates_editaveis.md',
+                checklists: 'modulo6_checklists.md',
+                glossary: 'modulo6_glossario.md',
+                tools: 'modulo6_guia_ferramentas.md',
+                cases: 'modulo6_pbl_cases.md',
+                prompts: 'modulo6_simuladores_ia.md'
+            };
+            showToast(`ðŸ“‚ Abrindo: ${resources[resource]}`);
+        }
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>

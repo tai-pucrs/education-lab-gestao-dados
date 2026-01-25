@@ -1,0 +1,1329 @@
+Assistant:
+Content:
+[
+  {
+    "start_timestamp": "2026-01-23T16:57:55.924183Z",
+    "stop_timestamp": "2026-01-23T16:57:55.924183Z",
+    "flags": null,
+    "type": "text",
+    "text": "\n\n",
+    "citations": []
+  },
+  {
+    "start_timestamp": "2026-01-23T16:57:55.924183Z",
+    "stop_timestamp": "2026-01-23T16:58:01.450084Z",
+    "flags": null,
+    "type": "thinking",
+    "thinking": "O usu\u00e1rio est\u00e1 pedindo para eu fazer uma pesquisa sobre planos de trabalho docente - especificamente:\n1. O que comp\u00f5em um plano de trabalho docente\n2. Quais s\u00e3o os tipos de plano de trabalho docente\n\nEle quer que eu busque em:\n- Fontes de artigos e pesquisas acad\u00eamicas\n- Sites institucionais de ensino\n\nO contexto \u00e9 que ele tem dois documentos HTML sobre um framework de gest\u00e3o estrat\u00e9gica de dados para p\u00f3s-gradua\u00e7\u00e3o (30h ass\u00edncrono), e provavelmente quer estruturar isso como um plano de trabalho docente formal.\n\nSeguindo as instru\u00e7\u00f5es de research:\n- Esta \u00e9 uma consulta bem espec\u00edfica e clara sobre documenta\u00e7\u00e3o acad\u00eamica\n- N\u00e3o h\u00e1 ambiguidades reais que precisem de clarifica\u00e7\u00e3o\n- Ele j\u00e1 especificou as fontes (acad\u00eamicas e institucionais de ensino)\n- A pergunta est\u00e1 bem delimitada\n\nPortanto, devo usar o launch_extended_search_task IMEDIATAMENTE sem perguntar nada ao usu\u00e1rio. Vou passar o comando completo preservando a inten\u00e7\u00e3o dele.",
+    "summaries": [
+      {
+        "summary": "Pensando em componentes e tipologias de planos de trabalho docente em fontes acad\u00eamicas e institucionais."
+      },
+      {
+        "summary": "Mapeando componentes e tipologias de planos docentes."
+      },
+      {
+        "summary": "Identificou pesquisa clara e acionou busca acad\u00eamica imediata."
+      }
+    ],
+    "cut_off": false,
+    "alternative_display_type": null
+  },
+  {
+    "start_timestamp": "2026-01-23T16:58:01.509504Z",
+    "stop_timestamp": "2026-01-23T16:58:02.039631Z",
+    "flags": null,
+    "type": "text",
+    "text": "Vou iniciar uma pesquisa aprofundada sobre planos de trabalho docente em fontes acad\u00eamicas e institucionais de ensino para voc\u00ea!",
+    "citations": []
+  },
+  {
+    "start_timestamp": "2026-01-23T16:58:02.276785Z",
+    "stop_timestamp": "2026-01-23T16:58:10.866471Z",
+    "flags": null,
+    "type": "tool_use",
+    "id": "toolu_01MhJwKauBrxEcrcH8eiF2fS",
+    "name": "launch_extended_search_task",
+    "input": {
+      "command": "Pesquise em fontes acad\u00eamicas (artigos cient\u00edficos, pesquisas) e sites institucionais de ensino superior brasileiro o seguinte:\n\n1. COMPONENTES DE UM PLANO DE TRABALHO DOCENTE:\n   - Quais elementos/se\u00e7\u00f5es comp\u00f5em um plano de trabalho docente formal\n   - Estrutura padr\u00e3o utilizada em institui\u00e7\u00f5es de ensino superior\n   - Elementos obrigat\u00f3rios vs opcionais\n   - Diferen\u00e7as entre institui\u00e7\u00f5es p\u00fablicas e privadas\n\n2. TIPOS DE PLANO DE TRABALHO DOCENTE:\n   - Classifica\u00e7\u00e3o por modalidade (presencial, EAD, h\u00edbrido, ass\u00edncrono)\n   - Tipos por n\u00edvel de ensino (gradua\u00e7\u00e3o, p\u00f3s-gradua\u00e7\u00e3o lato sensu, stricto sensu)\n   - Varia\u00e7\u00f5es por \u00e1rea do conhecimento\n   - Diferen\u00e7as entre plano de ensino, plano de trabalho docente, e plano de aula\n\nFONTES PRIORIT\u00c1RIAS:\n- Artigos cient\u00edficos em peri\u00f3dicos de educa\u00e7\u00e3o e pedagogia\n- Documentos de universidades p\u00fablicas federais e estaduais brasileiras\n- Resolu\u00e7\u00f5es e normativas do MEC sobre ensino superior\n- Publica\u00e7\u00f5es acad\u00eamicas sobre design instrucional e planejamento pedag\u00f3gico\n- Manuais e guias de institui\u00e7\u00f5es reconhecidas (USP, UNICAMP, UFRGS, UnB, etc)\n\nFOCO ESPEC\u00cdFICO:\nO contexto \u00e9 um curso de p\u00f3s-gradua\u00e7\u00e3o lato sensu (especializa\u00e7\u00e3o) de 30 horas, 100% ass\u00edncrono online, sobre Gest\u00e3o Estrat\u00e9gica de Dados, estruturado em 6 m\u00f3dulos. Priorize refer\u00eancias que abordem planos de trabalho para:\n- P\u00f3s-gradua\u00e7\u00e3o\n- Modalidade EAD/ass\u00edncrona\n- Disciplinas t\u00e9cnicas/profissionalizantes\n\nForne\u00e7a exemplos pr\u00e1ticos, templates e estruturas reais quando dispon\u00edveis."
+    },
+    "message": "launch_extended_search_task",
+    "integration_name": null,
+    "integration_icon_url": null,
+    "context": null,
+    "display_content": null,
+    "approval_options": null,
+    "approval_key": null,
+    "is_mcp_app": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_result",
+    "tool_use_id": "toolu_01MhJwKauBrxEcrcH8eiF2fS",
+    "name": "launch_extended_search_task",
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"task_id\": \"wf-efdf3391-d93a-48dd-91ee-61c6ac171cb0\"}",
+        "uuid": "f4755042-4058-45a3-9313-3792cbfdf866"
+      }
+    ],
+    "is_error": false,
+    "structured_content": null,
+    "meta": null,
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "display_content": null
+  },
+  {
+    "start_timestamp": "2026-01-23T16:58:11.067712Z",
+    "stop_timestamp": "2026-01-23T16:58:11.067712Z",
+    "flags": null,
+    "type": "text",
+    "text": "",
+    "citations": []
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "text",
+    "text": "Seu relat\u00f3rio sobre planos de trabalho docente no ensino superior brasileiro est\u00e1 pronto. Ele abrange os fundamentos legais (LDB, Resolu\u00e7\u00e3o CNE/CES 1/2018, Decreto 12.456/2025), os seis elementos obrigat\u00f3rios para p\u00f3s-gradua\u00e7\u00e3o lato sensu, diferen\u00e7as entre institui\u00e7\u00f5es p\u00fablicas e privadas, e especificidades para EAD ass\u00edncrono. Inclui tamb\u00e9m um template detalhado para curso de 30 horas em Gest\u00e3o Estrat\u00e9gica de Dados, com estrutura modular e matriz instrucional recomendada.",
+    "citations": []
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_use",
+    "id": null,
+    "name": "artifacts",
+    "input": {
+      "id": "compass_artifact_wf-efdf3391-d93a-48dd-91ee-61c6ac171cb0_text/markdown",
+      "type": "text/markdown",
+      "title": "Planos de Trabalho Docente no Ensino Superior Brasileiro: Estrutura, Tipos e Aplica\u00e7\u00e3o para EAD",
+      "source": "c",
+      "command": "create",
+      "content": "# Planos de trabalho docente no ensino superior brasileiro: estrutura, tipos e aplica\u00e7\u00e3o para EAD\n\nA elabora\u00e7\u00e3o de um plano de trabalho docente formal no Brasil exige **seis elementos obrigat\u00f3rios**: identifica\u00e7\u00e3o, ementa, objetivos, conte\u00fado program\u00e1tico, metodologia/avalia\u00e7\u00e3o e bibliografia \u2014 conforme estabelece a Resolu\u00e7\u00e3o CNE/CES n\u00ba 1/2018 para p\u00f3s-gradua\u00e7\u00e3o lato sensu. Para cursos **100% EAD ass\u00edncronos**, como uma especializa\u00e7\u00e3o em Gest\u00e3o Estrat\u00e9gica de Dados de 30 horas, a estrutura deve incorporar elementos espec\u00edficos de design instrucional: matriz instrucional por m\u00f3dulo, recursos digitais detalhados e cronograma de atividades ass\u00edncronas. A regulamenta\u00e7\u00e3o brasileira sofreu atualiza\u00e7\u00e3o significativa em 2025 com o Decreto n\u00ba 12.456, que redefiniu categorias de atividades EAD (s\u00edncronas, ass\u00edncronas, mediadas) e exig\u00eancias para corpo docente.\n\n---\n\n## Fundamentos legais e defini\u00e7\u00f5es conceituais\n\nO plano de trabalho docente (PTD) encontra fundamenta\u00e7\u00e3o no **Artigo 13 da LDB n\u00ba 9.394/1996**, que estabelece como incumb\u00eancia dos docentes \"elaborar e cumprir plano de trabalho, segundo a proposta pedag\u00f3gica do estabelecimento de ensino\". Segundo Vasconcellos (2006), o PTD constitui \"o documento que organiza o processo de ensino e aprendizagem elaborado pelo professor, para compor a proposta pedag\u00f3gica da escola e o planejamento\".\n\nA literatura pedag\u00f3gica brasileira distingue tr\u00eas n\u00edveis hier\u00e1rquicos de planejamento docente:\n\n| Documento | Abrang\u00eancia | N\u00edvel | Caracter\u00edstica principal |\n|-----------|-------------|-------|--------------------------|\n| **Plano de Ensino/Curso** | Per\u00edodo letivo completo | Macro | Diretrizes gerais vinculadas ao PPC |\n| **Plano de Trabalho Docente** | Per\u00edodo letivo contextualizado | Meso | Organiza\u00e7\u00e3o pedag\u00f3gica detalhada |\n| **Plano de Aula** | Unidade/encontro espec\u00edfico | Micro | Roteiro adapt\u00e1vel em tempo real |\n\nO **plano de ensino** foca tradicionalmente no ato de ensinar e nas a\u00e7\u00f5es do professor, enquanto abordagens contempor\u00e2neas, conforme Anastasiou e Alves (2009), deslocam o foco para a **aprendizagem** atrav\u00e9s de processos de parceria em sala de aula. J\u00e1 o **plano de aula**, segundo Lib\u00e2neo (1993), sistematiza conhecimentos, atividades e procedimentos para uma aula espec\u00edfica, com previs\u00e3o de tempo e objetivos operacionais mais detalhados.\n\n---\n\n## Componentes obrigat\u00f3rios segundo normativas e institui\u00e7\u00f5es\n\n### Elementos exigidos pela Resolu\u00e7\u00e3o CNE/CES n\u00ba 1/2018\n\nPara cursos de p\u00f3s-gradua\u00e7\u00e3o lato sensu, o Artigo 7\u00ba da resolu\u00e7\u00e3o determina que o Projeto Pedag\u00f3gico de Curso deve conter **plano de curso** com os seguintes componentes:\n\n- **Objetivos** (gerais e espec\u00edficos)\n- **Programa** (conte\u00fado program\u00e1tico estruturado)\n- **Metodologias de ensino-aprendizagem**\n- **Previs\u00e3o de trabalhos discentes**\n- **Avalia\u00e7\u00e3o**\n- **Bibliografia**\n\nA carga hor\u00e1ria m\u00ednima total do curso \u00e9 de **360 horas**, com matriz curricular contendo \"disciplinas ou atividades de aprendizagem com efetiva intera\u00e7\u00e3o no processo educacional\". O corpo docente deve ter **no m\u00ednimo 30% de portadores de t\u00edtulo stricto sensu** \u2014 redu\u00e7\u00e3o significativa em rela\u00e7\u00e3o aos 50% exigidos pela resolu\u00e7\u00e3o anterior de 2007. Desde 2018, o TCC/monografia **n\u00e3o \u00e9 mais obrigat\u00f3rio**.\n\n### Estrutura consolidada nas universidades federais brasileiras\n\nA pesquisa em documentos institucionais de USP, UnB, UFMG, UFRGS, UFRJ e UFSCar revelou elementos comuns nos planos de trabalho docente:\n\n**Elementos obrigat\u00f3rios em todas as institui\u00e7\u00f5es:**\n1. Identifica\u00e7\u00e3o do docente (nome, matr\u00edcula, departamento)\n2. Atividades de ensino com carga hor\u00e1ria especificada\n3. Aprova\u00e7\u00e3o por inst\u00e2ncias colegiadas (departamento, conselho)\n4. Per\u00edodo de vig\u00eancia e cronograma\n\n**Elementos frequentes (presentes na maioria):**\n- Atividades de pesquisa e projetos\n- Atividades de extens\u00e3o\n- Orienta\u00e7\u00e3o acad\u00eamica (IC, TCC, mestrado, doutorado)\n- Produ\u00e7\u00e3o cient\u00edfica esperada\n- Participa\u00e7\u00e3o em \u00f3rg\u00e3os colegiados\n\n**Elementos opcionais (variam por institui\u00e7\u00e3o):**\n- Plano de internacionaliza\u00e7\u00e3o\n- Forma\u00e7\u00e3o e capacita\u00e7\u00e3o docente continuada\n- Atividades administrativas\n- Capta\u00e7\u00e3o de recursos externos\n\nA **UnB** possui o modelo mais estruturado para est\u00e1gio probat\u00f3rio, regulamentado pela Resolu\u00e7\u00e3o CEPE n\u00ba 250/2015, exigindo m\u00ednimo de **8 cr\u00e9ditos semestrais** (sendo 4 na gradua\u00e7\u00e3o), indicadores objetivos mensur\u00e1veis e declara\u00e7\u00e3o formal de ci\u00eancia.\n\n---\n\n## Diferen\u00e7as entre institui\u00e7\u00f5es p\u00fablicas e privadas\n\nAs universidades p\u00fablicas federais seguem padr\u00f5es mais r\u00edgidos e padronizados, com aprova\u00e7\u00e3o obrigat\u00f3ria por m\u00faltiplas inst\u00e2ncias colegiadas e utiliza\u00e7\u00e3o de sistemas eletr\u00f4nicos institucionais (SEI, SIE). O per\u00edodo de est\u00e1gio probat\u00f3rio \u00e9 padronizado em **36 meses** com relat\u00f3rios parciais e finais obrigat\u00f3rios.\n\nInstitui\u00e7\u00f5es privadas, especialmente as voltadas para educa\u00e7\u00e3o profissional como o SENAC, desenvolveram modelos pr\u00f3prios com foco em **compet\u00eancias** e **situa\u00e7\u00f5es de aprendizagem** estruturadas. O Modelo Pedag\u00f3gico SENAC utiliza a metodologia dos \"7 Passos\" (K\u00fcller e Rodrigo, 2013) e avalia cinco marcas formativas: dom\u00ednio t\u00e9cnico-cient\u00edfico, vis\u00e3o cr\u00edtica, atitude empreendedora, atitude colaborativa e atitude sustent\u00e1vel.\n\nA principal diferen\u00e7a est\u00e1 na **flexibilidade metodol\u00f3gica**: enquanto institui\u00e7\u00f5es p\u00fablicas mant\u00eam estruturas tradicionais vinculadas a resolu\u00e7\u00f5es internas, institui\u00e7\u00f5es privadas frequentemente adotam frameworks de design instrucional contempor\u00e2neos e metodologias ativas com maior liberdade de adapta\u00e7\u00e3o.\n\n---\n\n## Classifica\u00e7\u00e3o por modalidade de ensino\n\n### Nova regulamenta\u00e7\u00e3o EAD (Decreto n\u00ba 12.456/2025)\n\nO decreto de maio de 2025 \u2014 que revogou o Decreto n\u00ba 9.057/2017 \u2014 estabelece defini\u00e7\u00f5es precisas para atividades educacionais:\n\n| Tipo de atividade | Defini\u00e7\u00e3o | Requisitos |\n|-------------------|-----------|------------|\n| **Presencial** | Participa\u00e7\u00e3o f\u00edsica em lugar e tempo coincidentes | Docente e estudante presentes |\n| **S\u00edncrona** | EaD com \u00e1udio/v\u00eddeo, lugares diversos, tempo coincidente | Transmiss\u00e3o em tempo real |\n| **S\u00edncrona mediada** | S\u00edncrona com controle de frequ\u00eancia | M\u00e1ximo 70 alunos por docente |\n| **Ass\u00edncrona** | Lugares e tempos diversos | Flexibilidade total de acesso |\n\nOs tr\u00eas formatos de oferta definidos pelo decreto estabelecem propor\u00e7\u00f5es espec\u00edficas:\n\n- **Presencial**: m\u00ednimo 70% presencial, m\u00e1ximo 30% EAD\n- **Semipresencial**: m\u00ednimo 30% presencial + 20% presencial ou s\u00edncrona mediada\n- **A dist\u00e2ncia**: m\u00ednimo 10% presencial + 10% presencial ou s\u00edncrona mediada, restante majoritariamente a dist\u00e2ncia\n\nPara **p\u00f3s-gradua\u00e7\u00e3o lato sensu**, a oferta EAD est\u00e1 condicionada ao credenciamento da IES: conforme o Artigo 29, \u00a74\u00ba do Decreto 9.235/2017 (alterado), os cursos de especializa\u00e7\u00e3o \"somente podem ser ofertados nos formatos de oferta dos cursos de gradua\u00e7\u00e3o previstos no ato de credenciamento\".\n\n### Especificidades do planejamento para EAD ass\u00edncrono\n\nO planejamento em EaD envolve vari\u00e1veis em duas ordens, conforme a ABED: **macro planejamento** (projeto institucional de EaD) e **micro planejamento** (elabora\u00e7\u00e3o, desenvolvimento e implementa\u00e7\u00e3o dos programas). O decreto define que materiais did\u00e1ticos devem \"refletir o planejamento pedag\u00f3gico e a organiza\u00e7\u00e3o curricular do curso\", alinhados \u00e0s Diretrizes Curriculares Nacionais e aos objetivos do PPC.\n\nCinco componentes s\u00e3o considerados imprescind\u00edveis para EaD segundo pesquisa da UFG:\n1. Planejamento detalhado de materiais e atividades\n2. Adequa\u00e7\u00e3o lingu\u00edstica com dialogicidade\n3. Media\u00e7\u00e3o e intera\u00e7\u00e3o cont\u00ednuas\n4. Acompanhamento sistem\u00e1tico do processo\n5. Avalia\u00e7\u00e3o integrada com feedbacks\n\nPara cursos ass\u00edncronos, as avalia\u00e7\u00f5es devem ter **peso majorit\u00e1rio presencial** na nota final, incluindo elementos discursivos que componham no m\u00ednimo **1/3 do peso da avalia\u00e7\u00e3o** (Art. 23 do Decreto 12.456/2025).\n\n---\n\n## Tipologia por n\u00edvel de ensino e \u00e1rea do conhecimento\n\n### Gradua\u00e7\u00e3o versus p\u00f3s-gradua\u00e7\u00e3o\n\nNa gradua\u00e7\u00e3o, os planos de ensino s\u00e3o mais rigidamente vinculados \u00e0s Diretrizes Curriculares Nacionais de cada curso, com ementas definidas no PPC que s\u00f3 podem ser alteradas mediante aprova\u00e7\u00e3o do Colegiado. A UFSM, por exemplo, exige disponibiliza\u00e7\u00e3o do plano de ensino digital no Portal do Aluno em at\u00e9 **15 dias do in\u00edcio do semestre**.\n\nNa p\u00f3s-gradua\u00e7\u00e3o lato sensu, h\u00e1 maior flexibilidade curricular. A Resolu\u00e7\u00e3o CNE/CES 1/2018 n\u00e3o especifica dura\u00e7\u00e3o m\u00ednima do curso (apenas carga hor\u00e1ria de 360h), permitindo estrutura\u00e7\u00f5es intensivas ou estendidas conforme o p\u00fablico-alvo. O TCC deixou de ser obrigat\u00f3rio, podendo ser substitu\u00eddo por projetos integradores ou outras formas de avalia\u00e7\u00e3o.\n\nNa p\u00f3s-gradua\u00e7\u00e3o stricto sensu, o foco desloca-se para orienta\u00e7\u00e3o de pesquisa, com planos de trabalho docente que incluem obrigatoriamente projetos de pesquisa, publica\u00e7\u00f5es esperadas e orienta\u00e7\u00f5es de mestrado/doutorado.\n\n### Varia\u00e7\u00f5es por \u00e1rea do conhecimento\n\nCursos t\u00e9cnicos e profissionalizantes \u2014 como especializa\u00e7\u00e3o em Gest\u00e3o Estrat\u00e9gica de Dados \u2014 apresentam caracter\u00edsticas distintivas nos planos de trabalho:\n\n- **Foco em compet\u00eancias**: conhecimentos, habilidades e atitudes espec\u00edficas do mercado\n- **Situa\u00e7\u00f5es de aprendizagem pr\u00e1ticas**: estudos de caso, projetos aplicados, laborat\u00f3rios virtuais\n- **Ferramentas espec\u00edficas**: datasets reais, softwares profissionais (SQL, Python, ferramentas de BI)\n- **Projeto integrador**: substitui TCC tradicional com aplica\u00e7\u00e3o pr\u00e1tica dos conhecimentos\n\nA UTFPR oferece especializa\u00e7\u00e3o em Ci\u00eancia de Dados 100% EAD com 17 disciplinas estruturadas em matriz curricular que inclui desde fundamentos (Linguagem de Programa\u00e7\u00e3o, Banco de Dados) at\u00e9 aplica\u00e7\u00f5es avan\u00e7adas (Deep Learning, MLOps), culminando em Projeto Integrador com relat\u00f3rio de 6 p\u00e1ginas e v\u00eddeo de apresenta\u00e7\u00e3o.\n\n---\n\n## Template recomendado para curso EAD ass\u00edncrono de 30 horas\n\nPara uma especializa\u00e7\u00e3o em Gest\u00e3o Estrat\u00e9gica de Dados com 6 m\u00f3dulos de 5 horas cada, a estrutura recomendada integra elementos regulat\u00f3rios obrigat\u00f3rios com boas pr\u00e1ticas de design instrucional:\n\n### Se\u00e7\u00e3o 1: Identifica\u00e7\u00e3o e contexto\n```\nDisciplina/M\u00f3dulo | Curso | Carga hor\u00e1ria total: 30h\nModalidade: EAD 100% ass\u00edncrono | Docente respons\u00e1vel\nPer\u00edodo de oferta | Plataforma AVA utilizada\n```\n\n### Se\u00e7\u00e3o 2: Ementa e objetivos\nEmenta em par\u00e1grafo de 4-5 linhas indicando escopo geral, seguida de objetivo geral (contribui\u00e7\u00e3o para forma\u00e7\u00e3o profissional) e **objetivos espec\u00edficos por m\u00f3dulo** utilizando verbos de a\u00e7\u00e3o mensur\u00e1veis (Taxonomia de Bloom).\n\n### Se\u00e7\u00e3o 3: Compet\u00eancias a desenvolver\nOrganizadas em tr\u00eas dimens\u00f5es: **conhecimentos** (saber), **habilidades** (saber fazer) e **atitudes/valores** (saber ser) \u2014 alinhadas ao perfil profissional esperado.\n\n### Se\u00e7\u00e3o 4: Conte\u00fado program\u00e1tico e matriz instrucional\n\n| M\u00f3dulo | Tema | Conte\u00fados | CH | Recursos | Atividades |\n|--------|------|-----------|-----|----------|------------|\n| 1 | [Tema central] | 1.1, 1.2, 1.3 | 5h | Videoaulas, e-book, caso | F\u00f3rum, quiz, pr\u00e1tica |\n| 2-6 | [Progress\u00e3o tem\u00e1tica] | ... | 5h cada | ... | ... |\n\n### Se\u00e7\u00e3o 5: Metodologia para formato ass\u00edncrono\n\n| Elemento presencial tradicional | Adapta\u00e7\u00e3o ass\u00edncrona |\n|--------------------------------|----------------------|\n| Aulas expositivas | Videoaulas gravadas (m\u00e1x. 15 min cada) |\n| Discuss\u00f5es em sala | F\u00f3runs com prazo de participa\u00e7\u00e3o |\n| Trabalhos em grupo | Wikis colaborativos, documentos compartilhados |\n| Atendimento ao aluno | FAQ estruturado, mensagens ass\u00edncronas, tutoria |\n\n### Se\u00e7\u00e3o 6: Avalia\u00e7\u00e3o\nDistribui\u00e7\u00e3o sugerida para curso profissionalizante de dados:\n- Participa\u00e7\u00e3o qualificada em f\u00f3runs: **20%**\n- Question\u00e1rios por m\u00f3dulo (autoavalia\u00e7\u00e3o): **30%**\n- Atividades pr\u00e1ticas com ferramentas: **30%**\n- Projeto integrador final: **20%**\n\n### Se\u00e7\u00e3o 7: Cronograma detalhado\nEspecificando semana, m\u00f3dulo, atividades disponibilizadas, entregas esperadas e prazos \u2014 essencial para autogest\u00e3o do estudante em formato ass\u00edncrono.\n\n### Se\u00e7\u00e3o 8: Bibliografia e recursos\nBibliografia b\u00e1sica (dispon\u00edvel em acesso aberto ou biblioteca virtual) e complementar, al\u00e9m de recursos tecnol\u00f3gicos espec\u00edficos (laborat\u00f3rios virtuais, datasets, softwares).\n\n---\n\n## Estrutura de cada m\u00f3dulo de 5 horas\n\nA distribui\u00e7\u00e3o interna recomendada para m\u00f3dulos de cursos t\u00e9cnicos ass\u00edncronos:\n\n- **Apresenta\u00e7\u00e3o do m\u00f3dulo**: v\u00eddeo introdut\u00f3rio de 3-5 minutos contextualizando objetivos\n- **Videoaulas de conte\u00fado**: 3-4 v\u00eddeos de 10-15 minutos cada (~1,5-2h)\n- **Material de leitura**: e-book ou apostila digital com aprofundamento (~1h de estudo)\n- **Estudo de caso**: situa\u00e7\u00e3o-problema da \u00e1rea de dados para an\u00e1lise (~30min)\n- **Atividade pr\u00e1tica**: exerc\u00edcio hands-on com ferramentas espec\u00edficas (~1h)\n- **Question\u00e1rio de verifica\u00e7\u00e3o**: autoavalia\u00e7\u00e3o com feedback automatizado (~15min)\n- **F\u00f3rum tem\u00e1tico**: discuss\u00e3o ass\u00edncrona moderada (~15min de participa\u00e7\u00e3o m\u00ednima)\n\nA linguagem dos materiais deve seguir princ\u00edpios de **dialogicidade instrucional** (fundamentados em Bakhtin e Freire): textos que simulam conversa, perguntas reflexivas intercaladas, exemplos contextualizados ao mercado brasileiro de dados, e chamadas para a\u00e7\u00e3o que orientem o percurso de aprendizagem aut\u00f4noma.\n\n---\n\n## Conclus\u00e3o\n\nO plano de trabalho docente para p\u00f3s-gradua\u00e7\u00e3o lato sensu EAD no Brasil opera na interse\u00e7\u00e3o entre regulamenta\u00e7\u00e3o federal (Resolu\u00e7\u00e3o CNE/CES 1/2018, Decreto 12.456/2025) e pr\u00e1ticas institucionais consolidadas. Os **seis elementos obrigat\u00f3rios** \u2014 objetivos, programa, metodologia, trabalhos discentes, avalia\u00e7\u00e3o e bibliografia \u2014 formam o n\u00facleo irredut\u00edvel, mas a efetividade em cursos ass\u00edncronos exige incorpora\u00e7\u00e3o de elementos de design instrucional: matriz instrucional detalhada, recursos digitais especificados e cronograma expl\u00edcito de atividades.\n\nA tend\u00eancia identificada nas melhores pr\u00e1ticas brasileiras \u2014 exemplificada pelo modelo SENAC e pelas especializa\u00e7\u00f5es t\u00e9cnicas de institutos federais \u2014 aponta para estrutura\u00e7\u00e3o por **compet\u00eancias** com foco em situa\u00e7\u00f5es de aprendizagem pr\u00e1ticas, substitui\u00e7\u00e3o do TCC tradicional por **projetos integradores** aplicados, e avalia\u00e7\u00e3o processual cont\u00ednua. Para um curso de 30 horas em Gest\u00e3o Estrat\u00e9gica de Dados, a modulariza\u00e7\u00e3o em 6 unidades de 5 horas permite granularidade adequada para progress\u00e3o tem\u00e1tica e distribui\u00e7\u00e3o balanceada entre conte\u00fado te\u00f3rico, pr\u00e1tica com ferramentas e avalia\u00e7\u00e3o formativa.\n\nA principal atualiza\u00e7\u00e3o normativa de 2025 \u2014 a exig\u00eancia de **avalia\u00e7\u00f5es presenciais com peso majorit\u00e1rio** \u2014 representa desafio operacional para cursos 100% ass\u00edncronos, demandando estrutura\u00e7\u00e3o de momentos presenciais ou s\u00edncronos mediados em polos autorizados, mesmo que o restante do curso permane\u00e7a integralmente ass\u00edncrono.",
+      "language": null,
+      "md_citations": [
+        {
+          "url": "https://educacaoonline.edu.puc-rio.br/index.php/eduonline/article/download/1446/438/4949",
+          "uuid": "3ad1a8d0-d2f3-4031-bf87-b205a2f1bfe5",
+          "title": "puc-rio",
+          "sources": [
+            {
+              "url": "https://educacaoonline.edu.puc-rio.br/index.php/eduonline/article/download/1446/438/4949",
+              "uuid": "3ad1a8d0-d2f3-4031-bf87-b205a2f1bfe5",
+              "title": "",
+              "source": "puc-rio",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=puc-rio.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "3ad1a8d0-d2f3-4031-bf87-b205a2f1bfe5",
+            "source": "puc-rio",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=puc-rio.br",
+            "preview_title": ""
+          },
+          "end_index": 1157,
+          "start_index": 917,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://www.unirio.br/cchs/eb/arquivos/licenciatura/ELABORACAO%20DO%20PLANO%20DE%20ENSINO%20E%20DO%20PLANO%20DE%20AULA.pdf",
+          "uuid": "25c6a337-f7fd-4ce9-a0a6-55ec6108a4f1",
+          "title": "unirio",
+          "sources": [
+            {
+              "url": "https://www.unirio.br/cchs/eb/arquivos/licenciatura/ELABORACAO%20DO%20PLANO%20DE%20ENSINO%20E%20DO%20PLANO%20DE%20AULA.pdf",
+              "uuid": "25c6a337-f7fd-4ce9-a0a6-55ec6108a4f1",
+              "title": "",
+              "source": "unirio",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=unirio.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "25c6a337-f7fd-4ce9-a0a6-55ec6108a4f1",
+            "source": "unirio",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=unirio.br",
+            "preview_title": ""
+          },
+          "end_index": 2324,
+          "start_index": 2133,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+          "uuid": "9101933b-f7b8-4337-8f37-188f558dfc64",
+          "title": "ufmg",
+          "sources": [
+            {
+              "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+              "uuid": "9101933b-f7b8-4337-8f37-188f558dfc64",
+              "title": "",
+              "source": "ufmg",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "9101933b-f7b8-4337-8f37-188f558dfc64",
+            "source": "ufmg",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+            "preview_title": ""
+          },
+          "end_index": 2827,
+          "start_index": 2623,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://abmes.org.br/arquivos/documentos/A_pos-graduacao_lato_sensu_a_lei_e_as_normas_do_MEC.pdf",
+          "uuid": "b0b3f820-f935-456a-8735-6b07a7e6ec6a",
+          "title": "ABMES",
+          "sources": [
+            {
+              "url": "https://abmes.org.br/arquivos/documentos/A_pos-graduacao_lato_sensu_a_lei_e_as_normas_do_MEC.pdf",
+              "uuid": "b0b3f820-f935-456a-8735-6b07a7e6ec6a",
+              "title": "A p\u00f3s-gradua\u00e7\u00e3o lato sensu, a Lei e as normas do MEC",
+              "source": "ABMES",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abmes.org.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "b0b3f820-f935-456a-8735-6b07a7e6ec6a",
+            "source": "ABMES",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abmes.org.br",
+            "preview_title": "A p\u00f3s-gradua\u00e7\u00e3o lato sensu, a Lei e as normas do MEC"
+          },
+          "end_index": 3008,
+          "start_index": 2829,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+          "uuid": "801b8190-32fc-47ce-bb0c-8aa3cce03f09",
+          "title": "ufmg",
+          "sources": [
+            {
+              "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+              "uuid": "801b8190-32fc-47ce-bb0c-8aa3cce03f09",
+              "title": "",
+              "source": "ufmg",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "801b8190-32fc-47ce-bb0c-8aa3cce03f09",
+            "source": "ufmg",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+            "preview_title": ""
+          },
+          "end_index": 3008,
+          "start_index": 2829,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://abmes.org.br/arquivos/documentos/A_pos-graduacao_lato_sensu_a_lei_e_as_normas_do_MEC.pdf",
+          "uuid": "cfb55282-2fac-4c02-8323-580ff52952b8",
+          "title": "ABMES",
+          "sources": [
+            {
+              "url": "https://abmes.org.br/arquivos/documentos/A_pos-graduacao_lato_sensu_a_lei_e_as_normas_do_MEC.pdf",
+              "uuid": "cfb55282-2fac-4c02-8323-580ff52952b8",
+              "title": "A p\u00f3s-gradua\u00e7\u00e3o lato sensu, a Lei e as normas do MEC",
+              "source": "ABMES",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abmes.org.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "cfb55282-2fac-4c02-8323-580ff52952b8",
+            "source": "ABMES",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abmes.org.br",
+            "preview_title": "A p\u00f3s-gradua\u00e7\u00e3o lato sensu, a Lei e as normas do MEC"
+          },
+          "end_index": 3089,
+          "start_index": 3009,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+          "uuid": "92b99369-be49-4f3c-bbf6-4eec0551acb1",
+          "title": "ufmg",
+          "sources": [
+            {
+              "url": "https://www.ufmg.br/prpg/wp-content/uploads/2021/07/Resolucao-01-2018-da-CES-CNE.pdf",
+              "uuid": "92b99369-be49-4f3c-bbf6-4eec0551acb1",
+              "title": "",
+              "source": "ufmg",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "92b99369-be49-4f3c-bbf6-4eec0551acb1",
+            "source": "ufmg",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+            "preview_title": ""
+          },
+          "end_index": 3089,
+          "start_index": 3009,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://faculdade.grancursosonline.com.br/blog/legislacao-de-pos-graduacao/",
+          "uuid": "52e036df-3f43-402d-9ac8-9c1f04049d54",
+          "title": "Grancursosonline",
+          "sources": [
+            {
+              "url": "https://faculdade.grancursosonline.com.br/blog/legislacao-de-pos-graduacao/",
+              "uuid": "52e036df-3f43-402d-9ac8-9c1f04049d54",
+              "title": "Legisla\u00e7\u00e3o de P\u00f3s-Gradua\u00e7\u00e3o: conhe\u00e7a a regulamenta\u00e7\u00e3o!",
+              "source": "Grancursosonline",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=grancursosonline.com.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "52e036df-3f43-402d-9ac8-9c1f04049d54",
+            "source": "Grancursosonline",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=grancursosonline.com.br",
+            "preview_title": "Legisla\u00e7\u00e3o de P\u00f3s-Gradua\u00e7\u00e3o: conhe\u00e7a a regulamenta\u00e7\u00e3o!"
+          },
+          "end_index": 3231,
+          "start_index": 3175,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://www.gov.br/mec/pt-br/assuntos/noticias/2025/maio/assinado-decreto-que-institui-a-nova-politica-de-ead",
+          "uuid": "8fb5d47c-38a3-4ac8-ab8a-f0206370d3d9",
+          "title": "Minist\u00e9rio da Educa\u00e7\u00e3o",
+          "sources": [
+            {
+              "url": "https://www.gov.br/mec/pt-br/assuntos/noticias/2025/maio/assinado-decreto-que-institui-a-nova-politica-de-ead",
+              "uuid": "8fb5d47c-38a3-4ac8-ab8a-f0206370d3d9",
+              "title": "Assinado decreto que institui a Nova Pol\u00edtica de EaD \u2014 Minist\u00e9rio da Educa\u00e7\u00e3o",
+              "source": "Minist\u00e9rio da Educa\u00e7\u00e3o",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=www.gov.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "8fb5d47c-38a3-4ac8-ab8a-f0206370d3d9",
+            "source": "Minist\u00e9rio da Educa\u00e7\u00e3o",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=www.gov.br",
+            "preview_title": "Assinado decreto que institui a Nova Pol\u00edtica de EaD \u2014 Minist\u00e9rio da Educa\u00e7\u00e3o"
+          },
+          "end_index": 5715,
+          "start_index": 5589,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12456.htm",
+          "uuid": "aa5bae7e-5be1-482d-9f67-e6d1e203e652",
+          "title": "planalto",
+          "sources": [
+            {
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12456.htm",
+              "uuid": "aa5bae7e-5be1-482d-9f67-e6d1e203e652",
+              "title": "D12456",
+              "source": "planalto",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=planalto.gov.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "aa5bae7e-5be1-482d-9f67-e6d1e203e652",
+            "source": "planalto",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=planalto.gov.br",
+            "preview_title": "D12456"
+          },
+          "end_index": 7289,
+          "start_index": 7098,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://www.ifmg.edu.br/santaluzia/ensino/arquivos/roteiro-para-elaboracao-do-plano-de-ensino-ifmg-santa-luzia.pdf",
+          "uuid": "3eca78ae-8b90-41cc-994b-41b2ddc0a8c3",
+          "title": "Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia de Minas Gerais",
+          "sources": [
+            {
+              "url": "https://www.ifmg.edu.br/santaluzia/ensino/arquivos/roteiro-para-elaboracao-do-plano-de-ensino-ifmg-santa-luzia.pdf",
+              "uuid": "3eca78ae-8b90-41cc-994b-41b2ddc0a8c3",
+              "title": "ROTEIRO PARA ELABORA\u00c7\u00c3O DE PLANO DE ENSINO 1. Cabe\u00e7alho",
+              "source": "Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia de Minas Gerais",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifmg.edu.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "3eca78ae-8b90-41cc-994b-41b2ddc0a8c3",
+            "source": "Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia de Minas Gerais",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifmg.edu.br",
+            "preview_title": "ROTEIRO PARA ELABORA\u00c7\u00c3O DE PLANO DE ENSINO 1. Cabe\u00e7alho"
+          },
+          "end_index": 8105,
+          "start_index": 8017,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://www.ufsm.br/pro-reitorias/prograd/code/plano-de-ensino",
+          "uuid": "c093bfb8-4344-421f-b8fe-c8f146a5ce53",
+          "title": "ufsm",
+          "sources": [
+            {
+              "url": "https://www.ufsm.br/pro-reitorias/prograd/code/plano-de-ensino",
+              "uuid": "c093bfb8-4344-421f-b8fe-c8f146a5ce53",
+              "title": "Plano de Ensino",
+              "source": "ufsm",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufsm.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "c093bfb8-4344-421f-b8fe-c8f146a5ce53",
+            "source": "ufsm",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufsm.br",
+            "preview_title": "Plano de Ensino"
+          },
+          "end_index": 8237,
+          "start_index": 8106,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://www.unibf.com.br/novidades/pos-graduacao/existe-tempo-minimo-para-terminar-uma-pos-graduacao",
+          "uuid": "621b2fd8-fcf8-4fd4-ab4f-0dfc2c7fc3df",
+          "title": "UniBF",
+          "sources": [
+            {
+              "url": "https://www.unibf.com.br/novidades/pos-graduacao/existe-tempo-minimo-para-terminar-uma-pos-graduacao",
+              "uuid": "621b2fd8-fcf8-4fd4-ab4f-0dfc2c7fc3df",
+              "title": "UniBF - Existe tempo m\u00ednimo para terminar uma p\u00f3s-gradua\u00e7\u00e3o?",
+              "source": "UniBF",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=unibf.com.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "621b2fd8-fcf8-4fd4-ab4f-0dfc2c7fc3df",
+            "source": "UniBF",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=unibf.com.br",
+            "preview_title": "UniBF - Existe tempo m\u00ednimo para terminar uma p\u00f3s-gradua\u00e7\u00e3o?"
+          },
+          "end_index": 8475,
+          "start_index": 8239,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://faculdade.grancursosonline.com.br/blog/legislacao-de-pos-graduacao/",
+          "uuid": "0ae6d81c-bd8b-4b53-b42d-20252adfc37c",
+          "title": "Grancursosonline",
+          "sources": [
+            {
+              "url": "https://faculdade.grancursosonline.com.br/blog/legislacao-de-pos-graduacao/",
+              "uuid": "0ae6d81c-bd8b-4b53-b42d-20252adfc37c",
+              "title": "Legisla\u00e7\u00e3o de P\u00f3s-Gradua\u00e7\u00e3o: conhe\u00e7a a regulamenta\u00e7\u00e3o!",
+              "source": "Grancursosonline",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=grancursosonline.com.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "0ae6d81c-bd8b-4b53-b42d-20252adfc37c",
+            "source": "Grancursosonline",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=grancursosonline.com.br",
+            "preview_title": "Legisla\u00e7\u00e3o de P\u00f3s-Gradua\u00e7\u00e3o: conhe\u00e7a a regulamenta\u00e7\u00e3o!"
+          },
+          "end_index": 8589,
+          "start_index": 8476,
+          "origin_tool_name": "web_search"
+        },
+        {
+          "url": "https://cdados.dv.utfpr.edu.br/",
+          "uuid": "c7c0c5a0-612a-44ea-95c5-b1508a3c75c7",
+          "title": "utfpr",
+          "sources": [
+            {
+              "url": "https://cdados.dv.utfpr.edu.br/",
+              "uuid": "c7c0c5a0-612a-44ea-95c5-b1508a3c75c7",
+              "title": "Especializa\u00e7\u00e3o em Ci\u00eancia de Dados - UTFPR",
+              "source": "utfpr",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=utfpr.edu.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "c7c0c5a0-612a-44ea-95c5-b1508a3c75c7",
+            "source": "utfpr",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=utfpr.edu.br",
+            "preview_title": "Especializa\u00e7\u00e3o em Ci\u00eancia de Dados - UTFPR"
+          },
+          "end_index": 9714,
+          "start_index": 9396,
+          "origin_tool_name": "web_fetch"
+        },
+        {
+          "url": "https://www.abed.org.br/congresso2016/trabalhos/280.pdf",
+          "uuid": "7b637eee-990d-417b-837d-101af4a44e44",
+          "title": "ABED",
+          "sources": [
+            {
+              "url": "https://www.abed.org.br/congresso2016/trabalhos/280.pdf",
+              "uuid": "7b637eee-990d-417b-837d-101af4a44e44",
+              "title": "O PLANO DE TRABALHO DOCENTE: ESTRAT\u00c9GIA DE",
+              "source": "ABED",
+              "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abed.org.br",
+              "subtitles": null,
+              "content_body": null,
+              "resource_type": null
+            }
+          ],
+          "metadata": {
+            "type": "generic_metadata",
+            "uuid": "7b637eee-990d-417b-837d-101af4a44e44",
+            "source": "ABED",
+            "icon_url": "https://www.google.com/s2/favicons?sz=64&domain=abed.org.br",
+            "preview_title": "O PLANO DE TRABALHO DOCENTE: ESTRAT\u00c9GIA DE"
+          },
+          "end_index": 14025,
+          "start_index": 13675,
+          "origin_tool_name": "web_search"
+        }
+      ],
+      "version_uuid": "e9eeff8f-de1b-4fc4-a926-a17d0790b174"
+    },
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "context": null,
+    "display_content": null,
+    "approval_options": null,
+    "approval_key": null,
+    "is_mcp_app": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_result",
+    "tool_use_id": null,
+    "name": "artifacts",
+    "content": [
+      {
+        "type": "text",
+        "text": "OK",
+        "uuid": "3776e825-107a-42fd-9d4b-133c03cab0bb"
+      }
+    ],
+    "is_error": false,
+    "structured_content": null,
+    "meta": null,
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "display_content": null
+  }
+]
+
+================================================================================
+
+Human:
+Content:
+[
+  {
+    "start_timestamp": "2026-01-23T17:17:55.289962Z",
+    "stop_timestamp": "2026-01-23T17:17:55.289962Z",
+    "flags": null,
+    "type": "text",
+    "text": "Repita a pesquisa para disciplinas t\u00e9cnicas de TI presenciais em escola t\u00e9cnica para cursos modulares e integrados ao ensino m\u00e9dio , cursos on-line livres",
+    "citations": []
+  }
+]
+
+================================================================================
+
+Assistant:
+Content:
+[
+  {
+    "start_timestamp": "2026-01-23T17:24:44.672860Z",
+    "stop_timestamp": "2026-01-23T17:24:51.244129Z",
+    "flags": null,
+    "type": "thinking",
+    "thinking": "O usu\u00e1rio quer uma nova pesquisa, agora focada em:\n1. **Disciplinas t\u00e9cnicas de TI presenciais**\n2. **Escola t\u00e9cnica** (ensino m\u00e9dio t\u00e9cnico)\n3. **Cursos modulares e integrados ao ensino m\u00e9dio**\n4. **Cursos online livres**\n\nPreciso pesquisar sobre planos de trabalho docente nesse novo contexto. As diferen\u00e7as principais s\u00e3o:\n- N\u00edvel de ensino: m\u00e9dio t\u00e9cnico (n\u00e3o superior)\n- Modalidade: presencial (n\u00e3o EAD ass\u00edncrono)\n- Tipo: escola t\u00e9cnica, n\u00e3o gradua\u00e7\u00e3o/p\u00f3s\n- Incluir tamb\u00e9m cursos online livres\n\nVou pesquisar:\n- Legisla\u00e7\u00e3o espec\u00edfica para ensino m\u00e9dio t\u00e9cnico\n- Estrutura de planos de trabalho em escolas t\u00e9cnicas (SENAC, SENAI, IFs, ETECs)\n- Diferen\u00e7as entre cursos modulares e integrados\n- Planos para cursos online livres (n\u00e3o regulamentados)\n\nPreciso buscar fontes sobre:\n- Lei de Diretrizes e Bases para ensino m\u00e9dio\n- Resolu\u00e7\u00f5es espec\u00edficas para educa\u00e7\u00e3o profissional t\u00e9cnica\n- Cat\u00e1logo Nacional de Cursos T\u00e9cnicos\n- Diretrizes Curriculares Nacionais para Educa\u00e7\u00e3o Profissional T\u00e9cnica\n- IFs (Institutos Federais)\n- Sistema S (SENAI, SENAC)\n- ETECs (S\u00e3o Paulo)\n- Cursos livres (regulamenta\u00e7\u00e3o m\u00ednima)",
+    "summaries": [
+      {
+        "summary": "Pensando em pesquisas de disciplinas t\u00e9cnicas de TI presenciais e cursos online livres para educa\u00e7\u00e3o t\u00e9cnica modular e integrada."
+      },
+      {
+        "summary": "Investigando plataformas de cursos t\u00e9cnicos presenciais e online."
+      },
+      {
+        "summary": "Investigando planos de trabalho docente para disciplinas t\u00e9cnicas."
+      },
+      {
+        "summary": "Mapeou pesquisa sobre ensino t\u00e9cnico presencial, legisla\u00e7\u00e3o e estruturas institucionais."
+      }
+    ],
+    "cut_off": false,
+    "alternative_display_type": null
+  },
+  {
+    "start_timestamp": "2026-01-23T17:24:51.303407Z",
+    "stop_timestamp": "2026-01-23T17:24:52.950545Z",
+    "flags": null,
+    "type": "text",
+    "text": "Vou pesquisar agora sobre planos de trabalho docente para o contexto de **ensino t\u00e9cnico em TI**.\n\nFocos da pesquisa:\n- Educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio\n- Escolas t\u00e9cnicas presenciais\n- Cursos modulares vs integrados\n- Cursos livres online\n\nIniciando buscas...",
+    "citations": []
+  },
+  {
+    "start_timestamp": "2026-01-23T17:24:53.127494Z",
+    "stop_timestamp": "2026-01-23T17:24:53.480087Z",
+    "flags": null,
+    "type": "tool_use",
+    "id": "toolu_012Fu3aSNx279SVrDvpqnhyU",
+    "name": "web_search",
+    "input": {
+      "query": "plano trabalho docente ensino t\u00e9cnico profissional TI inform\u00e1tica"
+    },
+    "message": "Searching the web",
+    "integration_name": null,
+    "integration_icon_url": null,
+    "context": null,
+    "display_content": null,
+    "approval_options": null,
+    "approval_key": null,
+    "is_mcp_app": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_result",
+    "tool_use_id": "toolu_012Fu3aSNx279SVrDvpqnhyU",
+    "name": "web_search",
+    "content": [
+      {
+        "type": "knowledge",
+        "title": "T\u00e9cnico de Gest\u00e3o e Programa\u00e7\u00e3o de Sistemas Inform\u00e1ticos - AE Augusto Cabrita",
+        "url": "https://aeaugustocabrita.pt/ofertaeducativa/tgpsi/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "aeaugustocabrita.pt",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=aeaugustocabrita.pt",
+          "site_name": "AE Augusto Cabrita"
+        },
+        "is_missing": false,
+        "text": "\u00c9 o profissional qualificado apto a realizar, de forma aut\u00f3noma ou integrado numa equipa, atividades de conce\u00e7\u00e3o, especifica\u00e7\u00e3o, projeto, implementa\u00e7\u00e3o, avalia\u00e7\u00e3o, suporte e manuten\u00e7\u00e3o de sistemas inform\u00e1ticos e de tecnologias de processamento e transmiss\u00e3o de dados de informa\u00e7\u00e3o. ... Idade: at\u00e9 aos 19 anos. ... Este curso permite desenvolver, melhorar e adquirir o conhecimento e a compreens\u00e3o do mundo contempor\u00e2neo nas suas principais vertentes da programa\u00e7\u00e3o ... (a) Carga hor\u00e1ria global n\u00e3o compartimentada pelos tr\u00eas anos do ciclo de forma\u00e7\u00e3o, a gerir pela escola, de acordo com o estabelecido na Portaria n.\u00ba 550-C/2004, de 21 de Maio, e demais regulamenta\u00e7\u00e3o aplic\u00e1vel. (b) Disciplina sujeita a avalia\u00e7\u00e3o sumativa externa, nos termos previstos no artigo 11\u00ba do Decreto-Lei n.o 74/2004, de 26 de Mar\u00e7o, conjugado com os artigos 26\u00ba , 27\u00ba e 30\u00ba a 33\u00ba da Portaria n\u00ba 550-C/2004, de 21 de Maio.\n\n(c) O aluno dever\u00e1 dar continuidade a uma das l\u00ednguas estrangeiras estudadas no ensinob\u00e1sico ... Se gostas de programar? Ent\u00e3o, este curso \u00e9 para ti. O curso profissional de T\u00e9cnico de Gest\u00e3o e Programa\u00e7\u00e3o de Sistemas Inform\u00e1ticos tem como objetivo preparar-te com compet\u00eancias t\u00e9cnicas nas \u00e1reas de An\u00e1lise e Programa\u00e7\u00e3o de Sistemas de Informa\u00e7\u00e3o e Bases de Dados e compet\u00eancias adicionais em Sistemas Operativos, Arquitetura de Computadores e Redes de Dados. ... Inclui a submiss\u00e3o da pr\u00e9-inscri\u00e7\u00e3o no site da escola e a valida\u00e7\u00e3o dos crit\u00e9rios pelos servi\u00e7os administrativos. ... Entrevista de candidatura para an\u00e1lise motivacional e vocacional, desenvolvida por Diretor do Curso e/ou por outro docente do grupo disciplinar. ... Inicia-se com a entrega de toda a documenta\u00e7\u00e3o solicitada pelos servi\u00e7os administrativos, nos termos da legisla\u00e7\u00e3o em vigor \u00e0 data da mesma.\n\n\u00c9 o profissional qualificado apto a realizar, de forma aut\u00f3noma ou integrado numa equipa, atividades de conce\u00e7\u00e3o, especifica\u00e7\u00e3o, projeto, implementa\u00e7\u00e3o, avalia\u00e7\u00e3o, suporte e manuten\u00e7\u00e3o de sistemas inform\u00e1ticos e de tecnologias de processamento e transmiss\u00e3o de dados de informa\u00e7\u00e3o. ... Idade: at\u00e9 aos 19 anos. ... Este curso permite desenvolver, melhorar e adquirir o conhecimento e a compreens\u00e3o do mundo contempor\u00e2neo nas suas principais vertentes da programa\u00e7\u00e3o ... (a) Carga hor\u00e1ria global n\u00e3o compartimentada pelos tr\u00eas anos do ciclo de forma\u00e7\u00e3o, a gerir pela escola, de acordo com o estabelecido na Portaria n.\u00ba 550-C/2004, de 21 de Maio, e demais regulamenta\u00e7\u00e3o aplic\u00e1vel. (b) Disciplina sujeita a avalia\u00e7\u00e3o sumativa externa, nos termos previstos no artigo 11\u00ba do Decreto-Lei n.o 74/2004, de 26 de Mar\u00e7o, conjugado com os artigos 26\u00ba , 27\u00ba e 30\u00ba a 33\u00ba da Portaria n\u00ba 550-C/2004, de 21 de Maio.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://aeaugustocabrita.pt/ofertaeducativa/tgpsi/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Curso Profissional de T\u00e9cnico/a de Inform\u00e1tica \u2013 Sistemas - Escola Profissional do Montijo",
+        "url": "https://epmontijo.edu.pt/curso-tecnico-de-informatica-sistemas/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "epmontijo.edu.pt",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=epmontijo.edu.pt",
+          "site_name": "Epmontijo"
+        },
+        "is_missing": false,
+        "text": "Este curso prepara-te para atuar na \u00e1rea das tecnologias de informa\u00e7\u00e3o, com compet\u00eancias em suporte t\u00e9cnico, redes, programa\u00e7\u00e3o, desenvolvimento web, gest\u00e3o de sistemas e ciberseguran\u00e7a. Ao longo de tr\u00eas anos, ter\u00e1s forma\u00e7\u00e3o pr\u00e1tica e te\u00f3rica que te permite resolver problemas inform\u00e1ticos, instalar e manter sistemas e trabalhar com as ferramentas digitais mais atuais. Com est\u00e1gio inclu\u00eddo, sais preparado/a para entrar no mercado de trabalho ou prosseguir estudos na \u00e1rea da inform\u00e1tica e tecnologias. Inscreve-te j\u00e1 aqui! Forma\u00e7\u00e3o completa com integra\u00e7\u00e3o em contexto real de trabalho e apoio constante na tua evolu\u00e7\u00e3o profissional: Acesso gratuito ao curso com apoio social e material ... O/A T\u00e9cnico/a de Inform\u00e1tica \u2013 Sistemas \u00e9 o profissional habilitado a proceder \u00e0 instala\u00e7\u00e3o, manuten\u00e7\u00e3o e configura\u00e7\u00e3o de diversas aplica\u00e7\u00f5es e ferramentas em diferentes sistemas operativos.\n\nEste curso prepara-te para atuar na \u00e1rea das tecnologias de informa\u00e7\u00e3o, com compet\u00eancias em suporte t\u00e9cnico, redes, programa\u00e7\u00e3o, desenvolvimento web, gest\u00e3o de sistemas e ciberseguran\u00e7a. Ao longo de tr\u00eas anos, ter\u00e1s forma\u00e7\u00e3o pr\u00e1tica e te\u00f3rica que te permite resolver problemas inform\u00e1ticos, instalar e manter sistemas e trabalhar com as ferramentas digitais mais atuais. Com est\u00e1gio inclu\u00eddo, sais preparado/a para entrar no mercado de trabalho ou prosseguir estudos na \u00e1rea da inform\u00e1tica e tecnologias. Inscreve-te j\u00e1 aqui! Forma\u00e7\u00e3o completa com integra\u00e7\u00e3o em contexto real de trabalho e apoio constante na tua evolu\u00e7\u00e3o profissional: Acesso gratuito ao curso com apoio social e material ... O/A T\u00e9cnico/a de Inform\u00e1tica \u2013 Sistemas \u00e9 o profissional habilitado a proceder \u00e0 instala\u00e7\u00e3o, manuten\u00e7\u00e3o e configura\u00e7\u00e3o de diversas aplica\u00e7\u00f5es e ferramentas em diferentes sistemas operativos.\n\nDurante a forma\u00e7\u00e3o, os alunos realizam duas forma\u00e7\u00f5es em contexto de trabalho, com cerca de 3 meses cada, integradas no 2.\u00ba e 3.\u00ba anos. Os est\u00e1gios decorrem em empresas tecnol\u00f3gicas, departamentos de inform\u00e1tica ou servi\u00e7os t\u00e9cnicos, permitindo uma experi\u00eancia pr\u00e1tica em ambientes profissionais reais. ... Depois de conclu\u00edres o curso, podes candidatar-te a qualquer curso do ensino superior, pois esta forma\u00e7\u00e3o garante equival\u00eancia ao 12.\u00ba ano de escolaridade. Se pretenderes continuar a aprofundar os teus conhecimentos na \u00e1rea das tecnologias de informa\u00e7\u00e3o, tens v\u00e1rias op\u00e7\u00f5es de cursos superiores relacionados, tais como: ... Este curso fornece-te uma base s\u00f3lida para prosseguires estudos em \u00e1reas tecnol\u00f3gicas, com reconhecimento das tuas compet\u00eancias pr\u00e1ticas e te\u00f3ricas no setor da inform\u00e1tica.\n\nCom um Curso T\u00e9cnico de Inform\u00e1tica/Sistemas, tens v\u00e1rias oportunidades de emprego na \u00e1rea da tecnologia e inform\u00e1tica. Aqui est\u00e3o algumas op\u00e7\u00f5es de onde podes trabalhar: T\u00e9cnico de Suporte Inform\u00e1tico \u2013 Resolver problemas t\u00e9cnicos e prestar assist\u00eancia a utilizadores. Administrador de Redes \u2013 Gerir servidores e redes de empresas. T\u00e9cnico de Manuten\u00e7\u00e3o de Computadores \u2013 Diagn\u00f3stico e repara\u00e7\u00e3o de hardware e software. Suporte Interno de TI \u2013 Trabalhar na \u00e1rea de inform\u00e1tica de qualquer empresa. Gestor de Infraestrutura de TI \u2013 Instalar e gerir equipamentos e redes. Programador \u2013 Criar e testar aplica\u00e7\u00f5es e software. T\u00e9cnico de Web Development \u2013 Criar e gerir websites e plataformas online. Repara\u00e7\u00e3o de Computadores e Redes \u2013 Trabalhar em lojas ou assist\u00eancia t\u00e9cnica ao domic\u00edlio. Configura\u00e7\u00e3o e Manuten\u00e7\u00e3o de Sistemas \u2013 Instala\u00e7\u00e3o de software e redes empresariais.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "age": "August 19, 2025",
+          "url": "https://epmontijo.edu.pt/curso-tecnico-de-informatica-sistemas/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Plano de Curso T\u00e9cnico em Inform\u00e1tica",
+        "url": "https://www.ifb.edu.br/attachments/article/8026/Resolu%C3%A7%C3%A3o%20n%C2%BA%205.2022%20-%20Anexo%20-%20Plano%20de%20Curso%20T%C3%A9cnico%20em%20Inform%C3%A1tica%20na%20forma%20Articulada%20Integrada%20ao%20Ensino%20M%C3%A9dio.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifb.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifb.edu.br",
+          "site_name": "IFB"
+        },
+        "is_missing": false,
+        "text": "I. ministrar educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio, prioritariamente na forma \u00b7 de cursos integrados, para os concluintes do ensino fundamental e para o p\u00fablico ... II. ministrar cursos de forma\u00e7\u00e3o inicial e continuada de trabalhadores, objetivando a \u00b7 capacita\u00e7\u00e3o, o aperfei\u00e7oamento, a especializa\u00e7\u00e3o e a atualiza\u00e7\u00e3o de profissionais, em todos os n\u00edveis de escolaridade, nas \u00e1reas da educa\u00e7\u00e3o profissional e ... III. realizar pesquisas aplicadas, estimulando o desenvolvimento de solu\u00e7\u00f5es \u00b7 t\u00e9cnicas e tecnol\u00f3gicas, estendendo seus benef\u00edcios \u00e0 comunidade; IV. desenvolver atividades de extens\u00e3o de acordo com os princ\u00edpios e finalidades \u00b7 da educa\u00e7\u00e3o profissional e tecnol\u00f3gica, em articula\u00e7\u00e3o com o mundo do trabalho e \u00b7 os segmentos sociais, e com \u00eanfase na produ\u00e7\u00e3o, desenvolvimento e difus\u00e3o de ... V. estimular e apoiar processos educativos ...\n\nI. ministrar educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio, prioritariamente na forma \u00b7 de cursos integrados, para os concluintes do ensino fundamental e para o p\u00fablico ... II. ministrar cursos de forma\u00e7\u00e3o inicial e continuada de trabalhadores, objetivando a \u00b7 capacita\u00e7\u00e3o, o aperfei\u00e7oamento, a especializa\u00e7\u00e3o e a atualiza\u00e7\u00e3o de profissionais, em todos os n\u00edveis de escolaridade, nas \u00e1reas da educa\u00e7\u00e3o profissional e ... III. realizar pesquisas aplicadas, estimulando o desenvolvimento de solu\u00e7\u00f5es \u00b7 t\u00e9cnicas e tecnol\u00f3gicas, estendendo seus benef\u00edcios \u00e0 comunidade; IV. desenvolver atividades de extens\u00e3o de acordo com os princ\u00edpios e finalidades \u00b7 da educa\u00e7\u00e3o profissional e tecnol\u00f3gica, em articula\u00e7\u00e3o com o mundo do trabalho e \u00b7 os segmentos sociais, e com \u00eanfase na produ\u00e7\u00e3o, desenvolvimento e difus\u00e3o de ... V. estimular e apoiar processos educativos que levem \u00e0 gera\u00e7\u00e3o de trabalho e ...\n\nCurriculares Nacionais Gerais para a Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica\u201d em seu Art. ... Colegial Agr\u00edcola. A Escola de Planaltina foi criada em 17 de fevereiro de 1959 pelo Plano \u00b7 de Metas do Governo do Presidente Juscelino Kubitschek (Lei n\u00ba 3.552 de 16 de fevereiro \u00b7 de 1959 e Exposi\u00e7\u00e3o de Motivos n\u00ba 95 \u2013 DOU de 19/02/1959) e inaugurada em 21 de abril \u00b7 de 1962 com a denomina\u00e7\u00e3o de Escola Agrot\u00e9cnica de Bras\u00edlia, subordinada \u00e0 \u00b7 Superintend\u00eancia do Ensino Agr\u00edcola e Veterin\u00e1rio do Minist\u00e9rio da Agricultura, com o \u00b7 objetivo de ministrar cursos regulares dos antigos Gin\u00e1sio e Colegial Agr\u00edcola. Por meio do Decreto n\u00ba 60.731 de 19 de maio de 1967, determinou-se a \u00b7 subordina\u00e7\u00e3o das Escolas Agr\u00edcolas do Minist\u00e9rio da Agricultura ao Minist\u00e9rio da \u00b7 Educa\u00e7\u00e3o e da Cultura. Com a extin\u00e7\u00e3o da Escola Did\u00e1tica do ensino agr\u00e1rio, os col\u00e9gios \u00b7\n\nPro\u0301-Reitoria de Ensino do IFB - PREN/RIFB/IFB. Para as demais se\u0301ries, devera\u0301 ser \u00b7 observado edital pro\u0301prio, segundo orientac\u0327o\u0303es da PREN/RIFB/IFB, em observa\u0302ncia a\u0300s \u00b7 diretrizes constantes no Projeto Pedago\u0301gico Institucional - PPI, aprovado pela Resoluc\u0327a\u0303o ... Segundo previsto no Art. 18 do REMI. ... Computacionais; e Suporte t\u00e9cnico (MEC, 2021, p. 221). Quanto aos campos de atua\u00e7\u00e3o, os locais e ambientes de trabalho do T\u00e9cnico em \u00b7 Inform\u00e1tica s\u00e3o: empresas de infraestrutura em tecnologia da informa\u00e7\u00e3o; empresas de \u00b7 desenvolvimento de sistemas; departamento de desenvolvimento de sistemas em ... A seguir, \u00e9 detalhada a estrutura curricular do curso. ... Al\u00e9m disso, segundo o Art. 7\u00ba da Resolu\u00e7\u00e3o n\u00ba 32/2019 - RIFB/IFB, a proposta \u00b7 pedag\u00f3gica dos cursos de ensino m\u00e9dio e t\u00e9cnicos presenciais pode prever atividades a \u00b7\n\nindicar no Plano de Ensino quais ferramentas ser\u00e3o utilizadas para o limite de horas ... Inform\u00e1tica. Al\u00e9m dos projetos integradores que representam um instrumento para \u00b7 o aprimoramento da forma\u00e7\u00e3o profissional, integrando os conhecimentos da base \u00b7 comum com aqueles especificamente t\u00e9cnicos para propor solu\u00e7\u00f5es \u00e0s demandas ... Figura 1 \u2013 Itiner\u00e1rio Formativo Curso T\u00e9cnico em Inform\u00e1tica na forma Articulada Integrada ao Ensino ... Inform\u00e1tica na forma Articulada Integrada ao Ensino M\u00e9dio. A carga hor\u00e1ria das componentes curriculares da parte proped\u00eautica e diversificada ... Os quadros 3, 4 e 5 detalham os ement\u00e1rios de cada ano do curso. ... Aplicar conhecimentos lingu\u00edsticos. ... Parnasianismo. ... Forma\u00e7\u00e3o de palavras. ... Frase, ora\u00e7\u00e3o e per\u00edodo. ... Conjun\u00e7\u00e3o. ... Ora\u00e7\u00e3o Coordenada. ... Termos essenciais da ora\u00e7\u00e3o.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.ifb.edu.br/attachments/article/8026/Resolu%C3%A7%C3%A3o%20n%C2%BA%205.2022%20-%20Anexo%20-%20Plano%20de%20Curso%20T%C3%A9cnico%20em%20Inform%C3%A1tica%20na%20forma%20Articulada%20Integrada%20ao%20Ensino%20M%C3%A9dio.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "TECNOLOGIA EM AN\u00c1LISE E DESENVOVIMENTO DE SISTEMAS",
+        "url": "https://sjc.fatec.sp.gov.br/downloads/cursos/ads/projeto_pedagogico_ads.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "fatec.sp.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=fatec.sp.gov.br",
+          "site_name": "Fatec"
+        },
+        "is_missing": false,
+        "text": "Este profissional estar\u00e1 apto ... tecnologia da informa\u00e7\u00e3o, elaborando pol\u00edticas e ... 2880 aulas \uf0e0 2400 h (atende CNCST) + (240 horas de EST\u00c1GIO CURRICULAR + 160 horas do Trabalho de Gradua\u00e7\u00e3o) = 2800 HORAS \u00b7 TECNOLOGIA EM AN\u00c1LISE E DESENVOLVIMENTO DE SISTEMAS \u00b7 ...\n\nObjetivo: Manter-se atualizado com o estado da arte em TI. Ementa: Discuss\u00e3o e apresenta\u00e7\u00e3o de temas atuais da \u00e1rea de Tecnologia da Informa\u00e7\u00e3o, de interesse \u00b7 \u00e0 forma\u00e7\u00e3o dos profissionais. Inova\u00e7\u00f5es e aplica\u00e7\u00f5es diferenciadas em inform\u00e1tica. ... A que for definida no plano de ensino. ... Objetivo: Instalar redes. Ementa: Pr\u00e1tica em laborat\u00f3rio de instala\u00e7\u00e3o f\u00edsica de redes e suas diversas topologias, instala\u00e7\u00e3o de \u00b7 equipamentos de conectividade, cabeamento estruturado, protocolos TCP/IP, algor\u00edtmos e protocolos \u00b7 de roteamento, an\u00e1lise de tr\u00e1fego, protocolos de transporte TCP e UDP, protocolos de aplica\u00e7\u00e3o e ... HUNT, Craig. Linux Servidores de redes. 1.ed. Editora Ci\u00eancia Moderna, 2004. DANTAS, Mario. Tecnologias de Redes de Comunica\u00e7\u00e3o e Computadores. 1.ed. Rio de Janeiro:Axcel ... VIANA, E R C. Virtualiza\u00e7ao de Servidores Linux para Redes Corporativas.\n\n\u00f3rg\u00e3os p\u00fablicos ou como empreendedor em inform\u00e1tica. Este profissional estar\u00e1 apto a: o Projetar e implementar sistemas de acordo com as necessidades institucionais; o Coordenar infra-estruturas de tecnologia da informa\u00e7\u00e3o, elaborando pol\u00edticas e ... 2880 aulas \uf0e0 2400 h (atende CNCST) + (240 horas de EST\u00c1GIO CURRICULAR + 160 horas do Trabalho de Gradua\u00e7\u00e3o) = 2800 HORAS \u00b7 TECNOLOGIA EM AN\u00c1LISE E DESENVOLVIMENTO DE SISTEMAS \u00b7 DISTRIBUI\u00c7\u00c3O DA CARGA DID\u00c1TICA SEMESTRAL POR TIPO DE ATIVIDADE CURRICULAR ... TES-001 - Est\u00e1gio supervisionado \u2013 240h; TTG I-003 Trabalho de gradua\u00e7\u00e3o I80h; TTG II-103 Trabalho de gradua\u00e7\u00e3o II 80h \u00b7 Tabelas das siglas e denomina\u00e7\u00f5es das disciplinas ... Objetivo: Conhecer e aplicar recursos de programa\u00e7\u00e3o orientada a eventos para personalizar aplicativos de \u00b7 escrit\u00f3rio ( editor de textos, planilhas e banco de dados).\n\nRIORDAN, R M. Use A Cabe\u00e7a! Ajax Profissional. Alta Books, 2009. ... Objetivo: Criar aplica\u00e7\u00f5es para atoma\u00e7\u00e3o industrial. Ementa: Introdu\u00e7\u00e3o \u00e0 automa\u00e7\u00e3o: conceito de automa\u00e7\u00e3o, aplica\u00e7\u00f5es, controle e supervis\u00e3o de processos. Sistemas Flex\u00edveis de Manufatura. Programa\u00e7\u00e3o de Computadores para Constru\u00e7\u00e3o de programas para \u00b7 supervis\u00e3o e controle de processos industriais (SCADA - Supervisory Control and Data Acquisition, MES - Manufacturing Execution System e PIMS - Plant Information Management System). Modelo de software norma IEC \u00b7 61131-3: Identificadores, tipos de dados, vari\u00e1veis, unidade de organiza\u00e7\u00e3o de programa, recursos, tarefas, regras \u00b7 de execu\u00e7\u00e3o de programas, configura\u00e7\u00e3o do CP; Linguagens LD, FBD, SFC, IL e ST. ... MORAES, C. C.; CASTRUCCI, L. P. Engenharia de automa\u00e7\u00e3o industrial. 2.ed. LTC, 2007. PRUDENTE, F.\n\ncontatos em ambiente profissional, tanto pessoalmente quanto ao telefone. Ementa: Aprimoramento da compreens\u00e3o e produ\u00e7\u00e3o oral e escrita por meio de fun\u00e7\u00f5es sociais e estruturas mais \u00b7 complexas da l\u00edngua desenvolvidas na disciplina Ingl\u00eas 5. \u00canfase na oralidade, atendendo \u00e0s especificidades \u00b7 acad\u00eamico-profissionais da \u00e1rea e abordando aspectos s\u00f3cio-culturais da l\u00edngua inglesa. ... Livro texto adotado pelo corpo docente. ... MURPHY, Raymond. Advanced Grammar in Use CD-Rom with answers. Third Edition. Cambridge, 2007. OXENDEN, Clive et al. American English File: Student\u2019s Book 2. New York, NY: Oxford University Press, 2008. POSITIVO INFORM\u00c1TICA. Tell Me More \u2013 Business. Curitiba, 2007. RICHARDS, Jack C. New Interchange: Student\u2019s Book 3. Third Edition. Cambridge: Cambridge University Press, ... TRABALHO DE GRADUA\u00c7\u00c3O \u2013 CARGA de 160 horas, al\u00e9m das 2400 horas.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://sjc.fatec.sp.gov.br/downloads/cursos/ads/projeto_pedagogico_ads.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "2015.1.TGTUR.Plano de Ensino - Inform\u00e1tica B\u00e1sica ...",
+        "url": "https://alf.ifmt.edu.br/media/filer_public/bc/30/bc30f542-79b4-49a3-ae9a-4b2965db8c9e/alftecsubgtur20151planos_de_ensino.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifmt.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifmt.edu.br",
+          "site_name": "Ifmt"
+        },
+        "is_missing": false,
+        "text": "Usu\u00e1rios. Aplicativos de Produtividade Pessoal. Editor de Texto. Planilha Eletr\u00f4nica e Apresenta\u00e7\u00f5es \u00b7 Gr\u00e1ficas. Ferramentas para Internet. Hist\u00f3rico da Computa\u00e7\u00e3o. Tecnologias e Aplica\u00e7\u00f5es de Computadores ... Fornecer informa\u00e7\u00f5es b\u00e1sicas e hist\u00f3ricas sobre Inform\u00e1tica. Capacitar o aluno quanto ao conhecimento uso e aplicabilidade do computador no cotidiano de sua vida, permitindo que o mesmo se utilize de vantagens que a inform\u00e1tica oferece, melhorando a qualidade e \u00b7 produtividade das suas tarefas profissionais e pessoais. ... profissional, conscientizar o aluno, do uso da inform\u00e1tica como ferramenta de trabalho, familiarizando-o ... Identificar o que \u00e9 um hardware e um software. ... Identificar o sistema operacional e sistemas em rede. Entender o funcionamento do computador e da internet e como fazer uso dos mesmos. Fazer uso das ferramentas de escrit\u00f3rio, softwares de edi\u00e7\u00e3o de texto, de planilha eletr\u00f4nica, de \u00b7\n\nUsu\u00e1rios. Aplicativos de Produtividade Pessoal. Editor de Texto. Planilha Eletr\u00f4nica e Apresenta\u00e7\u00f5es \u00b7 Gr\u00e1ficas. Ferramentas para Internet. Hist\u00f3rico da Computa\u00e7\u00e3o. Tecnologias e Aplica\u00e7\u00f5es de Computadores ... Fornecer informa\u00e7\u00f5es b\u00e1sicas e hist\u00f3ricas sobre Inform\u00e1tica. Capacitar o aluno quanto ao conhecimento uso e aplicabilidade do computador no cotidiano de sua vida, permitindo que o mesmo se utilize de vantagens que a inform\u00e1tica oferece, melhorando a qualidade e \u00b7 produtividade das suas tarefas profissionais e pessoais. ... profissional, conscientizar o aluno, do uso da inform\u00e1tica como ferramenta de trabalho, familiarizando-o ... Identificar o que \u00e9 um hardware e um software. ... Identificar o sistema operacional e sistemas em rede. Entender o funcionamento do computador e da internet e como fazer uso dos mesmos. Fazer uso das ferramentas de escrit\u00f3rio, softwares de edi\u00e7\u00e3o de texto, de planilha eletr\u00f4nica, de \u00b7\n\nseguran\u00e7a do trabalho). Direito Ambiental: princ\u00edpios fundamentais (a pol\u00edtica nacional do meio ambiente, turismo como atividade impactante). Direito do Consumidor (atrasos na viagem, cancelamento da viagem, venda enganosa, problemas no hotel, problemas de transporte). Direitos Humanos e suas rela\u00e7\u00f5es com o ... Meios ou materiais de ensino (livros, audiovisuais, m\u00eddias, base de dados: Portal CAPES, revistas, filmes, ... A avalia\u00e7\u00e3o ser\u00e1 norteada pela concep\u00e7\u00e3o dial\u00f3gica, formativa, processual e cont\u00ednua, pressupondo a \u00b7 contextualiza\u00e7\u00e3o dos conhecimentos e das atividades desenvolvidas. S\u00e3o considerados instrumentos de avalia\u00e7\u00e3o do conhecimento: ... X - projetos interdisciplinares e outros. Os instrumentos de avalia\u00e7\u00e3o atitudinal que poder\u00e3o ser utilizados para avaliar os discentes s\u00e3o: ... V - outros crit\u00e9rios definidos pelo docente.\n\nocorrer, tamb\u00e9m, em hor\u00e1rios alternativos a serem definidos conjuntamente pelo docente e equipe ... Entende-se por estudos de recupera\u00e7\u00e3o paralela todas as atividades a serem desenvolvidas para sanar as \u00b7 dificuldades do processo ensino-aprendizagem, tais como: ... BADAR\u00d3, R. A. Turismo e direito convergenciais. Rio de Janeiro: SENAC, 2004. COLNAGO, L. M. R.; ALVARENGA, R. Z. (Org.). Direitos humanos e direito do trabalho. S\u00e3o Paulo: ... MAMEDE, G. Direito do turismo: legisla\u00e7\u00e3o espec\u00edfica aplicada ao turismo. 3. ed. S\u00e3o Paulo: Atlas, 2004. ... FEUZ, P. S. Direito do consumidor nos contratos de turismo. S\u00e3o Paulo: Edipro, 2003. OLIVEIRA, F. A. Coment\u00e1rios \u00e0 consolida\u00e7\u00e3o das leis do trabalho. 4. ed. S\u00e3o Paulo: LTr, 2013. PAIVA, R. A. M. Direito, turismo e consumo. Rio de Janeiro: Renovar, 2012. SILVA, L. P. L. L. A responsabilidade nos contratos de turismo em face ao c\u00f3digo de defesa do ...\n\nocorrer, tamb\u00e9m, em hor\u00e1rios alternativos a serem definidos conjuntamente pelo docente e equipe ... BROOKSHEAR, J. G. Ci\u00eancia da Computa\u00e7\u00e3o: uma vis\u00e3o abrangente. Porto Alegre: Bookman, 1999. MATTOS, A. C. M. Sistemas de informa\u00e7\u00e3o: uma vis\u00e3o executiva. 2. ed. S\u00e3o Paulo: Saraiva, 2010. ORGANIZA\u00c7\u00c3O MUNDIAL DO TURISMO. E-business: guia pr\u00e1tico para destinos e empresas ... CAPRON, H. L. e JOHNSON, J. A. Introdu\u00e7\u00e3o \u00e0 inform\u00e1tica. S\u00e3o Paulo: Pearson Prentice Hall, 2004. MAR\u00c7ULA, M.; BENINI FILHO, P. A. Inform\u00e1tica: conceitos e aplica\u00e7\u00f5es. 4. ed. S\u00e3o Paulo: \u00c9rica, ... MEIRELLES, F. Inform\u00e1tica: Novas aplica\u00e7\u00f5es com microcomputadores. 2. ed. S\u00e3o Paulo: Makron \u00b7 Books, 2004. PEOPLE EDUCATION. Apostila de Word, Power Point e Excel. User Specialist 2003. REZENDE, D. A. Planejamento de sistemas de informa\u00e7\u00e3o e inform\u00e1tica. 4. ed. S\u00e3o Paulo: Atlas, 2011.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://alf.ifmt.edu.br/media/filer_public/bc/30/bc30f542-79b4-49a3-ae9a-4b2965db8c9e/alftecsubgtur20151planos_de_ensino.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "T\u00e9cnico/a de Inform\u00e1tica \u2013 Instala\u00e7\u00e3o e Gest\u00e3o de Redes \u2013 AESAS",
+        "url": "https://aesas.pt/cursos/tecnico-a-de-informatica-instalacao-e-gestao-de-redes/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "aesas.pt",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=aesas.pt",
+          "site_name": "Aesas"
+        },
+        "is_missing": false,
+        "text": "O Plano de A\u00e7\u00e3o para o ... digitais: Envolvimento Profissional, Ensino e Aprendizagem, Avalia\u00e7\u00e3o das Aprendizagens, Desenvolvimento Profissional Cont\u00ednuo e Lideran\u00e7a. A elabora\u00e7\u00e3o deste Plano deve ter em conta diversas etapas, desde: recolha de evid\u00eancias: a partir da informa\u00e7\u00e3o recolhida por processos de diagn\u00f3stico; an\u00e1lise dos dados: interpreta\u00e7\u00e3o e reflex\u00e3o sobre os resultados alcan\u00e7ados; elabora\u00e7\u00e3o: defini\u00e7\u00e3o do Plano de A\u00e7\u00e3o para o Desenvolvimento Digital; implementa\u00e7\u00e3o: per\u00edodo temporal em que o plano \u00e9 desenvolvido na pr\u00e1tica; monitoriza\u00e7\u00e3o das a\u00e7\u00f5es e avalia\u00e7\u00e3o: aferi\u00e7\u00e3o e adequa\u00e7\u00e3o dos n\u00edveis de implementa\u00e7\u00e3o e consecu\u00e7\u00e3o dos objetivos definidos no plano. A cria\u00e7\u00e3o de ecossistemas de desenvolvimento digital dever\u00e1 considerar que a capacita\u00e7\u00e3o dos docentes e de outros profissionais de educa\u00e7\u00e3o ter\u00e1 ...\n\nO Plano de A\u00e7\u00e3o para o Desenvolvimento Digital das Escolas (PADDE) </strong >tem por base o quadro conceptual dos documentos orientadores desenvolvidos pela Comiss\u00e3o Europeia, designadamente o DigCompEdu</a > e o DigCompOrg</a >. Deste modo, as \u00e1reas de interven\u00e7\u00e3o do PADDE incidir\u00e3o nos diferentes dom\u00ednios da organiza\u00e7\u00e3o escolar no \u00e2mbito das tecnologias digitais: Envolvimento Profissional, Ensino e Aprendizagem, Avalia\u00e7\u00e3o das Aprendizagens, Desenvolvimento Profissional Cont\u00ednuo e Lideran\u00e7a. A elabora\u00e7\u00e3o deste Plano deve ter em conta diversas etapas, desde: recolha de evid\u00eancias: a partir da informa\u00e7\u00e3o recolhida por processos de diagn\u00f3stico; an\u00e1lise dos dados: interpreta\u00e7\u00e3o e reflex\u00e3o sobre os resultados alcan\u00e7ados; elabora\u00e7\u00e3o: defini\u00e7\u00e3o do Plano de A\u00e7\u00e3o para o Desenvolvimento Digital; implementa\u00e7\u00e3o: per\u00edodo temporal em que o plano \u00e9 desenvolvido na pr\u00e1tica; monitoriza\u00e7\u00e3o das a\u00e7\u00f5es e avalia\u00e7\u00e3o: aferi\u00e7\u00e3o e adequa\u00e7\u00e3o dos n\u00edveis de implementa\u00e7\u00e3o e consecu\u00e7\u00e3o dos objetivos definidos no pl\n\nCertifica\u00e7\u00e3o Escolar 12\u00ba Ano; Certificado Profissional N\u00edvel IV; Acesso ao Ensino Superior e/ou Mercado de Trabalho. ... A parceria entre o clube Artygym e o Agrupamento de Escolas Alberto Sampaio (AESAS) visa a promo\u00e7\u00e3o de atividades extracurriculares e o desenvolvimento digital dos alunos, atrav\u00e9s da implementa\u00e7\u00e3o de um Plano de A\u00e7\u00e3o para o Desenvolvimento Digital. A parceria inclui a recolha de evid\u00eancias, an\u00e1lise de dados, elabora\u00e7\u00e3o do plano, implementa\u00e7\u00e3o e monitoriza\u00e7\u00e3o das a\u00e7\u00f5es. ... Uma entidade que se dedica ao aprimoramento e apoio dos profissionais de educa\u00e7\u00e3o. O seu foco \u00e9 a forma\u00e7\u00e3o cont\u00ednua, a reflex\u00e3o sobre a pr\u00e1tica pedag\u00f3gica e a amplia\u00e7\u00e3o do universo cultural dos educadores, promovendo a integra\u00e7\u00e3o e o desenvolvimento profissional. ... O Erasmus+</a > \u00e9 o programa da UE para a educa\u00e3o, forma\u00e7\u00e3o, juventude e desporto.\n\nDada a natureza da estrutura deste CQ, a sua principal miss\u00e3o \u00e9 a realiza\u00e7\u00e3o de sess\u00f5es de orienta\u00e7\u00e3o escolar e profissional, bem como o desenvolvimento de processos de Reconhecimento, Valida\u00e7\u00e3o e Certifica\u00e7\u00e3o de Compet\u00eancias (RVCC), de n\u00edvel b\u00e1sico e secund\u00e1rio, que visam o aumento efetivo das qualifica\u00e7\u00f5es dos candidatos, tendo como recurso principal a sua hist\u00f3ria de vida, valorizando, desta forma, as aprendizagens realizadas ao longo da vida, em diversos contextos \u2013 formal, n\u00e3o formal e informal. O Agrupamento de Escolas Alberto Sampaio (AESAS) aderiu ao projeto da Academia de L\u00edderes Ubuntu - Escolas, no \u00e2mbito do Plano 21|23 Recupera\u00e7\u00e3o de Aprendizagens da DGE. ... Promover a Capacita\u00e7\u00e3o dos jovens, enquanto agentes de transforma\u00e7\u00e3o ao servi\u00e7o das suas comunidades, com enfoque no desenvolvimento de compet\u00eancias s\u00f3cio emocionais; ... Constitui\u00e7\u00e3o da Equipa de Trabalho: Constitui\u00e7\u00e3o da Equipa de Trabalho: Ana Andrea de Barros; Eug\u00e9nia Sousa; Helena Duque; F\u00e1tima Fontes; Teresa Carv\n\nDada a natureza da estrutura deste CQ, a sua principal miss\u00e3o \u00e9 a realiza\u00e7\u00e3o de sess\u00f5es de orienta\u00e7\u00e3o escolar e profissional, bem como o desenvolvimento de processos de Reconhecimento, Valida\u00e7\u00e3o e Certifica\u00e7\u00e3o de Compet\u00eancias (RVCC), de n\u00edvel b\u00e1sico e secund\u00e1rio, que visam o aumento efetivo das qualifica\u00e7\u00f5es dos candidatos, tendo como recurso principal a sua hist\u00f3ria de vida, valorizando, desta forma, as aprendizagens realizadas ao longo da vida, em diversos contextos \u2013 formal, n\u00e3o formal e informal. ... O Programa Rede de Bibliotecas Escolares foi lan\u00e7ado em 1996, pelos Minist\u00e9rios da Educa\u00e7\u00e3o e da Cultura (despacho conjunto n.\u00ba 184/ME/MC/96</a >, de 27 de A ) gosto), com o objetivo de instalar e desenvolver bibliotecas em escolas p\u00fablicas de todos os n\u00edveis de ensino, disponibilizando aos utilizadores os recursos necess\u00e1rios \u00e0 leitura, ao acesso, uso e produ\u00e7\u00e3o da informa\u00e7\u00e3o em suporte anal\u00f3gico, eletr\u00f3nico e digital.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://aesas.pt/cursos/tecnico-a-de-informatica-instalacao-e-gestao-de-redes/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Portal CBT- IFSP - T\u00e9cnico em Inform\u00e1tica",
+        "url": "https://cbt.ifsp.edu.br/index.php/tecnicos/61-cursos/239-tecnico-em-informatica",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifsp.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifsp.edu.br",
+          "site_name": "Ifsp"
+        },
+        "is_missing": false,
+        "text": "Confira os nomes dos professores ... Resolu\u00e7\u00e3o n. 109/2015, a qual estabelece que cada docente deve apresentar, semestralmente, o Plano Individual de Trabalho (PIT) e, anualmente, o Relat\u00f3rio Individual de Trabalho (RIT)....\n\nO Corpo Docente do Campus Cubat\u00e3o possui elevada forma\u00e7\u00e3o acad\u00eamica e profissional, atuando em diferentes regimes de trabalho, tais como: Regime de Dedica\u00e7\u00e3o Exclusiva (RDE), 40h/semanais e 20h/semanais. Confira os nomes dos professores que comp\u00f5em o Corpo Docente do campus \u00b7 No IFSP, as atividades docentes s\u00e3o reguladas pela Resolu\u00e7\u00e3o n. 109/2015, a qual estabelece que cada docente deve apresentar, semestralmente, o Plano Individual de Trabalho (PIT) e, anualmente, o Relat\u00f3rio Individual de Trabalho (RIT). Resolu\u00e7\u00e3o IFSP n. 109/2015 \u00b7 Planos e Relat\u00f3rios Individuais de Trabalhos do Corpo Docente a partir de 2019 \u00b7 Planos Individuais de Trabalho Docente (PIT) de 2015 a 2019 \u00b7 Relat\u00f3rios Individuais de Trabalho Docente (RIT) de 2015 a 2019 ... Prof. Roberta Silva Antunes \u00b7 E-mail: O endere\u00e7o de e-mail address est\u00e1 sendo protegido de spambots.\n\nCompreende que o desenvolvimento tecnol\u00f3gico modifica as rela\u00e7\u00f5es profissionais e interpessoais. Atua em diferentes modalidades do mundo do trabalho, entendendo seu car\u00e1ter, sua ess\u00eancia e a indissociabilidade entre os saberes pr\u00e1ticos e te\u00f3ricos. Reconhece a diversidade sexual, de g\u00eanero e as rela\u00e7\u00f5es \u00e9tnico-raciais atuando na desconstru\u00e7\u00e3o do machismo e racismo estruturais, do preconceito de qualquer tipo e das mais diversas formas de discrimina\u00e7\u00e3o e desigualdade sociais, raciais e de g\u00eanero, dentro e fora das rela\u00e7\u00f5es de trabalho. Apresenta forma\u00e7\u00e3o cient\u00edfica e tecnol\u00f3gica, que lhe permite atuar profissionalmente de forma a integrar trabalho, ci\u00eancia, tecnologia e cultura, buscando a inova\u00e7\u00e3o, considerando o contexto sociopol\u00edtico, econ\u00f4mico e o desenvolvimento sustent\u00e1vel, estando apto a prosseguir os estudos com autonomia intelectual e criatividade.\n\nO Curso T\u00e9cnico em Inform\u00e1tica Integrado ao Ensino M\u00e9dio (CTII) \u00e9 voltado para os estudantes que conclu\u00edram o Ensino Fundamental. Por ser integrado, ele garante tanto a conclus\u00e3o do Ensino M\u00e9dio quanto a forma\u00e7\u00e3o t\u00e9cnica profissional, bem como a possibilidade do estudante prosseguir seus estudos em curso de n\u00edvel superior.\n\n\u00c9 fundamental para atua\u00e7\u00e3o como T\u00e9cnico em Inform\u00e1tica ter conhecimentos e saberes relacionados aos processos de planejamento e execu\u00e7\u00e3o de projetos computacionais de forma a garantir a entrega de produtos digitais, an\u00e1lise de softwares, testagem de prot\u00f3tipos, de acordo com suas finalidades; conhecimentos e saberes relacionados \u00e0s normas t\u00e9cnicas, \u00e0 lideran\u00e7a de equipes, \u00e0 solu\u00e7\u00e3o de problemas t\u00e9cnicos e \u00e0 assertividade na comunica\u00e7\u00e3o de laudos e an\u00e1lises; e habilidades relacionadas \u00e0 constru\u00e7\u00e3o de solu\u00e7\u00f5es em BI e integra\u00e7\u00f5es sist\u00eamicas. O egresso do Curso T\u00e9cnico em Inform\u00e1tica atua na sociedade (da qual integra o mundo do trabalho) de forma cr\u00edtica, \u00e9tica e transformadora, valorizando aspectos da cidadania, colaborando com a\u00e7\u00f5es de inclus\u00e3o social, respeitando os direitos humanos, reconhecendo as diversidades existentes nas rela\u00e7\u00f5es sociais e as demandas ambientais.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://cbt.ifsp.edu.br/index.php/tecnicos/61-cursos/239-tecnico-em-informatica",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Curso Profissional de T\u00e9cnico de Inform\u00e1tica - Sistemas - Agrupamento de Escolas de Parede",
+        "url": "https://www.aeparede.edu.pt/curso-profissional-de-tecnico-de-informatica-sistemas/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "aeparede.edu.pt",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=aeparede.edu.pt",
+          "site_name": "Agrupamento de Escolas de Parede"
+        },
+        "is_missing": false,
+        "text": "\ud83d\udcbb Conhecimento de hardware, sistemas operacionais e redes \ud83d\udd27 Capacidade de instalar, configurar e manter sistemas inform\u00e1ticos \ud83d\udee0 Diagn\u00f3stico e resolu\u00e7\u00e3o de problemas t\u00e9cnicos \ud83c\udf10 Administra\u00e7\u00e3o de redes e servidores \ud83d\udd12 No\u00e7\u00f5es de ciberseguran\u00e7a e prote\u00e7\u00e3o de dados \ud83e\udd1d Trabalho em equipa e suporte t\u00e9cnico a utilizadores \u00b7 Este profissional desempenha um papel essencial na infraestrutura tecnol\u00f3gica das empresas, garantindo o funcionamento eficiente dos sistemas inform\u00e1ticos. ... \u00c0 semelhan\u00e7a dos anos anteriores, nos dias 16 e 17 de junho, os alunos da turma 12.\u00ba J do Curso \u2026 ... Decorreu em Almeria, Espanha, a mobilidade Erasmus+VET para os 9 alunos do ensino profissional do nosso agrupamento que abra\u00e7aram esta \u2026 ... No \u00e2mbito do processo de autoavalia\u00e7\u00e3o de escola e do plano de melhorias EQAVET -Quadro de Refer\u00eancia Europeu de Garantia \u2026\n\n\ud83d\udcbb Conhecimento de hardware, sistemas operacionais e redes \ud83d\udd27 Capacidade de instalar, configurar e manter sistemas inform\u00e1ticos \ud83d\udee0 Diagn\u00f3stico e resolu\u00e7\u00e3o de problemas t\u00e9cnicos \ud83c\udf10 Administra\u00e7\u00e3o de redes e servidores \ud83d\udd12 No\u00e7\u00f5es de ciberseguran\u00e7a e prote\u00e7\u00e3o de dados \ud83e\udd1d Trabalho em equipa e suporte t\u00e9cnico a utilizadores \u00b7 Este profissional desempenha um papel essencial na infraestrutura tecnol\u00f3gica das empresas, garantindo o funcionamento eficiente dos sistemas inform\u00e1ticos. ... \u00c0 semelhan\u00e7a dos anos anteriores, nos dias 16 e 17 de junho, os alunos da turma 12.\u00ba J do Curso \u2026 ... Decorreu em Almeria, Espanha, a mobilidade Erasmus+VET para os 9 alunos do ensino profissional do nosso agrupamento que abra\u00e7aram esta \u2026 ... No \u00e2mbito do processo de autoavalia\u00e7\u00e3o de escola e do plano de melhorias EQAVET -Quadro de Refer\u00eancia Europeu de Garantia \u2026\n\nO aluno que conclui o curso profissional de T\u00e9cnico de Inform\u00e1tica \u2013 Sistemas adquire compet\u00eancias para instalar, configurar e manter sistemas inform\u00e1ticos, redes e servidores, garantindo o bom funcionamento dos equipamentos e da infraestrutura tecnol\u00f3gica das empresas. Este profissional pode trabalhar em departamentos de TI, empresas de suporte t\u00e9cnico, consultorias de tecnologia ou como freelancer. \u2705 Instala\u00e7\u00e3o e manuten\u00e7\u00e3o de hardware e software: Configura\u00e7\u00e3o de computadores, perif\u00e9ricos e sistemas operacionais. \u2705 Gest\u00e3o e administra\u00e7\u00e3o de redes: Instala\u00e7\u00e3o e manuten\u00e7\u00e3o de redes locais (LAN), Wi-Fi e outros sistemas de comunica\u00e7\u00e3o. \u2705 Seguran\u00e7a inform\u00e1tica: Implementa\u00e7\u00e3o de medidas de seguran\u00e7a para prote\u00e7\u00e3o de dados e sistemas. \u2705 Suporte t\u00e9cnico e assist\u00eancia a utilizadores: Diagn\u00f3stico e resolu\u00e7\u00e3o de problemas em equipamentos e software.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "age": "October 1, 2025",
+          "url": "https://www.aeparede.edu.pt/curso-profissional-de-tecnico-de-informatica-sistemas/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "T\u00c9CNICO DE N\u00cdVEL M\u00c9DIO EM INFORM\u00c1TICA NA FORMA SUBSEQUENTE 2019",
+        "url": "https://www2.ifam.edu.br/campus/cmzl/arquivos/08-cmzl_ppcverso_consup_sub_informtica_2019-1.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifam.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifam.edu.br",
+          "site_name": "IFAM"
+        },
+        "is_missing": false,
+        "text": "Os planos de ensino e os planos de atividades em EaD devem ser \u00b7 apresentados \u00e0 equipe diretiva e alunos no in\u00edcio de cada per\u00edodo letivo e \u00b7 sempre antes de sua aplica\u00e7\u00e3o, para a melhoria do planejamento e integra\u00e7\u00e3o ... Pedag\u00f3gico do IFAM. Conforme o Artigo 4\u00ba, \u00a7 1\u00ba do Decreto n\u00ba 5.154/04, a Educa\u00e7\u00e3o \u00b7 Profissional T\u00e9cnica de N\u00edvel M\u00e9dio ser\u00e1 desenvolvida de forma articulada com \u00b7 o Ensino M\u00e9dio, sendo a Forma Subsequente uma das possibilidades dessa \u00b7 articula\u00e7\u00e3o. Esta forma de oferta \u00e9 destinada aos que j\u00e1 tenham conclu\u00eddo o ... T\u00e9cnicos \u2013 CNCT/3\u00aa Edi\u00e7\u00e3o, aprovado pela Resolu\u00e7\u00e3o CNE/CEB N\u00ba. 01 de \u00b7 5/12/2014, com base no Parecer CNE/CEB N\u00ba. 08/2014 e Resolu\u00e7\u00e3o CNE N\u00b0. 06/2012 que trata das Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o \u00b7 Profissional T\u00e9cnica de N\u00edvel M\u00e9dio \u2013 EPTNM. Desta maneira, o Curso T\u00e9cnico de N\u00edvel M\u00e9dio em Inform\u00e1tica na \u00b7\n\ncom a Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica, na perspectiva da integra\u00e7\u00e3o entre \u00b7 saberes espec\u00edficos para a produ\u00e7\u00e3o do conhecimento e a interven\u00e7\u00e3o social. De igual forma, prima pela indissociabilidade entre teoria e pr\u00e1tica no processo \u00b7 de ensino-aprendizagem, a ser verificada, principalmente, por meio do ... Aprendizagem (AVA) do IFAM. ... Quadro 1. Matriz Curricular \u00b7 INSTITUTO FEDERAL DE EDUCA\u00c7\u00c3O, CI\u00caNCIA E TECNOLOGIA DO AMAZONAS \u2013 IFAM ... Quadro 2. Carga Hor\u00e1ria do Curso ... Figura 1. Representa\u00e7\u00e3o Gr\u00e1fica do Perfil de Forma\u00e7\u00e3o do Curso T\u00e9cnico de N\u00edvel M\u00e9dio em ... Conceitos b\u00e1sicos de software e hardware. Tipos de Softwares. Internet. Correio \u00b7 eletr\u00f4nico. Editor de textos. Editor de Planilha eletr\u00f4nica. Editor de apresenta\u00e7\u00e3o de ... Defini\u00e7\u00f5es. Linguagem algor\u00edtmica. Vari\u00e1veis e express\u00f5es aritm\u00e9ticas.\n\nOs planos de ensino e os planos de atividades em EaD devem ser \u00b7 apresentados \u00e0 equipe diretiva e alunos no in\u00edcio de cada per\u00edodo letivo e \u00b7 sempre antes de sua aplica\u00e7\u00e3o, para a melhoria do planejamento e integra\u00e7\u00e3o ... Pedag\u00f3gico do IFAM. Conforme o Artigo 4\u00ba, \u00a7 1\u00ba do Decreto n\u00ba 5.154/04, a Educa\u00e7\u00e3o \u00b7 Profissional T\u00e9cnica de N\u00edvel M\u00e9dio ser\u00e1 desenvolvida de forma articulada com \u00b7 o Ensino M\u00e9dio, sendo a Forma Subsequente uma das possibilidades dessa \u00b7 articula\u00e7\u00e3o. Esta forma de oferta \u00e9 destinada aos que j\u00e1 tenham conclu\u00eddo o ... T\u00e9cnicos \u2013 CNCT/3\u00aa Edi\u00e7\u00e3o, aprovado pela Resolu\u00e7\u00e3o CNE/CEB N\u00ba. 01 de \u00b7 5/12/2014, com base no Parecer CNE/CEB N\u00ba. 08/2014 e Resolu\u00e7\u00e3o CNE N\u00b0. 06/2012 que trata das Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o \u00b7 Profissional T\u00e9cnica de N\u00edvel M\u00e9dio \u2013 EPTNM. Desta maneira, o Curso T\u00e9cnico de N\u00edvel M\u00e9dio em Inform\u00e1tica na \u00b7\n\nde modo geral que o educando seja preparado para o trabalho e a cidadania, tornando-se capaz de adaptar-se com flexibilidade \u00e0s novas condi\u00e7\u00f5es de \u00b7 ocupa\u00e7\u00e3o ou aperfei\u00e7oamento, e para tanto, regulamenta sobre a necessidade ... PACHECO, 2012). Outro conceito defendido no campo da educa\u00e7\u00e3o profissional no sentido \u00b7 da educa\u00e7\u00e3o integral \u00e9 o de politecnia, que segundo Dur\u00e3es (2009), se \u00b7 identifica plenamente com o conceito de educa\u00e7\u00e3o tecnol\u00f3gica no seu sentido \u00b7 pleno, como uma forma\u00e7\u00e3o ampla e integral dos sujeitos, abrangendo os \u00b7 conhecimentos t\u00e9cnicos e de base cient\u00edfica, numa perspectiva social e \u00b7 hist\u00f3rico cr\u00edtica. Assim a politecnia, como nos diz Ciavatta (2010, p. 94), \u201cexige \u00b7 que se busquem os alicerces do pensamento e da produ\u00e7\u00e3o da vida [...] de ... Conforme disposto no par\u00e1grafo \u00fanico do Art. 26 da Resolu\u00e7\u00e3o N\u00ba 06, de ... Ambiente Virtual de Ensino e Aprendizagem (AVEA).\n\nAmazonas era sin\u00f4nimo de qualidade do ensino profissional para todo o \u00b7 Amazonas. Entretanto, por for\u00e7a de Decreto de 26 de mar\u00e7o de 2001, ocorreu ... Coari. No dia 18 de dezembro de 2006, o funcionamento da UNED de Coari foi \u00b7 autorizado mediante a Portaria de N\u00ba 1.970, do Minist\u00e9rio da Educa\u00e7\u00e3o, iniciando ent\u00e3o as obras para a constru\u00e7\u00e3o da unidade, que funcionou \u00b7 inicialmente em instala\u00e7\u00f5es cedidas pela Prefeitura. ... N\u00ba. 2.225 de 05/1940, como Aprendizado Agr\u00edcola Rio Branco, com sede no \u00b7 Estado do Acre. Sua transfer\u00eancia para o Amazonas deveu-se ao Decreto Lei \u00b7 N\u00ba. 9.758, de 05 de setembro 1946, por meio do qual foi elevado \u00e0 categoria de \u00b7 escola, passando a denominar-se Escola de Inicia\u00e7\u00e3o Agr\u00edcola do \u00b7 Amazonas. Posteriormente, passou a ser chamado Gin\u00e1sio Agr\u00edcola do ... Amazonas, pelo Decreto N\u00ba. 70.513.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www2.ifam.edu.br/campus/cmzl/arquivos/08-cmzl_ppcverso_consup_sub_informtica_2019-1.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "do Curso T\u00e9cnico em Inform\u00e1tica Integrado ao Ensino M\u00e9dio - 3 anos 1\u00aa Vers\u00e3o",
+        "url": "https://portal1.iff.edu.br/nossos-campi/itaperuna/cursos/tecnico-integrado/curso-tecnico-em-informatica/ppc-integrado-informatica",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "iff.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=iff.edu.br",
+          "site_name": "IFFluminense"
+        },
+        "is_missing": false,
+        "text": "administrativos e demais colaboradores aos docentes \u2013, os quais interagem na ... Juntos formam a integralidade humana. Uma compreens\u00e3o hol\u00edstica, em \u00b7 totalidade, da realidade, compreendendo quatro pontos gerais: (a) respeito e cuidado pela comunidade da vida; (b) integridade ecol\u00f3gica; (c) justi\u00e7a social e econ\u00f4mica; (d) democracia, n\u00e3o-viol\u00eancia e paz. ... Profissional e Est\u00e1gio Curricular Supervisionado. Diante do exposto e no intuito de refor\u00e7ar a intera\u00e7\u00e3o entre os conhecimentos \u00b7 apresentados na matriz abaixo, ser\u00e1 desenvolvida tamb\u00e9m, como parte integrante do \u00b7 eixo de disciplinas obrigat\u00f3rias, a disciplina Projeto Integrador. Mais que um modelo \u00b7 de integra\u00e7\u00e3o de conhecimentos a partir do ensino e o simples desenvolvimento de \u00b7 compet\u00eancias inter-relacionando disciplinas, teoria-pr\u00e1tica, ensino-pesquisa-extens\u00e3o, o Projeto Integrador \u00e9 uma das formas de garantir a viabiliza\u00e7\u00e3o e articula\u00e7\u00e3o, de \u00b7\n\nEnsino Fundamental. Assim, o curr\u00edculo do curso est\u00e1 fundamentado nas caracter\u00edsticas da forma\u00e7\u00e3o \u00b7 do profissional, com a correspondente atribui\u00e7\u00e3o do t\u00edtulo, e no compromisso de \u00b7 forma\u00e7\u00e3o integral: s\u00e3o orientadores desta proposta a miss\u00e3o, os princ\u00edpios e os ... Compreende tecnologias relacionadas \u00e0 comunica\u00e7\u00e3o e processamento de dados. Abrange a\u00e7\u00f5es de concep\u00e7\u00e3o, desenvolvimento, implanta\u00e7\u00e3o, opera\u00e7\u00e3o, avalia\u00e7\u00e3o e ... Fluminense. ... Classifica\u00e7\u00e3o Brasileira de Ocupa\u00e7\u00e3o (CBO): T\u00e9cnicos em Inform\u00e1tica. Para clareza \u00b7 das atribui\u00e7\u00f5es do profissional em Inform\u00e1tica, as compet\u00eancias e habilidades foram \u00b7 agrupadas como se segue por meio dos eixos integradores descritos em nossa matriz. Todos esses n\u00facleos visam desenvolver no aluno a ado\u00e7\u00e3o de uma atitude \u00e9tica \u00b7 no trabalho e no conv\u00edvio social, compreendendo os processos de socializa\u00e7\u00e3o humana \u00b7\n\nadministrativos e demais colaboradores aos docentes \u2013, os quais interagem na ... Juntos formam a integralidade humana. Uma compreens\u00e3o hol\u00edstica, em \u00b7 totalidade, da realidade, compreendendo quatro pontos gerais: (a) respeito e cuidado pela comunidade da vida; (b) integridade ecol\u00f3gica; (c) justi\u00e7a social e econ\u00f4mica; (d) democracia, n\u00e3o-viol\u00eancia e paz. ... Profissional e Est\u00e1gio Curricular Supervisionado. Diante do exposto e no intuito de refor\u00e7ar a intera\u00e7\u00e3o entre os conhecimentos \u00b7 apresentados na matriz abaixo, ser\u00e1 desenvolvida tamb\u00e9m, como parte integrante do \u00b7 eixo de disciplinas obrigat\u00f3rias, a disciplina Projeto Integrador. Mais que um modelo \u00b7 de integra\u00e7\u00e3o de conhecimentos a partir do ensino e o simples desenvolvimento de \u00b7 compet\u00eancias inter-relacionando disciplinas, teoria-pr\u00e1tica, ensino-pesquisa-extens\u00e3o, o Projeto Integrador \u00e9 uma das formas de garantir a viabiliza\u00e7\u00e3o e articula\u00e7\u00e3o, de \u00b7\n\nc) Para alunos concluintes do Ensino M\u00e9dio ou do Ensino T\u00e9cnico de N\u00edvel ... Cursos T\u00e9cnicos Subsequentes em: Guia de Turismo. Curso de Gradua\u00e7\u00e3o em: Bacharelado em Sistemas de Informa\u00e7\u00e3o. ... Cursos T\u00e9cnicos Subsequentes em: Guia de Turismo e Seguran\u00e7a do Trabalho. ... Adultos (PROEJA). O campus Itaperuna possibilita, assim, a verticaliza\u00e7\u00e3o da educa\u00e7\u00e3o b\u00e1sica \u00e0 \u00b7 educa\u00e7\u00e3o profissional e a verticaliza\u00e7\u00e3o \u00e0 educa\u00e7\u00e3o superior, otimizando a sua \u00b7 infraestrutura f\u00edsica, os quadros de pessoal e os recursos de gest\u00e3o (Ver Figura 2). ... Administra\u00e7\u00e3o. Ambos os programas est\u00e3o vinculados \u00e0 Dire\u00e7\u00e3o de Pesquisa e \u00b7 Extens\u00e3o e integrados aos demais setores do campus, os quais contribuem para o ... Cient\u00edfica, Empreendedorismo e Extens\u00e3o. A sala destinada \u00e0 Dire\u00e7\u00e3o de Pesquisa e Extens\u00e3o disp\u00f5e de 4 mesas com \u00b7 computadores, 1 impressora, 2 arm\u00e1rios, 1 arquivo e 1 gaveteiro.\n\nRede Federal de Educa\u00e7\u00e3o Profissional. Desde sua cria\u00e7\u00e3o, ainda como Escola de \u00b7 Aprendizes e Art\u00edfices, datada de 23 de setembro de 1909, ao longo de mais de um \u00b7 s\u00e9culo de hist\u00f3ria, diversas foram suas transforma\u00e7\u00f5es \u2013 de Escola de Aprendizes e \u00b7 Art\u00edfices para Escola T\u00e9cnica Industrial (1945); de Escola T\u00e9cnica Industrial para \u00b7 Escola T\u00e9cnica Federal (1959); de Escola T\u00e9cnica Federal para Centro Federal de \u00b7 Educa\u00e7\u00e3o Tecnol\u00f3gica (1999); e de Centro Federal de Educa\u00e7\u00e3o Tecnol\u00f3gica para \u00b7 Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia (2008) \u2013, as quais foram, gradualmente, redimensionando a filosofia, os objetivos, o perfil e a pr\u00f3pria \u00b7 organiza\u00e7\u00e3o e escopo de atua\u00e7\u00e3o institucional. Hoje, o Instituto integra, assim, os seguintes campi: (i) na mesorregi\u00e3o do \u00b7 Norte Fluminense, os campi Campos-Centro, Campos-Guarus, Maca\u00e9, Quissam\u00e3, a \u00b7 Unidade de Ensino e Pesquisa de S\u00e3o Jo\u00e3o da Barra, a Unidade de Pesquisa e \u00b7",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://portal1.iff.edu.br/nossos-campi/itaperuna/cursos/tecnico-integrado/curso-tecnico-em-informatica/ppc-integrado-informatica",
+          "search_provider": "anthropic"
+        }
+      }
+    ],
+    "is_error": false,
+    "structured_content": null,
+    "meta": null,
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "display_content": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "token_budget"
+  },
+  {
+    "start_timestamp": "2026-01-23T17:24:56.527141Z",
+    "stop_timestamp": "2026-01-23T17:25:02.447720Z",
+    "flags": null,
+    "type": "thinking",
+    "thinking": "O usu\u00e1rio quer que eu repita a pesquisa, mas agora para um contexto completamente diferente:\n- **Ensino m\u00e9dio t\u00e9cnico** (n\u00e3o ensino superior)\n- **Escolas t\u00e9cnicas presenciais** (n\u00e3o EAD)\n- **Cursos modulares e integrados**\n- **Cursos online livres**\n\nPelos resultados da busca, vejo refer\u00eancias a:\n- IFB, IFSP, IFF, IFAM (Institutos Federais)\n- Escolas profissionais em Portugal\n- Portaria 550-C/2004\n- Decreto 5.154/04\n- Resolu\u00e7\u00e3o CNE/CEB 01/2014\n- Cat\u00e1logo Nacional de Cursos T\u00e9cnicos\n\nPreciso buscar mais informa\u00e7\u00f5es espec\u00edficas sobre:\n1. Legisla\u00e7\u00e3o brasileira para ensino t\u00e9cnico\n2. Diferen\u00e7a entre cursos integrados, concomitantes, subsequentes e modulares\n3. Estrutura de planos de trabalho em escolas t\u00e9cnicas\n4. SENAI, SENAC (Sistema S)\n5. ETECs\n6. Cursos livres online",
+    "summaries": [
+      {
+        "summary": "Recalibrando pesquisa para ensino t\u00e9cnico presencial modular."
+      }
+    ],
+    "cut_off": false,
+    "alternative_display_type": null
+  },
+  {
+    "start_timestamp": "2026-01-23T17:25:02.683941Z",
+    "stop_timestamp": "2026-01-23T17:25:03.038279Z",
+    "flags": null,
+    "type": "tool_use",
+    "id": "toolu_01HyvqsUrKHoBfhgBTP54YN4",
+    "name": "web_search",
+    "input": {
+      "query": "Resolu\u00e7\u00e3o CNE CEB 06 2012 diretrizes curriculares educa\u00e7\u00e3o profissional t\u00e9cnica n\u00edvel m\u00e9dio"
+    },
+    "message": "Searching the web",
+    "integration_name": null,
+    "integration_icon_url": null,
+    "context": null,
+    "display_content": null,
+    "approval_options": null,
+    "approval_key": null,
+    "is_mcp_app": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_result",
+    "tool_use_id": "toolu_01HyvqsUrKHoBfhgBTP54YN4",
+    "name": "web_search",
+    "content": [
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00e3o CEB/CNE N\u00ba 6 DE 20/09/2012 - Federal - LegisWeb",
+        "url": "https://www.legisweb.com.br/legislacao/?id=245343",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "legisweb.com.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=legisweb.com.br",
+          "site_name": "LegisWeb"
+        },
+        "is_missing": false,
+        "text": "Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. O Presidente da C\u00e2mara de Educa\u00e7\u00e3o B\u00e1sica do Conselho Nacional de Educa\u00e7\u00e3o, de conformidade com o disposto na al\u00ednea &quot;c&quot; do \u00a7 1\u00ba do art. 9\u00ba da Lei n\u00ba 4.024/1961, com a reda\u00e7\u00e3o dada ...\n\nDefine Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. O Presidente da C\u00e2mara de Educa\u00e7\u00e3o B\u00e1sica do Conselho Nacional de Educa\u00e7\u00e3o, de conformidade com o disposto na al\u00ednea \"c\" do \u00a7 1\u00ba do art. 9\u00ba da Lei n\u00ba 4.024/1961, com a reda\u00e7\u00e3o dada pela Lei n\u00ba 9.131/1995, nos artigos, 36-A, 36-B e 36-C, 36-D, 37, 39, 40, 41 e 42 da Lei 9.394/1996, e com fundamento no Parecer CNE/CEB n\u00ba 11/2012, homologado por Despacho do Ministro de Estado da Educa\u00e7\u00e3o de 31 de agosto de 2012, publicado no DOU de 4 de setembro de 2012, ... Art. 1\u00ba. A presente Resolu\u00e7\u00e3o define as Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. Par\u00e1grafo \u00fanico. Para os fins desta Resolu\u00e7\u00e3o, entende-se por Diretriz o conjunto articulado de princ\u00edpios e crit\u00e9rios a serem observados pelos sistemas de ensino e pelas institui\u00e7\u00f5es de ensino p\u00fablicas e privadas, na organiza\u00e7\u00e3o e no planejamento, desenvolvimento e avalia\u00e7\u00e3o da Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel \n\nXIII - autonomia da institui\u00e7\u00e3o educacional na concep\u00e7\u00e3o, elabora\u00e7\u00e3o, execu\u00e7\u00e3o, avalia\u00e7\u00e3o e revis\u00e3o do seu projeto pol\u00edticopedag\u00f3gico, constru\u00eddo como instrumento de trabalho da comunidade escolar, respeitadas a legisla\u00e7\u00e3o e normas educacionais, estas Diretrizes Curriculares Nacionais e outras complementares de cada sistema de ensino; XIV - flexibilidade na constru\u00e7\u00e3o de itiner\u00e1rios formativos diversificados e atualizados, segundo interesses dos sujeitos e possibilidades das institui\u00e7\u00f5es educacionais, nos termos dos respectivos projetos pol\u00edtico-pedag\u00f3gicos; XV - identidade dos perfis profissionais de conclus\u00e3o de curso, que contemplem conhecimentos, compet\u00eancias e saberes profissionais requeridos pela natureza do trabalho, pelo desenvolvimento tecnol\u00f3gico e pelas demandas sociais, econ\u00f4micas e ambientais; XVI - fortalecimento do regime de colabora\u00e7\u00e3o entre os entes federados, incluindo, por exemplo, os arranjos de desenvolvimento da educa\u00e7\u00e3o, visando \u00e0 melhoria dos indicadores educaci\n\nArt. 25\u00ba. Demandas de atualiza\u00e7\u00e3o e de aperfei\u00e7oamento de profissionais podem ser atendidas por cursos ou programas de livre oferta, desenvolvidos inclusive no mundo do trabalho, os quais podem vir a ter aproveitamento em curso de Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, mediante avalia\u00e7\u00e3o, reconhecimento e certifica\u00e7\u00e3o por parte de institui\u00e7\u00e3o que mantenha este curso, desde que estejam de acordo com estas Diretrizes Curriculares Nacionais e previstas nos Cat\u00e1logos Nacionais de Cursos institu\u00eddos e organizados pelo MEC. ... Art. 26\u00ba. A carga hor\u00e1ria m\u00ednima de cada curso de Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio \u00e9 indicada no Cat\u00e1logo Nacional de Cursos T\u00e9cnicos, segundo cada habilita\u00e7\u00e3o profissional. Par\u00e1grafo \u00fanico. Respeitados os m\u00ednimos previstos de dura\u00e7\u00e3o e carga hor\u00e1ria total, o plano de curso t\u00e9cnico de n\u00edvel m\u00e9dio pode prever atividades n\u00e3o presenciais, at\u00e9 20% (vinte por cento) da carga hor\u00e1ria di\u00e1ria do curso, desde que haja suporte tecnol\u00f3gico e seja garantido o a\n\n\u00a7 1\u00ba Os cursos assim desenvolvidos, com projetos pedag\u00f3gicos unificados, devem visar simultaneamente aos objetivos da Educa\u00e7\u00e3o B\u00e1sica e, especificamente, do Ensino M\u00e9dio e tamb\u00e9m da Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica, atendendo tanto a estas Diretrizes, quanto \u00e0s Diretrizes Curriculares Nacionais para o Ensino M\u00e9dio, assim como \u00e0s Diretrizes Curriculares Nacionais Gerais para a Educa\u00e7\u00e3o B\u00e1sica e \u00e0s diretrizes complementares definidas pelos respectivos sistemas de ensino. \u00a7 2\u00ba Estes cursos devem atender \u00e0s diretrizes e normas nacionais definidas para a modalidade espec\u00edfica, tais como Educa\u00e7\u00e3o de Jovens e Adultos, Educa\u00e7\u00e3o do Campo, Educa\u00e7\u00e3o Escolar Ind\u00edgena, Educa\u00e7\u00e3o Escolar Quilombola, educa\u00e7\u00e3o de pessoas em regime de acolhimento ou interna\u00e7\u00e3o e em regime de priva\u00e7\u00e3o de liberdade, Educa\u00e7\u00e3o Especial e Educa\u00e7\u00e3o a Dist\u00e2ncia.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.legisweb.com.br/legislacao/?id=245343",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00e3o CNE/CEB n\u00ba 6, DE 20 DE SETEMBRO DE 2012",
+        "url": "https://abmes.org.br/legislacoes/detalhe/1288/resolucao-cne-ceb-n-6",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "abmes.org.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=abmes.org.br",
+          "site_name": "ABMES"
+        },
+        "is_missing": false,
+        "text": "Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.\n\nD.O.U 21/09/2012 | Categoria: Resolu\u00e7\u00e3o | Subcategoria: Conselho Nacional de Educa\u00e7\u00e3o - C\u00e2mara de Educa\u00e7\u00e3o B\u00e1sica \u00b7 Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. ... Revoga: N\u00e3o revoga nenhuma Legisla\u00e7\u00e3o. ... Altera: N\u00e3o altera nenhuma Legisla\u00e7\u00e3o. Alterada por: N\u00e3o \u00e9 alterada por nenhuma Legisla\u00e7\u00e3o. Prezado associado, caso necessite de esclarecimentos sobre a norma em quest\u00e3o, envie suas d\u00favidas para relacionamento@abmes.org.br.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://abmes.org.br/legislacoes/detalhe/1288/resolucao-cne-ceb-n-6",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00f5es CEB 2012 \u2014 Minist\u00e9rio da Educa\u00e7\u00e3o",
+        "url": "https://www.gov.br/mec/pt-br/cne/resolucoes/resolucoes-ceb-2012",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "www.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=www.gov.br",
+          "site_name": "Minist\u00e9rio da Educa\u00e7\u00e3o"
+        },
+        "is_missing": false,
+        "text": "Resolu\u00e7\u00e3o CNE/CEB n\u00ba 6, de 20 de setembro de 2012 - Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 7, de 9 de novembro de 2012 - Altera o par\u00e1grafo \u00fanico do art.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.gov.br/mec/pt-br/cne/resolucoes/resolucoes-ceb-2012",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00e3o CNE_CEB 06 de 2012 - define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.pdf \u2014 Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia de Minas Gerais IFMG",
+        "url": "https://www.ifmg.edu.br/portal/educacao-a-distancia/legislacao-e-normas/legislacao-da-ead/resolucao-cne_ceb-06-de-2012-define-diretrizes-curriculares-nacionais-para-a-educacao-profissional-tecnica-de-nivel-medio.pdf/view",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifmg.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifmg.edu.br",
+          "site_name": "IFMG"
+        },
+        "is_missing": false,
+        "text": "Voc\u00ea est\u00e1 aqui: P\u00e1gina Inicial &gt; Educa\u00e7\u00e3o a dist\u00e2ncia &gt; Legisla\u00e7\u00e3o e Normas &gt; Legisla\u00e7\u00e3o da EaD &gt; Resolu\u00e7\u00e3o CNE_CEB 06 de 2012 - define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.pdf ... Pesquisa p\u00fablica no Sei!\n\nVoc\u00ea est\u00e1 aqui: P\u00e1gina Inicial > Educa\u00e7\u00e3o a dist\u00e2ncia > Legisla\u00e7\u00e3o e Normas > Legisla\u00e7\u00e3o da EaD > Resolu\u00e7\u00e3o CNE_CEB 06 de 2012 - define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.pdf ... Pesquisa p\u00fablica no Sei! ... Portaria 2.117 de 2019 - Disp\u00f5e sobre a oferta de carga hor\u00e1ria na modalidade de Ensino a Dist\u00e2ncia.pdf \u00b7 Resolu\u00e7\u00e3o CNE_CEB 03 de 2018 - atualiza Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.pdf \u00b7 Resolu\u00e7\u00e3o CNE_CEB 06 de 2012 - define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio.pdf \u00b7 Referenciais de Qualidade MEC_2007 - Referenciais de qualidade para educa\u00e7\u00e3o superior a dist\u00e2ncia.pdf \u00b7 LDB 9.394 de 1996 - Estabelece as diretrizes e bases da educa\u00e7\u00e3o nacional.pdf \u00b7 Portaria 1071_2022 - Disp\u00f5e sobre implementa\u00e7\u00e3o de regras de concess\u00e3o de bolsas de pesquisa, de desenvolvimento e de inova\u00e7\u00e3o bem como bolsas de interc\u00e2mbio no \u00e2mbito de programas e projet",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.ifmg.edu.br/portal/educacao-a-distancia/legislacao-e-normas/legislacao-da-ead/resolucao-cne_ceb-06-de-2012-define-diretrizes-curriculares-nacionais-para-a-educacao-profissional-tecnica-de-nivel-medio.pdf/view",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00e3o CNE/CEB 6/2012 \u2014 Instituto Federal do Tocantins",
+        "url": "https://portal.ifto.edu.br/ifto/reitoria/pro-reitorias/proen/diretorias/ensino-tecnico/reforma-do-ensino-medio/documentos/resolucao-cne-ceb-6-2012.pdf/view",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ifto.edu.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ifto.edu.br",
+          "site_name": "IFTO"
+        },
+        "is_missing": false,
+        "text": "Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio\n\nSECRETARIA DE EDUCA\u00c7\u00c3O PROFISSIONAL E TECNOL\u00d3GICA \u00b7 Perguntas frequentes \u00b7 Contato \u00b7 Acesso a sistemas \u00b7 \u00c1rea de imprensa \u00b7 Voc\u00ea est\u00e1 aqui: P\u00e1gina Inicial > IFTO > Reitoria > Pr\u00f3-reitorias > Ensino > Diretorias > Ensino B\u00e1sico e T\u00e9cnico > Reforma do Ensino M\u00e9dio > Documentos > Resolu\u00e7\u00e3o CNE/CEB 6/2012 \u00b7 Menu \u00b7 Assuntos \u00b7 Apresenta\u00e7\u00e3o \u00b7 Cat\u00e1logos de Cursos \u00b7 Cursos T\u00e9cnicos \u00b7 Not\u00edcias do Ensino b\u00e1sico e t\u00e9cnico \u00b7 Reforma do Ensino M\u00e9dio \u00b7 Apresenta\u00e7\u00e3o \u00b7 Documentos \u00b7 BNCC \u00b7 Cat\u00e1logo Nacional de Cursos T\u00e9cnicos - CNCT \u00b7 Diretrizes EMI - Reditec 2018 \u00b7 GUIA DE IMPLEMENTA\u00c7\u00c3O DO NOVO ENSINO M\u00c9DIO \u00b7 Lei n\u00b0 13.415 \u00b7 Resolu\u00e7\u00e3o CNE/CEB 6/2012 \u00b7 Resolu\u00e7\u00e3o CNE/CEB 3/2018. Regulamentos dos Cursos T\u00e9cnicos \u00b7 Info \u00b7 por M\u00e1rcio de Lima Ara\u00fajo \u2014 publicado 04/04/2016 14h27, \u00faltima modifica\u00e7\u00e3o 15/04/2019 09h37 \u00b7 Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio \u00b7",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://portal.ifto.edu.br/ifto/reitoria/pro-reitorias/proen/diretorias/ensino-tecnico/reforma-do-ensino-medio/documentos/resolucao-cne-ceb-6-2012.pdf/view",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o",
+        "url": "https://portal.mec.gov.br/component/docman/?task=doc_download&gid=11663",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "mec.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=mec.gov.br",
+          "site_name": "Minist\u00e9rio da Educa\u00e7\u00e3o"
+        },
+        "is_missing": false,
+        "text": "(*) Resolu\u00e7\u00e3o CNE/CEB 6/2012. Di\u00e1rio Oficial da Uni\u00e3o, Bras\u00edlia, 21 de setembro de 2012, Se\u00e7\u00e3o 1, p. 22. (**) Revogada pela Resolu\u00e7\u00e3o CNE/CP n\u00ba 1, de 5 de janeiro de 2021. ... Art. 4\u00ba A Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, no cumprimento dos \u00b7 objetivos da educa\u00e7\u00e3o ...\n\nda Lei 9.394/96, e com fundamento no Parecer CNE/CEB n\u00ba 11/2012, homologado por \u00b7 Despacho do Ministro de Estado da Educa\u00e7\u00e3o de 31 de agosto de 2012, publicado no DOU de ... Art. 1\u00ba A presente Resolu\u00e7\u00e3o define as Diretrizes Curriculares Nacionais para a \u00b7 Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. Par\u00e1grafo \u00fanico. Para os fins desta Resolu\u00e7\u00e3o, entende-se por Diretriz o conjunto \u00b7 articulado de princ\u00edpios e crit\u00e9rios a serem observados pelos sistemas de ensino e pelas \u00b7 institui\u00e7\u00f5es de ensino p\u00fablicas e privadas, na organiza\u00e7\u00e3o e no planejamento, desenvolvimento e avalia\u00e7\u00e3o da Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, inclusive \u00b7 fazendo uso da certifica\u00e7\u00e3o profissional de cursos. Art. 2\u00ba A Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica, nos termos da Lei n\u00ba 9.394/96 (LDB), alterada pela Lei n\u00ba 11.741/2008, abrange os cursos de: I - forma\u00e7\u00e3o inicial e continuada ou qualifica\u00e7\u00e3o profissional; II - Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio; III - Educa\u00e7\u00e3o Profissional Tecnol\u00f3gica, de gradu\n\n(*) Resolu\u00e7\u00e3o CNE/CEB 6/2012. Di\u00e1rio Oficial da Uni\u00e3o, Bras\u00edlia, 21 de setembro de 2012, Se\u00e7\u00e3o 1, p. 22. (**) Revogada pela Resolu\u00e7\u00e3o CNE/CP n\u00ba 1, de 5 de janeiro de 2021. ... Art. 4\u00ba A Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, no cumprimento dos \u00b7 objetivos da educa\u00e7\u00e3o nacional, articula-se com o Ensino M\u00e9dio e suas diferentes \u00b7 modalidades, incluindo a Educa\u00e7\u00e3o de Jovens e Adultos (EJA), e com as dimens\u00f5es do \u00b7 trabalho, da tecnologia, da ci\u00eancia e da cultura. Par\u00e1grafo \u00fanico. A Educa\u00e7\u00e3o de Jovens e Adultos deve articular-se, preferencialmente, com a Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica, propiciando, simultaneamente, a qualifica\u00e7\u00e3o \u00b7 profissional e a eleva\u00e7\u00e3o dos n\u00edveis de escolaridade dos trabalhadores. Art. 5\u00ba Os cursos de Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio t\u00eam por finalidade \u00b7 proporcionar ao estudante conhecimentos, saberes e compet\u00eancias profissionais necess\u00e1rios \u00b7\n\nArt. 15 O curr\u00edculo, consubstanciado no plano de curso e com base no princ\u00edpio do \u00b7 pluralismo de ideias e concep\u00e7\u00f5es pedag\u00f3gicas, \u00e9 prerrogativa e responsabilidade de cada \u00b7 institui\u00e7\u00e3o educacional, nos termos de seu projeto pol\u00edtico-pedag\u00f3gico, observada a legisla\u00e7\u00e3o \u00b7 e o disposto nestas Diretrizes e no Cat\u00e1logo Nacional de Cursos T\u00e9cnicos. Art. 16. As institui\u00e7\u00f5es de ensino devem formular, coletiva e participativamente, nos \u00b7 termos dos arts. 12, 13, 14 e 15 da LDB, seus projetos pol\u00edtico-pedag\u00f3gicos e planos de curso. Art. 17 O planejamento curricular fundamenta-se no compromisso \u00e9tico da institui\u00e7\u00e3o \u00b7 educacional em rela\u00e7\u00e3o \u00e0 concretiza\u00e7\u00e3o do perfil profissional de conclus\u00e3o do curso, o qual \u00e9 \u00b7 definido pela explicita\u00e7\u00e3o dos conhecimentos, saberes e compet\u00eancias profissionais e \u00b7 pessoais, tanto aquelas que caracterizam a prepara\u00e7\u00e3o b\u00e1sica para o trabalho, quanto as \u00b7\n\n\u00e0s Diretrizes Curriculares Nacionais para o Ensino M\u00e9dio, assim como \u00e0s Diretrizes \u00b7 Curriculares Nacionais Gerais para a Educa\u00e7\u00e3o B\u00e1sica e \u00e0s diretrizes complementares ... Educa\u00e7\u00e3o a Dist\u00e2ncia. Art. 9\u00ba Na oferta de cursos na forma subsequente, caso o diagn\u00f3stico avaliativo \u00b7 evidencie necessidade, devem ser introduzidos conhecimentos e habilidades inerentes \u00e0 \u00b7 Educa\u00e7\u00e3o B\u00e1sica, para complementa\u00e7\u00e3o e atualiza\u00e7\u00e3o de estudos, em conson\u00e2ncia com o \u00b7 respectivo eixo tecnol\u00f3gico, garantindo o perfil profissional de conclus\u00e3o. Art. 10 A oferta de curso de Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio em \u00b7 institui\u00e7\u00f5es p\u00fablicas e privadas, em quaisquer das formas, deve ser precedida da devida \u00b7 autoriza\u00e7\u00e3o pelo \u00f3rg\u00e3o competente do respectivo sistema de ensino. Art. 11 A oferta da Educa\u00e7\u00e3o Profissional para os que n\u00e3o conclu\u00edram o Ensino M\u00e9dio \u00b7",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://portal.mec.gov.br/component/docman/?task=doc_download&gid=11663",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "resolu\u00e7\u00e3o cne/ceb n\u00ba 6, de 20 de setembro de 2012",
+        "url": "http://www.crmariocovas.sp.gov.br/Downloads/ccs/concurso_2013/PDFs/resol_federal_06_12.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "crmariocovas.sp.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=crmariocovas.sp.gov.br",
+          "site_name": "Crmario Covas"
+        },
+        "is_missing": false,
+        "text": "Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel ... Par\u00e1grafo \u00fanico. Para os fins desta Resolu\u00e7\u00e3o, entende-se por Diretriz o \u00b7 conjunto articulado de princ\u00edpios e crit\u00e9rios a serem observados pelos sistemas de ensino \u00b7 e pelas institui\u00e7\u00f5es ...\n\nEduca\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio: I - atendimento \u00e0s demandas socioecon\u00f4mico-ambientais dos cidad\u00e3os e do \u00b7 mundo do trabalho, em termos de compromisso \u00e9tico para com os estudantes e a ... X - certificados e diplomas a serem emitidos. \u00a7 1\u00ba A organiza\u00e7\u00e3o curricular deve explicitar: I - componentes curriculares de cada etapa, com a indica\u00e7\u00e3o da respectiva ... Diretrizes espec\u00edficas editadas pelo Conselho Nacional de Educa\u00e7\u00e3o. \u00a7 4\u00ba O plano de realiza\u00e7\u00e3o do est\u00e1gio profissional supervisionado deve ser \u00b7 explicitado na organiza\u00e7\u00e3o curricular e no plano de curso, uma vez que \u00e9 ato educativo de \u00b7 responsabilidade da institui\u00e7\u00e3o educacional, conforme previsto no inciso V do Artigo 20 ... X - avalia\u00e7\u00e3o da execu\u00e7\u00e3o do respectivo plano de curso. \u00a7 1\u00ba A autoriza\u00e7\u00e3o de curso est\u00e1 condicionada ao atendimento de \u00b7\n\nArtigo 32 A carga hor\u00e1ria destinada a est\u00e1gio profissional supervisionado, quando previsto em plano de curso, em quaisquer das formas de oferta do curso t\u00e9cnico \u00b7 de n\u00edvel m\u00e9dio, dever\u00e1 ser adicionada \u00e0 carga hor\u00e1ria m\u00ednima estabelecida para a ... Conselho Nacional de Educa\u00e7\u00e3o. \u00a7 1\u00ba Os sistemas de ensino devem viabilizar a forma\u00e7\u00e3o a que se refere o \u00b7 caput deste artigo, podendo ser organizada em coopera\u00e7\u00e3o com o Minist\u00e9rio da Educa\u00e7\u00e3o ... T\u00e9cnica de N\u00edvel M\u00e9dio s\u00e3o obrigat\u00f3rias a partir do in\u00edcio do ano de 2013. \u00a7 1\u00ba Os sistemas e institui\u00e7\u00f5es de ensino que tenham condi\u00e7\u00f5es de \u00b7 implantar as Diretrizes Curriculares Nacionais, poder\u00e3o faz\u00ea-lo imediatamente. \u00a7 2\u00ba Fica ressalvado, aos alunos matriculados no per\u00edodo de transi\u00e7\u00e3o, o \u00b7 direito de conclus\u00e3o de cursos organizados com base na Resolu\u00e7\u00e3o CNE/CEB n\u00ba 4/99, atualizada pela Resolu\u00e7\u00e3o CNE/CEB n\u00ba 1/2005, e regulamenta\u00e7\u00f5es subsequentes.\n\nmundo do trabalho, os quais podem vir a ter aproveitamento em curso de Educa\u00e7\u00e3o \u00b7 Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, mediante avalia\u00e7\u00e3o, reconhecimento e certifica\u00e7\u00e3o \u00b7 por parte de institui\u00e7\u00e3o que mantenha este curso, desde que estejam de acordo com estas \u00b7 Diretrizes Curriculares Nacionais e previstas nos Cat\u00e1logos Nacionais de Cursos ... Par\u00e1grafo \u00fanico. Respeitados os m\u00ednimos previstos de dura\u00e7\u00e3o e carga \u00b7 hor\u00e1ria total, o plano de curso t\u00e9cnico de n\u00edvel m\u00e9dio pode prever atividades n\u00e3o \u00b7 presenciais, at\u00e9 20% (vinte por cento) da carga hor\u00e1ria di\u00e1ria do curso, desde que haja \u00b7 suporte tecnol\u00f3gico e seja garantido o atendimento por docentes e tutores. Artigo 27 Os cursos de Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio, na \u00b7 forma articulada com o Ensino M\u00e9dio, integrada ou concomitante em institui\u00e7\u00f5es de \u00b7\n\noferta dessa modalidade de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica. Em decorr\u00eancia, a \u00b7 C\u00e2mara de Educa\u00e7\u00e3o B\u00e1sica do CNE atualizou as Diretrizes Curriculares Nacionais para o \u00b7 Ensino M\u00e9dio e as Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica \u00b7 de N\u00edvel M\u00e9dio, por meio da Resolu\u00e7\u00e3o CNE/CEB n\u00ba 1/2005, com fundamento no Parecer \u00b7 CNE/CEB n\u00ba 39/2004. Posteriormente, a Resolu\u00e7\u00e3o CNE/CEB n\u00ba 3/2008, que teve como base o \u00b7 Parecer CNE/CEB n\u00ba 11/2008, disp\u00f4s sobre a institui\u00e7\u00e3o do Cat\u00e1logo Nacional de Cursos \u00b7 T\u00e9cnicos de N\u00edvel M\u00e9dio, sendo que seu Artigo 3\u00ba determina que os cursos constantes \u00b7 desse Cat\u00e1logo sejam organizados por eixos tecnol\u00f3gicos definidores de um projeto \u00b7 pedag\u00f3gico que contemple as trajet\u00f3rias dos itiner\u00e1rios formativos e estabele\u00e7a exig\u00eancias ... Educa\u00e7\u00e3o B\u00e1sica\u201d. Assim, al\u00e9m da se\u00e7\u00e3o IV, que trata \u201cdo Ensino M\u00e9dio\u201d, foi acrescentada a \u00b7",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "http://www.crmariocovas.sp.gov.br/Downloads/ccs/concurso_2013/PDFs/resol_federal_06_12.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Resolu\u00e7\u00f5es CEB 2012 - MEC - Minist\u00e9rio da Educa\u00e7\u00e3o",
+        "url": "https://portal.mec.gov.br/index.php?id=17417&option=com_content&view=article",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "mec.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=mec.gov.br",
+          "site_name": "MEC"
+        },
+        "is_missing": false,
+        "text": "Resolu\u00e7\u00e3o CNE/CEB n\u00ba 6, de 20 de setembro de 2012 - Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 7, de 9 de novembro de 2012 - Altera o par\u00e1grafo \u00fanico do art.\n\nResolu\u00e7\u00e3o CNE/CEB n\u00ba 1, de 23 de janeiro de 2012 - Disp\u00f5e sobre a implementa\u00e7\u00e3o do regime de colabora\u00e7\u00e3o mediante Arranjo de Desenvolvimento da Educa\u00e7\u00e3o (ADE), como instrumento de gest\u00e3o p\u00fablica para a melhoria da qualidade social da educa\u00e7\u00e3o. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 2, de 30 de janeiro de 2012 - Define Diretrizes Curriculares Nacionais para o Ensino M\u00e9dio. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 3, de 16 de maio de 2012 - Define diretrizes para o atendimento de educa\u00e7\u00e3o escolar para popula\u00e7\u00f5es em situa\u00e7\u00e3o de itiner\u00e2ncia. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 4, de 6 de junho de 2012 - Disp\u00f5e sobre altera\u00e7\u00e3o na Resolu\u00e7\u00e3o CNE/CEB n\u00ba 3/2008, definindo a nova vers\u00e3o do Cat\u00e1logo Nacional de Cursos T\u00e9cnicos de N\u00edvel M\u00e9dio. Resolu\u00e7\u00e3o CNE/CEB n\u00ba 5, de 22 de junho de 2012 - Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Escolar Ind\u00edgena na Educa\u00e7\u00e3o B\u00e1sica.\n\nPortal do Minist\u00e9rio da Educa\u00e7\u00e3o, MEC",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://portal.mec.gov.br/index.php?id=17417&option=com_content&view=article",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Legisla\u00e7\u00e3o Educacional Federal | Diretoria de Desenvolvimento Estudantil",
+        "url": "https://www.dde.cefetmg.br/acompanhamento-pedagogico/legislacao-educacional/legislacao-educacional-federal/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "cefetmg.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=cefetmg.br",
+          "site_name": "Cefetmg"
+        },
+        "is_missing": false,
+        "text": "Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio \u00b7 \u2013 Resolu\u00e7\u00e3o CNE/CEB n\u00ba 6/2012 \u2013 Define Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. \u2013 Resolu\u00e7\u00e3o CNE/CP N\u00ba 1, de 5 de Janeiro de 2021 \u2013 Define ...\n\n\u2013 Resolu\u00e7\u00e3o CNE/CP n\u00b0 1/2004, fundamentada no Parecer CNE/CP n\u00ba 3/2004 \u2013 Institui Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o das Rela\u00e7\u00f5es \u00c9tnico-Raciais e para o Ensino de Hist\u00f3ria e Cultura Afro-Brasileira e Africana. Diretrizes Nacionais para a Educa\u00e7\u00e3o em Direitos Humanos \u00b7 \u2013 Parecer CNE/CP n\u00b0 8, de 06/03/2012 \u2013 Analisa as Diretrizes Nacionais para a Educa\u00e7\u00e3o em Direitos Humanos; \u2013 Resolu\u00e7\u00e3o CNE/CP N\u00b0 1, de 30/05/2012 \u2013 Estabelece Diretrizes Nacionais para a Educa\u00e7\u00e3o em Direitos Humanos. Prote\u00e7\u00e3o dos Direitos da Pessoa com Transtorno do Espectro Autista \u00b7 \u2013 Lei n\u00b0 12.764, de 27 de dezembro de 2012 \u2013 Institui a Pol\u00edtica Nacional de Prote\u00e7\u00e3o dos Direitos da Pessoa com Transtorno do Espectro Autista; e altera o \u00a7 3o do art. 98 da Lei no 8.112, de 11 de dezembro de 1990. Condi\u00e7\u00f5es de acessibilidade para pessoas com defici\u00eancia ou mobilidade reduzida \u00b7\n\n\u2013 Decreto n\u00b0 7.611/2011 \u2013 Disp\u00f5e sobre a educa\u00e7\u00e3o especial, o atendimento educacional especializado e d\u00e1 outras provid\u00eancias; \u2013 Lei n\u00b0 13.146/2015 \u2013 Institui a Lei Brasileira de Inclus\u00e3o da Pessoa com Defici\u00eancia (Estatuto da Pessoa com Defici\u00eancia); ... \u2013 Decreto n\u00b05.626/2005 \u2013 Regulamenta a Lei no 10.436, de 24 de abril de 2002, que disp\u00f5e sobre a L\u00edngua Brasileira de Sinais \u2013 Libras, e o art. 18 da Lei no 10.098, de 19 de dezembro de 2000. ... \u2013 Lei n\u00ba 9.795/1999 \u2013 Disp\u00f5e sobre a educa\u00e7\u00e3o ambiental, institui a Pol\u00edtica Nacional de Educa\u00e7\u00e3o Ambiental e d\u00e1 outras provid\u00eancias; \u2013 Decreto n\u00ba 4.281/2002 \u2013 Regulamenta a Lei no 9.795, de 27 de abril de 1999, que institui a Pol\u00edtica Nacional de Educa\u00e7\u00e3o Ambiental, e d\u00e1 outras provid\u00eancias. ... \u2013 Lei n\u00ba 11.788/2008 \u2013 Disp\u00f5e sobre o est\u00e1gio de estudantes; altera a reda\u00e7\u00e3o do art.\n\nS\u00famulas de pareceres do Conselho Nacional de Educa\u00e7\u00e3o, por ano",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.dde.cefetmg.br/acompanhamento-pedagogico/legislacao-educacional/legislacao-educacional-federal/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "AS DIRETRIZES CURRICULARES DA EDUCA\u00c7\u00c3O PROFISSIONAL NO GOVERNO DILMA: FORMA\u00c7\u00c3O DUAL DO TRABALHADOR? | Trabalho & Educa\u00e7\u00e3o",
+        "url": "https://periodicos.ufmg.br/index.php/trabedu/article/view/12517",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "ufmg.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ufmg.br",
+          "site_name": "FuLiA/UFMG"
+        },
+        "is_missing": false,
+        "text": "Este trabalho analisa as Diretrizes ... n.\u00ba 06/2012) que foram promulgadas no Governo Dilma Rousseff. O prop\u00f3sito \u00e9 identificar os eixos centrais da proposta pedag\u00f3gica e da organiza\u00e7\u00e3o curricular....\n\nBRASIL. CNE. CEB. Parecer n.\u00ba 11, de 09 de maio de 2012. Diretrizes Curriculares Nacionais para a Educa\u00e7\u00e3o Profissional T\u00e9cnica de N\u00edvel M\u00e9dio. Bras\u00edlia, 2012a. Dispon\u00edvel em: http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=10804-pceb011-12-pdf&Itemid=30192. Acesso em: 07 jul. 2015. BRASIL. CNE. Diretrizes curriculares nacionais para a educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio em debate. Bras\u00edlia, 2010. BRASIL. CNE. CEB. Resolu\u00e7\u00e3o n.\u00ba 04. Institui as Diretrizes curriculares nacionais para educa\u00e7\u00e3o profissional de n\u00edvel t\u00e9cnico. Bras\u00edlia, 08 de dezembro de 1999. Dispon\u00edvel em: http://portal.mec.gov.br/index.php?option=com_content&id=12992. Acesso em: 07 jul. 2015. BRASIL. CNE. CEB. Resolu\u00e7\u00e3o n.\u00b0 06. Diretrizes curriculares nacionais para a educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio. Bras\u00edlia, 20 de setembro de 2012b.\n\nBRASIL. MEC. CNE. CEB. Parecer n.\u00ba 11, de 12 de junho de 2008. Disp\u00f5e sobre a Proposta de institui\u00e7\u00e3o do Cat\u00e1logo Nacional de Cursos T\u00e9cnicos de N\u00edvel M\u00e9dio. Bras\u00edlia, 2008. CIAVATTA, M. Trabalho com princ\u00edpio educativo. In: CALDART, Roseli Salete et al. (Org.). Dicion\u00e1rio da Educa\u00e7\u00e3o Profissional em Sa\u00fade. Rio de Janeiro: EPSJV-Fiocruz, 2009. Dispon\u00edvel em: http://www.sites.epsjv.fiocruz.br/dicionario/verbetes/trapriedu.html. Acesso em 12 dez. 2017. CIAVATTA, M. Forma\u00e7\u00e3o integrada: a escola e o trabalho como lugares de mem\u00f3ria e de identidade. FRIGOTTO, G.; CIAVATTA, M.; RAMOS, M. (Orgs). Ensino m\u00e9dio integrado: concep\u00e7\u00e3o e contradi\u00e7\u00f5es. 3.ed. S\u00e3o Paulo: Cortez, 2012. CIAVATTA, M.; RAMOS, M. A \u201cera das diretrizes\u201d: disputa pelo projeto de educa\u00e7\u00e3o dos mais pobres. Revista Brasileira de Educa\u00e7\u00e3o, v. 17 n. 49, 2012. DELORS, J. Educa\u00e7\u00e3o: um tesouro a descobrir.\n\nFRIGOTTO, G.; CIAVATTA, M.; RAMOS, M. (Orgs). Ensino m\u00e9dio integrado: concep\u00e7\u00f5es e contradi\u00e7\u00f5es. 3. ed. S\u00e3o Paulo: Cortez, 2012. KUENZER, A. Z. Ensino de 2\u00ba grau: o trabalho como princ\u00edpio educativo. 3.ed. S\u00e3o Paulo: Cortez, 1997. KUENZER, A. Z. Reforma da educa\u00e7\u00e3o profissional ou ajuste ao regime de acumula\u00e7\u00e3o flex\u00edvel? Trabalho, Educa\u00e7\u00e3o e Sa\u00fade, v. 5 n. 3, p. 491-508, nov.2007/fev.2008. MACHADO, L. R. S. Mudan\u00e7as tecnol\u00f3gicas e a educa\u00e7\u00e3o da classe trabalhadora. In: MACHADO, L. R. S. e outros. Trabalho e educa\u00e7\u00e3o. 2.ed.Campinas: Papirus, 1994. MACHADO, L. R. S. Educa\u00e7\u00e3o b\u00e1sica, empregabilidade e compet\u00eancia. Trabalho & Educa\u00e7\u00e3o, Belo Horizonte, n. 3, p. 15-34, 1998. MACHADO, L. R. S. Organiza\u00e7\u00e3o da educa\u00e7\u00e3o profissional e tecnol\u00f3gica por eixos tecnol\u00f3gicos. Linhas Cr\u00edticas, v.16, n. 30, Bras\u00edlia, 2010. OLIVEIRA, D.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "age": "September 4, 2020",
+          "url": "https://periodicos.ufmg.br/index.php/trabedu/article/view/12517",
+          "search_provider": "anthropic"
+        }
+      }
+    ],
+    "is_error": false,
+    "structured_content": null,
+    "meta": null,
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "display_content": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "token_budget"
+  },
+  {
+    "start_timestamp": "2026-01-23T17:25:05.769472Z",
+    "stop_timestamp": "2026-01-23T17:25:10.397786Z",
+    "flags": null,
+    "type": "thinking",
+    "thinking": "O usu\u00e1rio quer agora uma pesquisa sobre planos de trabalho docente para:\n1. Disciplinas t\u00e9cnicas de TI presenciais\n2. Escola t\u00e9cnica (ensino m\u00e9dio t\u00e9cnico)\n3. Cursos modulares e integrados ao ensino m\u00e9dio\n4. Cursos online livres\n\nJ\u00e1 tenho informa\u00e7\u00f5es sobre:\n- Resolu\u00e7\u00e3o CNE/CEB 06/2012 (diretrizes para educa\u00e7\u00e3o profissional t\u00e9cnica de n\u00edvel m\u00e9dio)\n- IFs (Institutos Federais)\n- Estrutura curricular de cursos t\u00e9cnicos\n\nPreciso buscar mais sobre:\n- SENAI, SENAC (Sistema S)\n- ETECs (S\u00e3o Paulo)\n- Diferen\u00e7a entre integrado, concomitante, subsequente, modular\n- Cursos livres online (regulamenta\u00e7\u00e3o m\u00ednima)\n- Cat\u00e1logo Nacional de Cursos T\u00e9cnicos\n\nVou continuar as buscas...",
+    "summaries": [
+      {
+        "summary": "Compilando pesquisa sobre planos docentes t\u00e9cnicos presenciais."
+      }
+    ],
+    "cut_off": false,
+    "alternative_display_type": null
+  },
+  {
+    "start_timestamp": "2026-01-23T17:25:10.575276Z",
+    "stop_timestamp": "2026-01-23T17:25:10.987993Z",
+    "flags": null,
+    "type": "tool_use",
+    "id": "toolu_01PELBHfn3s8wmSufsL3k7aW",
+    "name": "web_search",
+    "input": {
+      "query": "SENAI SENAC plano trabalho docente estrutura curso t\u00e9cnico"
+    },
+    "message": "Searching the web",
+    "integration_name": null,
+    "integration_icon_url": null,
+    "context": null,
+    "display_content": null,
+    "approval_options": null,
+    "approval_key": null,
+    "is_mcp_app": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "tool_result",
+    "tool_use_id": "toolu_01PELBHfn3s8wmSufsL3k7aW",
+    "name": "web_search",
+    "content": [
+      {
+        "type": "knowledge",
+        "title": "Planejamento Docente 3",
+        "url": "https://espacodocente.senac.br/wp-content/uploads/2024/04/DocTec3_Planejamento_2022.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senac.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senac.br",
+          "site_name": "Senac"
+        },
+        "is_missing": false,
+        "text": "S\u00e9rie. ... Unidades Curriculares. O produto desse processo assume ma- terialidade no Plano de Trabalho Docente (PTD). Nele constam \u00b7 a planifica\u00e7\u00e3o das a\u00e7\u00f5es educativas e organiza\u00e7\u00e3o das estrat\u00e9- gias mais adequadas para o desenvolvimento da compet\u00eancia.\n\n515 KB ; PDF. \u2013 (Documentos T\u00e9cnicos do Modelo Pedag\u00f3gico Senac ; 3) Bibliografia. Vers\u00e3o impressa publicada em 2015. 1. Senac. 2. Educa\u00e7\u00e3o Profissional. 3. Planejamento educacional. 4. Plano de \u00b7 Trabalho Docente. 5. Modelo Pedag\u00f3gico Senac. I. T\u00edtulo. II. S\u00e9rie. ... Unidades Curriculares. O produto desse processo assume ma- terialidade no Plano de Trabalho Docente (PTD). Nele constam \u00b7 a planifica\u00e7\u00e3o das a\u00e7\u00f5es educativas e organiza\u00e7\u00e3o das estrat\u00e9- gias mais adequadas para o desenvolvimento da compet\u00eancia. O PTD procura tornar tang\u00edveis os princ\u00edpios educacionais, as \u00b7 marcas formativas, o modelo curricular centrado no desenvolvi- mento de compet\u00eancias e a proposta da avalia\u00e7\u00e3o processual, ... Trabalho Docente; IV) Planejamento Integrado do Curso. Na \u00fal- tima parte, s\u00e3o debatidos alguns apontamentos para a pr\u00e1tica ...\n\ncom base nos elementos de compet\u00eancia descritos no Plano de Curso, no \u00b7 recorte mobilizado pelo indicador que deu origem \u00e0 situa\u00e7\u00e3o de aprendi- zagem, que os alunos ir\u00e3o qualificar a a\u00e7\u00e3o inicial. - Atividades: o docente organiza uma visita t\u00e9cnica dos alunos ao setor \u00b7 de Recursos Humanos de uma empresa moveleira da regi\u00e3o. O produto \u00b7 dessa visita \u00e9 um relat\u00f3rio no qual os alunos devem analisar criticamente \u00b7 todos os processos envolvidos na a\u00e7\u00e3o de recrutamento e sele\u00e7\u00e3o de \u00b7 candidatos, observados na visita, \u00e0 luz dos seguintes elementos de com- ... Trabalhar em equipe. ... Responsabilidade no cumprimento de prazos. ... C. Segunda A\u00e7\u00e3o \u00b7 A segunda a\u00e7\u00e3o pode ser desenvolvida tendo por base a mesma \u00b7 atividade que iniciou o ciclo ou outra atividade que tamb\u00e9m exija o \u00b7 exerc\u00edcio do fazer profissional em desenvolvimento.\n\ngias avaliativas devem ser planejadas, sistematizadas e registradas4. - Estrat\u00e9gias avaliativas: na primeira a\u00e7\u00e3o do ciclo, por meio de uma \u00b7 ficha de observa\u00e7\u00e3o, o docente registra os conhecimentos pr\u00e9vios \u00b7 dos alunos em rela\u00e7\u00e3o ao fazer a ser desenvolvido na situa\u00e7\u00e3o de ... Pedag\u00f3gico Senac, como o PTD. ... Esses aspectos s\u00e3o detalhados a seguir. I) Cabe\u00e7alho do PTD: apresenta as informa\u00e7\u00f5es gerais de identifica\u00e7\u00e3o \u00b7 do PTD, por exemplo, nome do curso, c\u00f3digo e eixo da ocupa\u00e7\u00e3o, nome ... Curricular, per\u00edodo de oferta, entre outras informa\u00e7\u00f5es. II) Identifica\u00e7\u00e3o da compet\u00eancia e de seus indicadores: em seguida \u00b7 ao cabe\u00e7alho no PTD, deve ser informada a compet\u00eancia e o indicador ou \u00b7 conjunto de indicadores que d\u00e3o origem \u00e0s situa\u00e7\u00f5es de aprendizagem. Essas informa\u00e7\u00f5es, preferencialmente, devem ser organizadas de forma \u00b7\n\nPTDs, tendo em vista que todos planejam para o mesmo perfil. Essa indispens\u00e1vel articula\u00e7\u00e3o das compet\u00eancias, defendida pelo Senac, parte da constata\u00e7\u00e3o de que o mundo do trabalho, tal qual se encon- ... Aprendizagem). O Projeto Integrador foi organizado de forma a ser um \u00b7 espa\u00e7o privilegiado para a articula\u00e7\u00e3o das compet\u00eancias e o desenvolvi- ... BARATO, J.N. Conhecimento, trabalho e obra: uma proposta metodol\u00f3gica para a \u00b7 educa\u00e7\u00e3o profissional. Boletim T\u00e9cnico do Senac, Rio de Janeiro, v. 34, n. 3, p. 4-15, set./dez. 2008. Dispon\u00edvel em: <http://www.senac.br/BTS/343/artigo-1.pdf>. Acesso em: ... BRASIL. Minist\u00e9rio da Educa\u00e7\u00e3o. Guia Pronatec dos cursos FIC. 3. ed. Bras\u00edlia, DF, 2015. Dispon\u00edvel em: <http://pronatec.mec.gov.br/fic/>. Acesso em: 10 abr. 2015. BRASIL. Minist\u00e9rio da Educa\u00e7\u00e3o. Secretaria de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://espacodocente.senac.br/wp-content/uploads/2024/04/DocTec3_Planejamento_2022.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Senac - Departamento Nacional - Modelo Pedag\u00f3gico Senac",
+        "url": "http://www.extranet.senac.br/modelopedagogicosenac/index.html",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senac.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senac.br",
+          "site_name": "Senac"
+        },
+        "is_missing": false,
+        "text": "O Documento T\u00e9cnico Compet\u00eancia ... \u00b7 O Documento T\u00e9cnico Planejamento Docente apresenta os referenciais para o planejamento de atividades e situa\u00e7\u00f5es de aprendizagem com base no desenvolvimento de compet\u00eancias, refor\u00e7ando a import\u00e2ncia da elabora\u00e7\u00e3o do Plano ...\n\nAs Unidades Curriculares Nacionais (UCNs) s\u00e3o uma forma de ofertar, de maneira desvinculada, certas unidades curriculares derivadas de planos de cursos nacionais (PCNs), referentes aos cursos de Aprendizagem Comercial, Qualifica\u00e7\u00e3o Profissional e Cursos T\u00e9cnicos, ou de Planos de Cursos de Refer\u00eancia Nacional (PCRs), relativos aos cursos de aperfei\u00e7oamento, j\u00e1 disponibilizados no portf\u00f3lio Senac. Para que seja poss\u00edvel flexibilizar a oferta sem comprometer a converg\u00eancia curricular \u00e9 imprescind\u00edvel que os t\u00edtulos e os elementos das Unidades Curriculares sejam mantidos integralmente, conforme constam nos planos de curso originais. ... O Programa Com\u00e9rcio \u00e9 uma iniciativa desenvolvida com o intuito de promover solu\u00e7\u00f5es educacionais inovadoras e de qualidade em todo o territ\u00f3rio nacional para o Segmento Com\u00e9rcio. Os cursos foram concebidos a partir das necessidades espec\u00edficas do setor, o que contribui para forma\u00e7\u00e3o de profissionais com foco na efetividade dos processos e para o aumento da\n\nO Documento T\u00e9cnico Concep\u00e7\u00f5es e Princ\u00edpios apresenta os principais conceitos que estruturam o Modelo Pedag\u00f3gico Senac e a perspectiva educacional que orienta a pr\u00e1tica pedag\u00f3gica da institui\u00e7\u00e3o. O Documento T\u00e9cnico Compet\u00eancia apresenta a compreens\u00e3o institucional em torno desse conceito, que expressa o compromisso pol\u00edtico e pedag\u00f3gico da educa\u00e7\u00e3o profissional do Senac com o desenvolvimento de compet\u00eancias \u00b7 O Documento T\u00e9cnico Planejamento Docente apresenta os referenciais para o planejamento de atividades e situa\u00e7\u00f5es de aprendizagem com base no desenvolvimento de compet\u00eancias, refor\u00e7ando a import\u00e2ncia da elabora\u00e7\u00e3o do Plano de Trabalho Docente. O Documento T\u00e9cnico Projeto Integrador aborda o entendimento do Senac sobre a metodologia de projetos na educa\u00e7\u00e3o profissional e apresenta a import\u00e2ncia do Projeto Integrador como Unidade Curricular.\n\nO Documento T\u00e9cnico Itiner\u00e1rios Formativos aborda os principais temas relacionados \u00e0 finalidade e estrutura dos Itiner\u00e1rios Formativos Nacionais no \u00e2mbito do Modelo Pedag\u00f3gico Senac, ressaltando a import\u00e2ncia de conceber o percurso formativo do aluno como trajet\u00f3ria de crescimento pessoal e profissional. O documento STEAM apresenta a nova proposta curricular do Programa de aprendizagem ofertada pelo Senac, que se caracteriza por promover o desenvolvimento amplo e integral dos jovens aprendizes, conjugando o comprometimento do aluno com a qualidade do trabalho, com a amplia\u00e7\u00e3o de sua vis\u00e3o de mundo, a consci\u00eancia de sua atua\u00e7\u00e3o profissional e sua capacidade de transforma\u00e7\u00e3o da sociedade. ... Os Planos de Cursos Nacionais s\u00e3o documentos que estabelecem as principais diretrizes did\u00e1tico-pedag\u00f3gicas para oferta e operacionaliza\u00e7\u00e3o dos v\u00e1rios cursos de Aprendizagem, Qualifica\u00e7\u00e3o Profissional e T\u00e9cnicos do Modelo Pedag\u00f3gico Senac, alinhando a oferta e a a\u00e7\u00e3o educacional em todos os Departame\n\nNeste espa\u00e7o est\u00e3o dispon\u00edveis os documentos necess\u00e1rios para a elabora\u00e7\u00e3o de planos de cursos em conformidade com a metodologia do Modelo Pedag\u00f3gico Senac: orienta\u00e7\u00f5es, m\u00e1scaras e check-list. O acesso aos documentos \u00e9 restrito, sendo destinado a usu\u00e1rios cadastrados que participam do processo de elabora\u00e7\u00e3o de planos de cursos. em desenvolvimento ... Este espa\u00e7o foi disponibilizado para o compartilhamento dos Planos de Trabalho Docente e Sequ\u00eancias Did\u00e1ticas elaboradas para apoio ao desenvolvimento do trabalho pedag\u00f3gico nos Departamentos Regionais. O acesso aos documentos \u00e9 restrito, sendo destinado a usu\u00e1rios cadastrados que participam do processo de elabora\u00e7\u00e3o de planos de cursos. Acesse aqui ... Este espa\u00e7o foi disponibilizado para o compartilhamento dos Planos de curso Alinhados ao Modelo Pedag\u00f3gico Senac desenvolvidos pelos Departamentos Regionais ofertantes com vistas a atender a demanda do SIG Acesse aqui ...",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "http://www.extranet.senac.br/modelopedagogicosenac/index.html",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "MANUAL PARA ELABORA\u00c7\u00c3O DE TRABALHO DE ... - Senai",
+        "url": "https://www.pe.senai.br/wp-content/uploads/2021/04/manual_para_elaborac%CC%A7a%CC%83o_do_tcc.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senai.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senai.br",
+          "site_name": "Senai"
+        },
+        "is_missing": false,
+        "text": "Docente em... Escola T\u00e9cnica SENAI ... ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... Palavras-chave: Ergonomia. Doen\u00e7as Ocupacionais. LER. ... Vers\u00e3o atualizada em 17 mar. 2021 ... Elaborada de acordo com a ordem apresentada no texto. Segue o modelo na ... Vers\u00e3o atualizada em 17 mar. 2021 ... Elaborada de acordo com a ordem apresentada no texto. ... Vers\u00e3o atualizada em 17 mar. 2021 ... Conforme o modelo na ilustra\u00e7\u00e3o 13. Ilustra\u00e7\u00e3o 13 \u2013 Lista de abreviaturas e siglas ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... \u00c9 nesse cap\u00edtulo que o autor define e apresenta a estrutura do trabalho. Iniciando a partir de um breve hist\u00f3rico sobre o tema, seguido de sua import\u00e2ncia e \u00b7 a raz\u00e3o de sua escolha para o estudo. Deve, tamb\u00e9m, definir os objetivos dotrabalho, indicar a metodologia adotada e formular as hip\u00f3teses.\n\nDocente em... Escola T\u00e9cnica SENAI ... ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... Palavras-chave: Ergonomia. Doen\u00e7as Ocupacionais. LER. ... Vers\u00e3o atualizada em 17 mar. 2021 ... Elaborada de acordo com a ordem apresentada no texto. Segue o modelo na ... Vers\u00e3o atualizada em 17 mar. 2021 ... Elaborada de acordo com a ordem apresentada no texto. ... Vers\u00e3o atualizada em 17 mar. 2021 ... Conforme o modelo na ilustra\u00e7\u00e3o 13. Ilustra\u00e7\u00e3o 13 \u2013 Lista de abreviaturas e siglas ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... \u00c9 nesse cap\u00edtulo que o autor define e apresenta a estrutura do trabalho. Iniciando a partir de um breve hist\u00f3rico sobre o tema, seguido de sua import\u00e2ncia e \u00b7 a raz\u00e3o de sua escolha para o estudo. Deve, tamb\u00e9m, definir os objetivos dotrabalho, indicar a metodologia adotada e formular as hip\u00f3teses.\n\nManual para elabora\u00e7\u00e3o de trabalho de conclus\u00e3o de \u00b7 cursos t\u00e9cnicos / SENAI/DIRETORIA DE EDUCA\u00c7\u00c3O. \u2013 ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... 1 TRABALHO DE CONCLUS\u00c3O DE CURSO ................................................................... 3 \u00b7 2 REGRAS GERAIS ............................................................................................................... 4 \u00b7 2.1 CONTE\u00daDO ....................................................................................................................... 4 \u00b7 2.2 FORMATA\u00c7\u00c3O GR\u00c1FICA E EST\u00c9TICA ...................................................................... 4 \u00b7 3.1 CAPA ................................................................................................................................ 10 \u00b7 3.2 FOLHA DE ROSTO .......................................................................................................\n\nelabora\u00e7\u00e3o de trabalho de conclus\u00e3o de cursos t\u00e9cnicos. Recife, ... Vers\u00e3o atualizada em 17 mar. 2021 ... Vers\u00e3o atualizada em 17 mar. 2021 ... OBS: No final de cada anexo colocar a fonte. ... Vers\u00e3o atualizada em 17 mar. 2021 ... ASSOCIA\u00c7\u00c3O BRASILEIRA DE NORMAS T\u00c9CNICAS. ABNT NBR 10520: informa\u00e7\u00e3o e documenta\u00e7\u00e3o: cita\u00e7\u00f5es em documentos: apresenta\u00e7\u00e3o. Rio de Janeiro: ABNT, 2002. ASSOCIA\u00c7\u00c3O BRASILEIRA DE NORMAS T\u00c9CNICAS. ABNT NBR 14724: informa\u00e7\u00e3o e documenta\u00e7\u00e3o: trabalhos acad\u00eamicos: apresenta\u00e7\u00e3o. Rio de Janeiro: ABNT, 2011. ASSOCIA\u00c7\u00c3O BRASILEIRA DE NORMAS T\u00c9CNICAS. ABNT NBR 6023: informa\u00e7\u00e3o e documenta\u00e7\u00e3o: refer\u00eancias: elabora\u00e7\u00e3o. Rio de Janeiro: ABNT, 2018. ASSOCIA\u00c7\u00c3O BRASILEIRA DE NORMAS T\u00c9CNICAS. ABNT NBR 6024: informa\u00e7\u00e3o e documenta\u00e7\u00e3o: numera\u00e7\u00e3o progressiva das se\u00e7\u00f5es de um documento \u00b7 escrito: apresenta\u00e7\u00e3o.\n\nO que fica em negrito: T\u00edtulo do trabalho. ... ASSOCIA\u00c7\u00c3O BRASILEIRA DE NORMAS T\u00c9CNICAS. ABNT NBR 6023: informa\u00e7\u00e3o e documenta\u00e7\u00e3o: refer\u00eancias: elabora\u00e7\u00e3o.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.pe.senai.br/wp-content/uploads/2021/04/manual_para_elaborac%CC%A7a%CC%83o_do_tcc.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Programa de Forma\u00e7\u00e3o Docente- Modelo Pedag\u00f3gico Senac",
+        "url": "https://educapes.capes.gov.br/bitstream/capes/602765/2/Programa%20de%20Forma%C3%A7%C3%A3o%20Docente-%20Modelo%20Pedag%C3%B3gico%20Senac.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "capes.gov.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=capes.gov.br",
+          "site_name": "eduCapes"
+        },
+        "is_missing": false,
+        "text": "Programa de Forma\u00e7\u00e3o Modelo Pedag\u00f3gico SENAC. Programa para Atendimento de \u00b7 Demandas Formativas para \u00b7 Docentes que atuam em Cursos \u00b7 T\u00e9cnicos de N\u00edvel M\u00e9dio no Servi\u00e7o \u00b7 Nacional de Aprendizagem \u00b7 Comercial- SENAC: Contribui\u00e7\u00f5es \u00b7 para a Gest\u00e3o Pedag\u00f3gica. Orientador: Prof. Dr. Joel Cesar Bonin \u00b7 O Modelo \u00b7 Pedag\u00f3gico Senac \u00b7 O T\u00e9cnico de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica e o \u00b7 MPS \u00b7 O Pedagogo que atua como T\u00e9cnico de Educa\u00e7\u00e3o \u00b7 Profissional e Tecnol\u00f3gica (TEPT) no SENAC-PR tem um \u00b7 papel fundamental na institui\u00e7\u00e3o: o de garantir que a \u00b7 Unidade de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica (UEPT) seja o local onde se incrementam pr\u00e1ticas que visem \u00b7 promover o desenvolvimento de compet\u00eancias. 3. O desenvolvimento de \u00b7 compet\u00eancias ocorre a \u00b7 partir da mobiliza\u00e7\u00e3o de \u00b7 Elementos de \u00b7 Compet\u00eancia que, al\u00e9m \u00b7\n\nPrograma de Forma\u00e7\u00e3o Modelo Pedag\u00f3gico SENAC. Programa para Atendimento de \u00b7 Demandas Formativas para \u00b7 Docentes que atuam em Cursos \u00b7 T\u00e9cnicos de N\u00edvel M\u00e9dio no Servi\u00e7o \u00b7 Nacional de Aprendizagem \u00b7 Comercial- SENAC: Contribui\u00e7\u00f5es \u00b7 para a Gest\u00e3o Pedag\u00f3gica. Orientador: Prof. Dr. Joel Cesar Bonin \u00b7 O Modelo \u00b7 Pedag\u00f3gico Senac \u00b7 O T\u00e9cnico de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica e o \u00b7 MPS \u00b7 O Pedagogo que atua como T\u00e9cnico de Educa\u00e7\u00e3o \u00b7 Profissional e Tecnol\u00f3gica (TEPT) no SENAC-PR tem um \u00b7 papel fundamental na institui\u00e7\u00e3o: o de garantir que a \u00b7 Unidade de Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica (UEPT) seja o local onde se incrementam pr\u00e1ticas que visem \u00b7 promover o desenvolvimento de compet\u00eancias. 3. O desenvolvimento de \u00b7 compet\u00eancias ocorre a \u00b7 partir da mobiliza\u00e7\u00e3o de \u00b7 Elementos de \u00b7 Compet\u00eancia que, al\u00e9m \u00b7\n\nPrograma de Forma\u00e7\u00e3o Modelo Pedag\u00f3gico SENAC. ... Orientador: Prof.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://educapes.capes.gov.br/bitstream/capes/602765/2/Programa%20de%20Forma%C3%A7%C3%A3o%20Docente-%20Modelo%20Pedag%C3%B3gico%20Senac.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Modelo Pedag\u00f3gico Senac - Senac | Departamento Nacional",
+        "url": "http://www.dn.senac.br/educacao-profissional/modelo-pedagogico/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senac.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senac.br",
+          "site_name": "Senac"
+        },
+        "is_missing": false,
+        "text": "Marcas Formativas Esse conceito orienta toda a forma\u00e7\u00e3o e busca desenvolver, junto aos alunos, caracter\u00edsticas que os diferenciam enquanto profissionais formados pelo Senac e pelas quais ser\u00e3o reconhecidos no mercado de trabalho, a saber: atitude empreendedora, dom\u00ednio t\u00e9cnico-cient\u00edfico, vis\u00e3o cr\u00edtica, atitudes sustent\u00e1vel e colaborativa. Metodologia O Modelo Pedag\u00f3gico Senac inova ao conceber a organiza\u00e7\u00e3o de cursos em estruturas curriculares, cuja compet\u00eancia \u00e9 a pr\u00f3pria Unidade Curricular. Desta forma, a organiza\u00e7\u00e3o de um curso passa a ter como ponto de partida o perfil profissional, no qual se encontram as principais caracter\u00edsticas do profissional, bem como as compet\u00eancias necess\u00e1rias para atua\u00e7\u00e3o na ocupa\u00e7\u00e3o. A concep\u00e7\u00e3o de metodologia rompe com a tradicional divis\u00e3o entre teoria e pr\u00e1tica e privilegia o desenvolvimento de compet\u00eancias por meio de pr\u00e1ticas pedag\u00f3gicas ativas, inovadoras, integradoras e colaborativas, centradas no protagonismo do aluno.\n\nA a\u00e7\u00e3o avaliativa deve mobilizar, de forma articulada, conhecimentos, habilidades, atitudes e valores, considerando a realidade social, pol\u00edtica, hist\u00f3rica, econ\u00f4mica e cultural na qual as rela\u00e7\u00f5es humanas, situa\u00e7\u00f5es de trabalho e forma\u00e7\u00e3o s\u00e3o constru\u00eddas. A avalia\u00e7\u00e3o no Senac \u00e9 realizada de modo a resguardar a transpar\u00eancia e objetividade do processo avaliativo, possibilitando a docentes e alunos da Institui\u00e7\u00e3o a possibilidade de diagnosticarem a aprendizagem j\u00e1 realizada e as dificuldades encontradas, de forma a reorganizarem a a\u00e7\u00e3o educativa. Planos de cursos nacionais A partir do alinhamento nacional do Modelo Pedag\u00f3gico Senac, o Departamento Nacional iniciou juntamente com seus Departamentos Regionais uma a\u00e7\u00e3o de mapeamento dos perfis profissionais em \u00e2mbito nacional, traduzidos em planos de cursos que atendam \u00e0s necessidades do mercado. S\u00f3 uma a\u00e7\u00e3o com esta envergadura, que re\u00fane anualmente, em torno de 200 t\u00e9cnicos de todo o pa\u00eds, pode garantir uma padroniza\u00e7\u00e3o da qualidade da o\n\nRefor\u00e7ando o compromisso do Senac com a forma\u00e7\u00e3o de profissionais de excel\u00eancia para atua\u00e7\u00e3o no setor do Com\u00e9rcio de Bens, Servi\u00e7os e Turismo, o Departamento Nacional, em conjunto com os Departamentos Regionais, concebeu no ano de 2013 o Modelo Pedag\u00f3gico Senac. O Modelo qualifica a oferta da Educa\u00e7\u00e3o Profissional do Senac em todo o territ\u00f3rio [\u2026]\n\nRefor\u00e7ando o compromisso do Senac com a forma\u00e7\u00e3o de profissionais de excel\u00eancia para atua\u00e7\u00e3o no setor do Com\u00e9rcio de Bens, Servi\u00e7os e Turismo, o Departamento Nacional, em conjunto com os Departamentos Regionais, concebeu no ano de 2013 o Modelo Pedag\u00f3gico Senac. O Modelo qualifica a oferta da Educa\u00e7\u00e3o Profissional do Senac em todo o territ\u00f3rio \u2026\n\nMarcas Formativas Esse conceito orienta toda a forma\u00e7\u00e3o e busca desenvolver, junto aos alunos, caracter\u00edsticas que os diferenciam enquanto profissionais formados pelo Senac e pelas quais ser\u00e3o reconhecidos no mercado de trabalho, a saber: atitude empreendedora, dom\u00ednio t\u00e9cnico-cient\u00edfico, vis\u00e3o cr\u00edtica, atitudes sustent\u00e1vel e colaborativa. Metodologia O Modelo Pedag\u00f3gico Senac inova ao conceber a organiza\u00e7\u00e3o de cursos em estruturas curriculares, cuja compet\u00eancia \u00e9 a pr\u00f3pria Unidade Curricular. Desta forma, a organiza\u00e7\u00e3o de um curso passa a ter como ponto de partida o perfil profissional, no qual se encontram as principais caracter\u00edsticas do profissional, bem como as compet\u00eancias necess\u00e1rias para atua\u00e7\u00e3o na ocupa\u00e7\u00e3o. A concep\u00e7\u00e3o de metodologia rompe com a tradicional divis\u00e3o entre teoria e pr\u00e1tica e privilegia o desenvolvimento de compet\u00eancias por meio de pr\u00e1ticas pedag\u00f3gicas ativas, inovadoras, integradoras e colaborativas, centradas no protagonismo do aluno.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "http://www.dn.senac.br/educacao-profissional/modelo-pedagogico/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "O PLANO DE TRABALHO DOCENTE: ESTRAT\u00c9GIA DE",
+        "url": "https://www.abed.org.br/congresso2016/trabalhos/280.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "abed.org.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=abed.org.br",
+          "site_name": "ABED"
+        },
+        "is_missing": false,
+        "text": "Plano de Curso. Desta forma, assegurando o protagonismo discente, uma vez que sua valida\u00e7\u00e3o \u00b7 acontece nos primeiros dias do componente curricular, ou unidade curricular. \u00c9 importante \u00b7 destacar que essa estrat\u00e9gia articula e integra as diferentes contribui\u00e7\u00f5es das compet\u00eancias e ... O curr\u00edculo \u00e9, na vis\u00e3o de Saviani (2011, p. 23), a organiza\u00e7\u00e3o do \u201cconjunto das atividades \u00b7 nucleares distribu\u00eddas no espa\u00e7o e tempo escolares. (...) \u00e9, pois, uma escola funcionando, (...) desempenhando a fun\u00e7\u00e3o de escolariza\u00e7\u00e3o que lhe \u00e9 pr\u00f3pria\u201d. Todo curr\u00edculo constru\u00eddo precisa \u00b7 ser registrado em documentos que comprovem a execu\u00e7\u00e3o das t\u00e9cnicas de ensino adotadas pelo \u00b7 professor. No SENAC, o docente elabora o PTD, no qual est\u00e3o articuladas, a partir de aspectos \u00b7 temporais de carga hor\u00e1ria e n\u00famero de aulas, as compet\u00eancias a serem desenvolvidas por meio \u00b7\n\nSMANIOTTO, Sandra R. Uliano; MERCURIO, Elizabeth. Cursos Superiores De \u00b7 Tecnologia:Um Estudo Do Impacto Provocado Em Seus Estudantes. . IN: Boletim T\u00e9cnico do \u00b7 SENAC.v.33, n. 2, p. 70-79, maio /agosto,2007. SENAC. DN. Cole\u00e7\u00e3o de Documentos T\u00e9cnicos do Modelo Pedag\u00f3gico Senac.\n\nMarcas Formativas do SENAC, Dom\u00ednio T\u00e9cnico-Cient\u00edfico, Vis\u00e3o Cr\u00edtica, atitude \u00b7 Empreendedora, colaborativa e Sustent\u00e1vel. Essa forma\u00e7\u00e3o se deu por meio de um Ambiente Virtual de Aprendizagem (AVA) e a sua \u00b7 metodologia sustenta-se na pr\u00e1tica pedag\u00f3gica de cada instrutor e de suas experi\u00eancias \u00b7 profissionais, orientadas por processos de metodologia ativa e organizadas em laborat\u00f3rios de \u00b7 aprendizagem, considerando os diferentes atores do processo educacional, tendo em vista o aluno \u00b7 como o protagonista. O Nosso objetivo neste trabalho \u00e9 o de descrever e analisar o processo pelo \u00b7 qual passaram esses professores para que, por meio de an\u00e1lise da experi\u00eancia, possamos \u00b7 organizar boas pr\u00e1ticas e elaborar estrat\u00e9gias de ensino e avalia\u00e7\u00e3o, materializadas, na \u00b7 denominada situa\u00e7\u00e3o de aprendizagem (SA) e no projeto integrador (PI), \u00e0 luz dos sete passos \u00b7\n\nEduca\u00e7\u00e3o Profissional de N\u00edvel T\u00e9cnico (2000, p. 10) onde afirma que as compet\u00eancias \u00b7 s\u00e3o definidas como a\u00e7\u00f5es e opera\u00e7\u00f5es mentais, (que) articulam os conhecimentos (o \u00b7 \"saber\", as informa\u00e7\u00f5es articuladas operatoriamente), as habilidades (psicomotoras, ou \u00b7 seja, o \"saber fazer\" elaborado cognitivamente e s\u00f3cio-afetivamente) e os valores, as \u00b7 atitudes (o \"saber ser\", as predisposi\u00e7\u00f5es para decis\u00f5es e a\u00e7\u00f5es, constru\u00eddas a partir de \u00b7 referenciais est\u00e9ticos, pol\u00edticos e \u00e9ticos) constitu\u00eddos de forma articulada e mobilizados \u00b7 em realiza\u00e7\u00f5es profissionais com padr\u00f5es de qualidade requeridos, normal ou \u00b7 distintivamente, das produ\u00e7\u00f5es de uma \u00e1rea profissional. Para o Senac, essa estrat\u00e9gia de educa\u00e7\u00e3o continuada, por meio da p\u00f3s-gradua\u00e7\u00e3o em Doc\u00eancia \u00b7 para a Educa\u00e7\u00e3o Profissional, tornou-se um modelo de organiza\u00e7\u00e3o, evidenciando-se a \u00b7\n\nsujeitos desse estudo foram do curso de Organiza\u00e7\u00e3o de Eventos, curso de forma\u00e7\u00e3o inicial e \u00b7 continuada, estruturado em 200 horas. O componente vivenciado foi o de T\u00e9cnicas de \u00b7 Organiza\u00e7\u00e3o de Eventos e Cerimoniais, 120h. Planejar, mediar e avaliar a pr\u00e1tica docente aos quesitos exigidos para cada LPD foi o objetivo \u00b7 geral da pr\u00e1tica, sendo que cada etapa, teve o seu objetivo espec\u00edfico. O primeiro laborat\u00f3rio \u00b7 serviu de refer\u00eancia para a condu\u00e7\u00e3o dos outros dois laborat\u00f3rios, gerando um aprimoramento do \u00b7 PTD a partir da evolu\u00e7\u00e3o da SA e do entendimento da import\u00e2ncia da aplica\u00e7\u00e3o do PI para os \u00b7 pr\u00f3ximos laborat\u00f3rios. Desta forma, pudemos sentir, a cada laborat\u00f3rio, a evolu\u00e7\u00e3o do \u00b7 desenvolvimento das compet\u00eancias e seus indicadores, trabalhados de forma integrada. No segundo LPD, articulou-se a proposta do PI, tornando a SA mais clara para os alunos e \u00b7",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.abed.org.br/congresso2016/trabalhos/280.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "EXEMPLO DE PLANO DE TRABALHO DOCENTE - PTD",
+        "url": "https://portalsenac.am.senac.br/contratacao/web/uploads/adendos/Informativo%20III%20-%20Orienta%C3%A7%C3%B5es%20II%20para%20Avalia%C3%A7%C3%A3o%20Comportamental%20-%20Assistente%20T%C3%A9cnico.pdf",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senac.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senac.br",
+          "site_name": "Senac"
+        },
+        "is_missing": false,
+        "text": "selecionar\u00e3o \u00e0quelas que entenderem ser relevantes, e transcrever\u00e3o na estrutura de hist\u00f3ria ... Os alunos confrontar\u00e3o os conhecimentos apresentados com os produzidos na a\u00e7\u00e3o 1. O mediador apresentar\u00e1 o v\u00eddeo \u201cResolvendo problemas no Hotel\u201d. Disponibilizar\u00e1 aos alunos \u00b7 o Manual de Conduta Hoteleira para pesquisa orientada. Com essas informa\u00e7\u00f5es dever\u00e3o \u00b7 melhorar a hist\u00f3ria em quadrinhos quanto \u00e0s estrat\u00e9gias de resolu\u00e7\u00e3o de conflitos. ... Apresenta\u00e7\u00e3o da hist\u00f3ria em quadrinho.\n\nselecionar\u00e3o \u00e0quelas que entenderem ser relevantes, e transcrever\u00e3o na estrutura de hist\u00f3ria ... Os alunos confrontar\u00e3o os conhecimentos apresentados com os produzidos na a\u00e7\u00e3o 1. O mediador apresentar\u00e1 o v\u00eddeo \u201cResolvendo problemas no Hotel\u201d. Disponibilizar\u00e1 aos alunos \u00b7 o Manual de Conduta Hoteleira para pesquisa orientada. Com essas informa\u00e7\u00f5es dever\u00e3o \u00b7 melhorar a hist\u00f3ria em quadrinhos quanto \u00e0s estrat\u00e9gias de resolu\u00e7\u00e3o de conflitos. ... Apresenta\u00e7\u00e3o da hist\u00f3ria em quadrinho.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://portalsenac.am.senac.br/contratacao/web/uploads/adendos/Informativo%20III%20-%20Orienta%C3%A7%C3%B5es%20II%20para%20Avalia%C3%A7%C3%A3o%20Comportamental%20-%20Assistente%20T%C3%A9cnico.pdf",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Plano de Curso senai eletrotec.pdfkkkkkk | PDF",
+        "url": "https://www.slideshare.net/slideshow/plano-de-curso-senai-eletrotecpdfkkkkkk/266750845",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "slideshare.net",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=slideshare.net",
+          "site_name": "Slideshare"
+        },
+        "is_missing": false,
+        "text": "PLANO DE CURSOT\u00c9CNICO EM ELETROT\u00c9CNICA \u2013 DEPARTAMENTO REGIONAL DE PERNAMBUCO P\u00c1GINA 20 de 210 C\u00d3DIGO HAB.TEC.TEC.024 REVIS\u00c3O 00 DATA 30/03/2023 20 4.3 Desenho Curricular Habilita\u00e7\u00e3o Profissional: T\u00e9cnico em Eletrot\u00e9cnica M\u00f3dulos Unidades Curriculares Carga Hor\u00e1ria Carga Hor\u00e1ria do M\u00f3dulo Sa\u00edda B\u00c1SICO Sustentabilidade nos processos industriais 8h 112h Qualifica\u00e7\u00e3o T\u00e9cnica: Eletricista de Manuten\u00e7\u00e3o Carga Hor\u00e1ria: 848h T\u00e9cnico em Eletrot\u00e9cnica Carga Hor\u00e1ria: 1200h Introdu\u00e7\u00e3o a Qualidade e Produtividade 16h Introdu\u00e7\u00e3o a Ind\u00fastria 4.0 24h Sa\u00fade e Seguran\u00e7a no Trabalho 12h Introdu\u00e7\u00e3o ao Desenvolvimento de Projetos 12h Introdu\u00e7\u00e3o a Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o 40h INTRODUT\u00d3RIO Desenho T\u00e9cnico Aplicado a Projetos El\u00e9tricos 60h 220h Fundamentos de Eletricidade 80h Fundamentos de Sistemas El\u00e9tricos 80h ESPEC\u00cdFICO I Instala\u00e7\u00e3o e Manuten\u00e7\u00e3o El\u00e9trica Predial 100h 200h Projetos El\u00e9tricos Prediais 100h ESPEC\u00cdFICO II Criatividade e Idea\u00e7\u00e3o em Projetos de Inova\u00e7\u00e3o 16h 316h Instala\u00e7\u00f5es e Acio\n\nConsiderando a separa\u00e7\u00e3o f\u00edsica e temporal entre quem aprende e quem ensina, caracter\u00edstica da educa\u00e7\u00e3o a dist\u00e2ncia, a intera\u00e7\u00e3o professor/tutor-estudante ocorre de forma mediada, por meio de tecnologias de informa\u00e7\u00e3o e comunica\u00e7\u00e3o. Nos termos da Resolu\u00e7\u00e3o CNE/CP N\u00ba.1 DE 05 DE Janeiro de 2021 (BRASIL, 2021), que Define as Diretrizes Curriculares Nacionais Gerais para a Educa\u00e7\u00e3o Profissional e Tecnol\u00f3gica, pode prever carga hor\u00e1ria na modalidade a dist\u00e2ncia, at\u00e9 o limite indicado no CNCT (o plano de curso t\u00e9cnico, presencial, pode prever atividades n\u00e3o presenciais at\u00e9 o limite de 20% da carga hor\u00e1ria total do curso, \u201cdesde que haja suporte tecnol\u00f3gico e seja garantido o atendimento por docentes e tutores\u201d.) As unidades curriculares ofertadas na forma n\u00e3o presencial ser\u00e3o desenvolvidas no Ambiente Virtual de Aprendizagem do SENAI, com materiais on-line, em formato multim\u00eddia (v\u00eddeo, simula\u00e7\u00e3o, anima\u00e7\u00e3o, texto, ilustra\u00e7\u00e3o etc.), com intera\u00e7\u00e3o por meio de tecnologias digitais, utilizando v\n\nPor conseguinte, desde o in\u00edcio das discuss\u00f5es sobre a Moderniza\u00e7\u00e3o do Setor El\u00e9trico, com a institui\u00e7\u00e3o de Grupo de Trabalho hom\u00f4nimo em abril de 2019, o Minist\u00e9rio de Minas e Energia tem reiterado o valor que deposita na participa\u00e7\u00e3o e no engajamento dos agentes e da sociedade na constru\u00e7\u00e3o e implementa\u00e7\u00e3o dessa reforma. Mesmo com aten\u00e7\u00e3o e prioridade direcionadas para tratar das demandas dos agentes setoriais e da proposi\u00e7\u00e3o de medidas para enfrentamento dos efeitos da pandemia, causada pela COVID-19, nos setores de energia e minera\u00e7\u00e3o, por meio dos tr\u00eas comit\u00eas rec\u00e9m institu\u00eddos, o MME continua executando as atividades necess\u00e1rias para a implementa\u00e7\u00e3o da Moderniza\u00e7\u00e3o do Setor El\u00e9trico (BRASIL, 2020). Diante dessas demandas crescentes, o t\u00e9cnico em eletrot\u00e9cnica formado no SENAI estar\u00e1 na rota industrial emergente da cidade, levando em considera\u00e7\u00e3o o complexo industrial portu\u00e1rio de Suape e os novos investimentos para essa \u00e1rea, segundo a Ag\u00eancia de Desenvolvimento de Pernambuco.\n\nOutro princ\u00edpio \u00e9 a contextualiza\u00e7\u00e3o, significando abordagem de conte\u00fados/atividades, atrav\u00e9s da vincula\u00e7\u00e3o entre as experi\u00eancias de vida do aluno, o mundo do trabalho e outros diferentes aspectos da vida em sociedade. Destaca-se, tamb\u00e9m, o tratamento transversal de temas que, por seu significado e relev\u00e2ncia para a forma\u00e7\u00e3o do aluno, devem permear o desenvolvimento curricular, sem que se torne necess\u00e1rio emprestar-lhes o status de unidade curricular. Entre tais temas, como: sa\u00fade, educa\u00e7\u00e3o ambiental, \u00e9tica, pluralidade cultural, orienta\u00e7\u00e3o sexual, temas locais. O eixo metodol\u00f3gico norteador das a\u00e7\u00f5es docentes e discentes \u00e9 paltado nas estrat\u00e9gias de aprendizagem desafiadoras, que promovem a reflex\u00e3o e a tomada de decis\u00e3o por parte dos Alunos, na busca de solu\u00e7\u00f5es para os desafios estabelecidos no percurso formativo cujo conte\u00fado central focaliza situa\u00e7\u00f5es-problema reais ou simuladas, estudos de caso, projetos, pesquisas aplicadas e projetos integradores.\n\nPLANO DE CURSOT\u00c9CNICO EM ELETROT\u00c9CNICA \u2013 DEPARTAMENTO REGIONAL DE PERNAMBUCO P\u00c1GINA 20 de 210 C\u00d3DIGO HAB.TEC.TEC.024 REVIS\u00c3O 00 DATA 30/03/2023 20 4.3 Desenho Curricular Habilita\u00e7\u00e3o Profissional: T\u00e9cnico em Eletrot\u00e9cnica M\u00f3dulos Unidades Curriculares Carga Hor\u00e1ria Carga Hor\u00e1ria do M\u00f3dulo Sa\u00edda B\u00c1SICO Sustentabilidade nos processos industriais 8h 112h Qualifica\u00e7\u00e3o T\u00e9cnica: Eletricista de Manuten\u00e7\u00e3o Carga Hor\u00e1ria: 848h T\u00e9cnico em Eletrot\u00e9cnica Carga Hor\u00e1ria: 1200h Introdu\u00e7\u00e3o a Qualidade e Produtividade 16h Introdu\u00e7\u00e3o a Ind\u00fastria 4.0 24h Sa\u00fade e Seguran\u00e7a no Trabalho 12h Introdu\u00e7\u00e3o ao Desenvolvimento de Projetos 12h Introdu\u00e7\u00e3o a Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o 40h INTRODUT\u00d3RIO Desenho T\u00e9cnico Aplicado a Projetos El\u00e9tricos 60h 220h Fundamentos de Eletricidade 80h Fundamentos de Sistemas El\u00e9tricos 80h ESPEC\u00cdFICO I Instala\u00e7\u00e3o e Manuten\u00e7\u00e3o El\u00e9trica Predial 100h 200h Projetos El\u00e9tricos Prediais 100h ESPEC\u00cdFICO II Criatividade e Idea\u00e7\u00e3o em Projetos de Inova\u00e7\u00e3o 16h 316h Instala\u00e7\u00f5es e Acio",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.slideshare.net/slideshow/plano-de-curso-senai-eletrotecpdfkkkkkk/266750845",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Senac-RS",
+        "url": "https://www.senacrs.com.br/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senacrs.com.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senacrs.com.br",
+          "site_name": "Senac-RS"
+        },
+        "is_missing": false,
+        "text": "Atendimento aberto ao p\u00fablico para esclarecimentos sobre funcionamento do programa, requisitos, oportunidades de qualifica\u00e7\u00e3o e inser\u00e7\u00e3o no mercado de trabalho. ... Atividade pr\u00e1tica conduzida pela chef e docente Bruna Gotardo, com t\u00e9cnicas aplicadas \u00e0 prepara\u00e7\u00e3o de arroz pilaf de am\u00eandoas, espetinho de camar\u00e3o e salada de beterraba com molho de iogurte, valorizando criatividade e excel\u00eancia na gastronomia. 18h30 \u2013 Aula Experimental Gratuita de Comunica\u00e7\u00e3o em Ingl\u00eas \u00b7 Aula demonstrativa ministrada pela docente Mari Till, com foco no desenvolvimento da comunica\u00e7\u00e3o oral em ingl\u00eas, compet\u00eancia cada vez mais exigida no ambiente profissional. Al\u00e9m das a\u00e7\u00f5es formativas, a Sexta do Desconto contar\u00e1 com condi\u00e7\u00f5es especiais para matr\u00edculas, brindes exclusivos, atendimento personalizado e a\u00e7\u00f5es de relacionamento com a comunidade, ampliando o acesso \u00e0s informa\u00e7\u00f5es sobre cursos e servi\u00e7os oferecidos pelo Senac.\n\nAtendimento aberto ao p\u00fablico para esclarecimentos sobre funcionamento do programa, requisitos, oportunidades de qualifica\u00e7\u00e3o e inser\u00e7\u00e3o no mercado de trabalho. ... Atividade pr\u00e1tica conduzida pela chef e docente Bruna Gotardo, com t\u00e9cnicas aplicadas \u00e0 prepara\u00e7\u00e3o de arroz pilaf de am\u00eandoas, espetinho de camar\u00e3o e salada de beterraba com molho de iogurte, valorizando criatividade e excel\u00eancia na gastronomia. 18h30 \u2013 Aula Experimental Gratuita de Comunica\u00e7\u00e3o em Ingl\u00eas \u00b7 Aula demonstrativa ministrada pela docente Mari Till, com foco no desenvolvimento da comunica\u00e7\u00e3o oral em ingl\u00eas, compet\u00eancia cada vez mais exigida no ambiente profissional. Al\u00e9m das a\u00e7\u00f5es formativas, a Sexta do Desconto contar\u00e1 com condi\u00e7\u00f5es especiais para matr\u00edculas, brindes exclusivos, atendimento personalizado e a\u00e7\u00f5es de relacionamento com a comunidade, ampliando o acesso \u00e0s informa\u00e7\u00f5es sobre cursos e servi\u00e7os oferecidos pelo Senac.\n\nC\u00f3digo de \u00c9tica Pol\u00edtica de Privacidade Pol\u00edtica de Seguran\u00e7a da Informa\u00e7\u00e3o Premia\u00e7\u00f5es Programa PRODAF Portal da Transpar\u00eancia Chamamento P\u00fablico Trabalhe Conosco Publica\u00e7\u00f5es do Conselho Regional do Senac-RS ... Cl\u00e1usulas Gerais - 1733048 Cl\u00e1usulas Gerais - 1776290 Cl\u00e1usulas Gerais - 1726007 Cl\u00e1usulas Gerais - 1747048 ... Fazer o T\u00e9cnico em Inform\u00e1tica no Senac tem sido uma experi\u00eancia incr\u00edvel. A qualidade dos professores, a estrutura do curso e o foco em pr\u00e1ticas do mercado fazem a diferen\u00e7a. Recomendo a todos que querem se destacar nessa \u00e1rea t\u00e3o din\u00e2mica e cheia de oportunidades. ... Enfim trabalho de conclus\u00e3o no Curso Design de Moda apresentado a banca . A vinda do Diploma ser\u00e1 um marco na minha vida , mas as li\u00e7\u00f5es aprendidas durante a minha trajet\u00f3ria foram o verdadeiro tesouro que levarei comigo para sempre .\n\nAtividade pr\u00e1tica conduzida pela chef e docente Bruna Gotardo, com foco em t\u00e9cnicas aplicadas \u00e0 prepara\u00e7\u00e3o de arroz pilaf de am\u00eandoas, espetinho de camar\u00e3o e salada de beterraba com molho de iogurte, valorizando criatividade e excel\u00eancia na \u00e1rea da gastronomia. ... No dia 23 de janeiro, o Senac Gramado promove mais uma edi\u00e7\u00e3o da Sexta do Desconto, com uma programa\u00e7\u00e3o gratuita e aberta \u00e0 comunidade. Ao longo do dia, a escola realizar\u00e1 a\u00e7\u00f5es voltadas \u00e0 orienta\u00e7\u00e3o profissional, ao fortalecimento do mercado de trabalho e \u00e0 aproxima\u00e7\u00e3o com o setor produtivo da regi\u00e3o. ... Encontro direcionado a empres\u00e1rios, gestores e profissionais de recursos humanos, com apresenta\u00e7\u00e3o de solu\u00e7\u00f5es corporativas e possibilidades de capacita\u00e7\u00e3o alinhadas \u00e0s demandas das organiza\u00e7\u00f5es locais. 9h \u00e0s 12h e 13h \u00e0s 17h \u2013 Tira-D\u00favidas do Programa Jovem Aprendiz \u00b7\n\nO Senac me ensinou muito mais do que as compet\u00eancias necess\u00e1rias para minha fun\u00e7\u00e3o no mercado de trabalho. Aprendi a me apresentar em p\u00fablico, a construir apresenta\u00e7\u00f5es de qualidade e a trabalhar com ferramentas de computador, algo com o qual eu n\u00e3o tinha nenhum contato antes. ... Ol\u00e1, sou Fitriana, da Mal\u00e1sia, e foi no Senac que tive a oportunidade de realizar tr\u00eas cursos incr\u00edveis na \u00e1rea da moda. Desde o in\u00edcio, fiquei impressionada com a qualidade do ensino e o profissionalismo dos professores. Cada curso foi uma experi\u00eancia \u00fanica, onde aprendi n\u00e3o apenas as t\u00e9cnicas, mas tamb\u00e9m como aplic\u00e1-las na pr\u00e1tica, o que fez uma grande diferen\u00e7a para mim. Estou muito feliz com os resultados que alcancei e sou profundamente grata ao Senac por proporcionar um ambiente t\u00e3o acolhedor e inspirador para os alunos. ... Por meio do curso, consegui aprimorar meu desenvolvimento pessoal e profissional.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://www.senacrs.com.br/",
+          "search_provider": "anthropic"
+        }
+      },
+      {
+        "type": "knowledge",
+        "title": "Portfolio TEC EDU SENAI",
+        "url": "https://tecnologiaseducacionais.senai.br/",
+        "metadata": {
+          "type": "webpage_metadata",
+          "site_domain": "senai.br",
+          "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=senai.br",
+          "site_name": "Senai"
+        },
+        "is_missing": false,
+        "text": "Ele re\u00fane diversas ferramentas para a pr\u00e1tica pedag\u00f3gica. Criar Objetos de Aprendizagem utilizando Planilhas, Apresenta\u00e7\u00f5es, Documentos, Formul\u00e1rios, entre outros recursos, que podem estar contidos em Situa\u00e7\u00f5es de Aprendizagem, classificadas de acordo com o Curr\u00edculo, utilizando a for\u00e7a de toda comunidade docente, s\u00e3o algumas as facilidades da plataforma. Clique para saber mais Clique para acessar \u00b7 \u00c9 um ambiente web para desenvolvimento e reposit\u00f3rio de perfis profissionais e desenhos curriculares relacionados \u00e0s ocupa\u00e7\u00f5es constantes no Itiner\u00e1rio Nacional de Educa\u00e7\u00e3o Profissional do SENAI. As informa\u00e7\u00f5es constantes nesse ambiente servem como referencial nacional para estrutura\u00e7\u00e3o de cursos de qualifica\u00e7\u00e3o profissional, t\u00e9cnicos de n\u00edvel m\u00e9dio, superiores de tecnologia e bacharelado, assim como todos os tipos de forma\u00e7\u00e3o inicial e continuada (FIC).\n\nEle re\u00fane diversas ferramentas para a pr\u00e1tica pedag\u00f3gica. Criar Objetos de Aprendizagem utilizando Planilhas, Apresenta\u00e7\u00f5es, Documentos, Formul\u00e1rios, entre outros recursos, que podem estar contidos em Situa\u00e7\u00f5es de Aprendizagem, classificadas de acordo com o Curr\u00edculo, utilizando a for\u00e7a de toda comunidade docente, s\u00e3o algumas as facilidades da plataforma. Clique para saber mais Clique para acessar \u00b7 \u00c9 um ambiente web para desenvolvimento e reposit\u00f3rio de perfis profissionais e desenhos curriculares relacionados \u00e0s ocupa\u00e7\u00f5es constantes no Itiner\u00e1rio Nacional de Educa\u00e7\u00e3o Profissional do SENAI. As informa\u00e7\u00f5es constantes nesse ambiente servem como referencial nacional para estrutura\u00e7\u00e3o de cursos de qualifica\u00e7\u00e3o profissional, t\u00e9cnicos de n\u00edvel m\u00e9dio, superiores de tecnologia e bacharelado, assim como todos os tipos de forma\u00e7\u00e3o inicial e continuada (FIC).\n\nO Seguran\u00e7a do Trabalho 360 (SAEP 360) surge em uma perspectiva de inova\u00e7\u00e3o para as provas pr\u00e1ticas em larga escala, proporcionando uma experi\u00eancia imersiva aos estudantes e assim, que eles desenvolvam suas compet\u00eancias t\u00e9cnicas em situa\u00e7\u00f5es reais do mundo do trabalho com v\u00eddeos 360\u00ba para estudantes do curso t\u00e9cnico em seguran\u00e7a do trabalho. Clique para saber mais Clique para baixar para VR \u00b7 Estimulam o aprendizado independente e a por meio de experi\u00eancias imersivas em 3D de ambientes reais. Em um mundo em constante evolu\u00e7\u00e3o, os tours virtuais preparam os estudantes para o futuro por meio de recursos que tornam a aprendizagem mais significativa. Clique para acessar \u00b7 O Simulador de M\u00e1quinas CNC pode ser usado para treinamento de docentes, alunos ou para simula\u00e7\u00e3o de programas no ambiente industrial, oferecendo assim seguran\u00e7a e redu\u00e7\u00e3o de custos nos processos de treinamento para torneamento CNC.\n\nO RV360 Educacional tem por finalidade aumentar engajamento dos estudantes dos Cursos T\u00e9cnicos, a partir da aplica\u00e7\u00e3o de metodologias ativas, em sala de aula, utilizando a tecnologia de realidade virtual com v\u00eddeo 360\u00b0. Testado e aprovado por docentes e alunos do SENAI BA, o RV360 foi projetado para ser utilizado no m\u00f3dulo transversal que agrega aos Desenhos Curriculares dos cursos t\u00e9cnicos do SENAI a compet\u00eancia em desenvolver solu\u00e7\u00f5es inovadoras, a partir de um comportamento empreendedor. A primeira Unidade Curricular j\u00e1 est\u00e1 dispon\u00edvel para instalar no seu celular e utilizar nos \u00f3culos. Confira! Clique para acessar \u00b7 A Pesquisa de Acompanhamento de Egressos do SENAI \u00e9 realizada, em \u00e2mbito Nacional, desde 1999. Com o passar dos anos a Pesquisa vem evoluindo e aprimorando seus processos. Esse projeto \u00e9 estrat\u00e9gico para o Sistema na medida em que avaliamos a efetividade de nossas a\u00e7\u00f5es de forma\u00e7\u00e3o, por meio de 18 indicadores.\n\nA plataforma Elo.S \u00e9 mais nova plataforma de recompensas do SENAI. Trata-se de uma solu\u00e7\u00e3o que oferece medalhas digitais como recompensas pela atua\u00e7\u00e3o da comunidade junto ao SENAI, al\u00e9m de permitir que empresas e profissionais validem em tempo real a veracidade de cursos, treinamentos, habilidades e compet\u00eancias t\u00e9cnicas e garanta credibilidade dos certificados emitidos pelo SENAI. A plataforma possui, ainda, um banco de recompensas, onde o estudante ou docente pode trocar suas moedas digitais por cursos ou produtos. Clique para acessar \u00b7 Plataforma de hackatons e desafios baseados em demandas industriais de todo o Brasil aonde equipes de estudantes constroem solu\u00e7\u00f5es inovadoras, desenvolvendo compet\u00eancias enquanto se divertem. Clique para saber mais Clique para acessar \u00b7 \u00c9 um portal de acesso a informa\u00e7\u00f5es e documentos, referentes \u00e0 competi\u00e7\u00e3o Seletiva WorldSkills, evento administrado e operado pelo SENAI Departamento Nacional e seus Departamentos Regionais.",
+        "is_citable": true,
+        "prompt_context_metadata": {
+          "url": "https://tecnologiaseducacionais.senai.br/",
+          "search_provider": "anthropic"
+        }
+      }
+    ],
+    "is_error": false,
+    "structured_content": null,
+    "meta": null,
+    "message": null,
+    "integration_name": null,
+    "integration_icon_url": null,
+    "display_content": null
+  },
+  {
+    "start_timestamp": null,
+    "stop_timestamp": null,
+    "flags": null,
+    "type": "token_budget"
+  }
+]

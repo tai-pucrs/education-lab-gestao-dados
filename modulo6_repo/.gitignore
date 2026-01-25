@@ -1,0 +1,41 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/settings.json
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Build outputs (if any)
+dist/
+build/
+*.min.js
+*.min.css
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (não usamos, mas por segurança)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Backups
+*.backup
+*_backup/
+*_old/
