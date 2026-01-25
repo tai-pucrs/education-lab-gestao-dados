@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Gestão Estratégica de Dados - Produção Completa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .alert-box {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            flex: 1;
+            min-width: 180px;
+            padding: 15px 20px;
+            background: #edf2f7;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            color: #4a5568;
+            transition: all 0.3s;
+        }
+        
+        .tab-button:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .module-detail {
+            background: #f7fafc;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 6px solid #667eea;
+        }
+        
+        .module-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .module-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        .module-title {
+            flex: 1;
+            font-size: 1.8em;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .module-duration {
+            background: #48bb78;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+        .section-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            color: #2d3748;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .videoaula-item {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #764ba2;
+        }
+        
+        .videoaula-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .videoaula-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.1em;
+        }
+        
+        .videoaula-time {
+            background: #764ba2;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .videoaula-content {
+            color: #4a5568;
+            line-height: 1.8;
+        }
+        
+        .videoaula-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .videoaula-content li {
+            margin-bottom: 8px;
+        }
+        
+        .roteiro-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 0.95em;
+        }
+        
+        .roteiro-box strong {
+            color: #856404;
+        }
+        
+        .material-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        
+        .material-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .material-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .material-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .material-desc {
+            color: #718096;
+            margin-bottom: 15px;
+        }
+        
+        .copy-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .copy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        .prompt-box {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            position: relative;
+        }
+        
+        .copy-prompt-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 4px solid #667eea;
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .tool-icon {
+            font-size: 2em;
+        }
+        
+        .tool-name {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.1em;
+        }
+        
+        .tool-desc {
+            color: #718096;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .tool-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .tool-link:hover {
+            color: #764ba2;
+            transform: translateX(3px);
+        }
+        
+        .tip-box {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .tip-box strong {
+            color: #234e52;
+        }
+        
+        .warning-box {
+            background: #fff5f5;
+            border-left: 4px solid #f56565;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .warning-box strong {
+            color: #742a2a;
+        }
+        
+        .accordion {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        
+        .accordion-header:hover {
+            background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+        }
+        
+        .accordion-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.1em;
+        }
+        
+        .accordion-icon {
+            font-size: 1.5em;
+            color: #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .accordion.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion.active .accordion-content {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+        
+        .accordion-body {
+            padding: 20px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .module-title {
+                font-size: 1.3em;
+            }
+            
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Framework Completo de Produção</h1>
+        <div class="subtitle">Gestão Estratégica de Dados - 30h de Gravação Pura</div>
+        
+        <div class="alert-box">
+            <strong>📹 100% Gravação:</strong> Estas 30 horas são APENAS conteúdo em vídeo. Materiais de apoio (PDFs, exercícios, templates) são extras que complementam a experiência de aprendizagem autônoma.
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">30h</div>
+                <div class="stat-label">Videoaulas Gravadas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Módulos Temáticos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">36</div>
+                <div class="stat-label">Videoaulas Individuais</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18+</div>
+                <div class="stat-label">Materiais de Apoio</div>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('modulos')">📚 Módulos Detalhados</button>
+            <button class="tab-button" onclick="openTab('producao')">🎬 Guia de Produção</button>
+            <button class="tab-button" onclick="openTab('materiais')">📄 Geradores de Material</button>
+            <button class="tab-button" onclick="openTab('ferramentas')">🛠️ Ferramentas & IA</button>
+        </div>
+        
+        <!-- TAB 1: MÓDULOS DETALHADOS -->
+        <div id="modulos" class="tab-content active">
+            
+            <!-- MÓDULO 1 -->
+            <div class="module-detail">
+                <div class="module-header">
+                    <div class="module-number">1</div>
+                    <div class="module-title">Fundamentos de Governança de Dados</div>
+                    <div class="module-duration">5 horas</div>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">🎯 Objetivos de Aprendizagem</div>
+                    <ul style="margin-left: 20px; color: #4a5568;">
+                        <li>Compreender os princípios fundamentais de governança de dados</li>
+                        <li>Diferenciar frameworks de governança (DAMA-DMBOK, COBIT, ISO 8000)</li>
+                        <li>Analisar casos reais de implementação bem-sucedida</li>
+                        <li>Identificar papéis e responsabilidades em governança</li>
+                    </ul>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">📹 Estrutura de Videoaulas (5h)</div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.1 - Introdução à Governança de Dados</div>
+                            <div class="videoaula-time">45 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>O que é governança de dados e por que é estratégica</li>
+                                <li>Diferença entre gestão vs governança</li>
+                                <li>Evolução histórica: de compliance a ativo estratégico</li>
+                                <li>Impactos da falta de governança (casos de vazamentos, multas LGPD)</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Comece com case provocativo (vazamento Cambridge Analytica ou multa LGPD), explique conceitos fundamentais, mostre evolução com timeline visual, termine com provocação sobre maturidade atual do mercado brasileiro.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.2 - Framework DAMA-DMBOK Explicado</div>
+                            <div class="videoaula-time">60 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Roda do conhecimento DAMA (11 áreas)</li>
+                                <li>Detalhamento das áreas-chave: qualidade, arquitetura, segurança, metadata</li>
+                                <li>Como priorizar áreas na sua organização</li>
+                                <li>Adaptações do DMBOK para realidade brasileira</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Apresente a roda DAMA completa, aprofunde em 3-4 áreas mais críticas com exemplos práticos, mostre matriz de priorização, inclua template visual que alunos podem adaptar.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.3 - Outros Frameworks: COBIT e ISO 8000</div>
+                            <div class="videoaula-time">45 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>COBIT: foco em TI e alinhamento com negócios</li>
+                                <li>ISO 8000: padrão internacional de qualidade de dados</li>
+                                <li>Comparativo: quando usar cada framework</li>
+                                <li>Abordagem híbrida: pegando o melhor de cada</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Tabela comparativa visual, decisão tree para escolha de framework, exemplos de empresas que usam cada um, dicas práticas de implementação.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.4 - Papéis e Responsabilidades</div>
+                            <div class="videoaula-time">50 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Chief Data Officer (CDO): perfil e atribuições</li>
+                                <li>Data Stewards: o que fazem e como escolher</li>
+                                <li>Data Owners vs Data Custodians</li>
+                                <li>Comitê de governança: estrutura e cadência</li>
+                                <li>RACI matrix para governança de dados</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Organograma animado, dia-a-dia de cada papel (storytelling), template de RACI editável, exemplos de job descriptions reais.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.5 - Casos de Sucesso: Magazine Luiza e Banco Inter</div>
+                            <div class="videoaula-time">40 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Case Magalu: jornada de data-driven company</li>
+                                <li>Case Banco Inter: governança em fintech</li>
+                                <li>Lições aprendidas e armadilhas a evitar</li>
+                                <li>Roadmap típico de implementação (18-24 meses)</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Storytelling dos cases com linha do tempo, métricas de impacto (antes/depois), entrevista ou depoimento se possível, checklist de quick wins.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">1.6 - Workshop Prático: Diagnosticando sua Organização</div>
+                            <div class="videoaula-time">40 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Framework de assessment de maturidade</li>
+                                <li>Questionário estruturado (50 perguntas-chave)</li>
+                                <li>Como interpretar resultados e definir prioridades</li>
+                                <li>Exemplo prático: diagnóstico de empresa fictícia</li>
+                            </ul>
+                            <div class="roteiro-box">
+                                <strong>💡 Roteiro sugerido:</strong> Demonstração prática preenchendo assessment, análise SWOT de governança, roadmap customizado baseado em maturidade, template Excel/Google Sheets compartilhável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">📦 Materiais de Apoio Recomendados</div>
+                    <ul style="margin-left: 20px; color: #4a5568;">
+                        <li>📄 PDF: Glossário de Governança de Dados (30 termos essenciais)</li>
+                        <li>📊 Template Excel: Assessment de Maturidade Interativo</li>
+                        <li>🎨 Infográfico: Roda DAMA Traduzida e Comentada</li>
+                        <li>📋 Checklist: 100 Perguntas para Diagnóstico de Governança</li>
+                        <li>🎯 Exercício Autoguiado: Mapeie a governança da sua empresa</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- MÓDULO 2 -->
+            <div class="module-detail">
+                <div class="module-header">
+                    <div class="module-number">2</div>
+                    <div class="module-title">Estratégia e Alinhamento de Negócios</div>
+                    <div class="module-duration">5 horas</div>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">🎯 Objetivos de Aprendizagem</div>
+                    <ul style="margin-left: 20px; color: #4a5568;">
+                        <li>Conectar estratégia de dados com objetivos de negócio</li>
+                        <li>Desenvolver business case para iniciativas de dados</li>
+                        <li>Definir e acompanhar OKRs/KPIs de dados</li>
+                        <li>Priorizar investimentos com matriz valor x esforço</li>
+                    </ul>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">📹 Estrutura de Videoaulas (5h)</div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.1 - Data Strategy: Do Conceito à Prática</div>
+                            <div class="videoaula-time">55 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>O que é uma estratégia de dados eficaz</li>
+                                <li>Alinhamento com estratégia corporativa (cascata estratégica)</li>
+                                <li>Componentes essenciais: visão, missão, princípios, pilares</li>
+                                <li>Exemplos de estratégias de dados de grandes empresas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.2 - Business Value e ROI de Dados</div>
+                            <div class="videoaula-time">50 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Como medir valor de iniciativas de dados</li>
+                                <li>Cálculo de ROI: fórmulas e casos práticos</li>
+                                <li>Benefícios tangíveis vs intangíveis</li>
+                                <li>Construindo business case convincente</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.3 - OKRs para Dados: Teoria e Aplicação</div>
+                            <div class="videoaula-time">60 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Framework OKR aplicado a dados</li>
+                                <li>Exemplos de OKRs de qualidade, governança, analytics</li>
+                                <li>Como cascatear OKRs: empresa → área de dados → squad</li>
+                                <li>Ciclo de revisão e ajustes (quarterly)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.4 - KPIs e Métricas de Dados</div>
+                            <div class="videoaula-time">45 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Diferença entre OKR, KPI, métrica</li>
+                                <li>30 KPIs essenciais para gestão de dados</li>
+                                <li>Dashboard de governança: o que acompanhar</li>
+                                <li>Ferramentas para tracking (Tableau, Power BI, Looker)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.5 - Priorização de Iniciativas</div>
+                            <div class="videoaula-time">50 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Matriz valor x esforço (Value vs Complexity)</li>
+                                <li>Método RICE Score para projetos de dados</li>
+                                <li>Como envolver stakeholders na priorização</li>
+                                <li>Balanceando quick wins vs transformação profunda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="videoaula-item">
+                        <div class="videoaula-header">
+                            <div class="videoaula-title">2.6 - Simulação: Criando uma Data Strategy Completa</div>
+                            <div class="videoaula-time">40 min</div>
+                        </div>
+                        <div class="videoaula-content">
+                            <strong>Conteúdo:</strong>
+                            <ul>
+                                <li>Case simulado: empresa de e-commerce em crescimento</li>
+                                <li>Passo a passo: diagnóstico → visão → pilares → roadmap</li>
+                                <li>Definição de 3 OKRs estratégicos</li>
+                                <li>Apresentação executiva: estrutura e storytelling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-box">
+                    <div class="section-title">📦 Materiais de Apoio Recomendados</div>
+                    <ul style="margin-left: 20px; color: #4a5568;">
+                        <li>📊 Template PowerPoint: Estrutura de Data Strategy (slides editáveis)</li>
+                        <li>📈 Calculadora Excel: ROI de Projetos de Dados</li>
+                        <li>🎯 Framework Canvas: One-Page Data Strategy</li>
+                        <li>📋 Lista: 100+ KPIs de Dados por Categoria</li>
+                        <li>🎨 Exemplos: 10 Data Strategies de empresas brasileiras</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- MÓDULOS 3-6 RESUMIDOS (pode expandir igual aos anteriores) -->
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-header">
+                    <div class="accordion-title">📦 Módulo 3: Arquitetura e Qualidade de Dados (5h) - Clique para expandir</div>
+                    <div class="accordion-icon">▼</div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <strong>Videoaulas:</strong>
+                        <ul style="margin: 15px 0 15px 20px; color: #4a5568;">
+                            <li>3.1 - Data Lakes vs Warehouses vs Lakehouses (50min)</li>
+                            <li>3.2 - Arquiteturas Modernas: Medallion, Data Mesh (55min)</li>
+                            <li>3.3 - Dimensões de Qualidade de Dados (45min)</li>
+                            <li>3.4 - Data Profiling e Ferramentas (50min)</li>
+                            <li>3.5 - Implementando Data Quality Checks (45min)</li>
+                            <li>3.6 - Workshop: Desenhando uma Arquitetura (35min)</li>
+                        </ul>
+                        <strong>Materiais:</strong> Diagramas editáveis (Lucidchart/Draw.io), Checklist de qualidade, Guia de ferramentas Open Source
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-header">
+                    <div class="accordion-title">📊 Módulo 4: Analytics e Tomada de Decisão (5h) - Clique para expandir</div>
+                    <div class="accordion-icon">▼</div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <strong>Videoaulas:</strong>
+                        <ul style="margin: 15px 0 15px 20px; color: #4a5568;">
+                            <li>4.1 - Analytics Maturity Model (Gartner) (45min)</li>
+                            <li>4.2 - Descritivo → Diagnóstico → Preditivo → Prescritivo (60min)</li>
+                            <li>4.3 - Machine Learning para Negócios (sem código) (50min)</li>
+                            <li>4.4 - BI Moderno: Self-Service Analytics (45min)</li>
+                            <li>4.5 - Data Storytelling e Visualização (50min)</li>
+                            <li>4.6 - Caso Real: ML resolvendo problema de churn (30min)</li>
+                        </ul>
+                        <strong>Materiais:</strong> Framework de maturidade, Catálogo de use cases de ML, Template de storytelling
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-header">
+                    <div class="accordion-title">⚖️ Módulo 5: Ética, Privacidade e Compliance (5h) - Clique para expandir</div>
+                    <div class="accordion-icon">▼</div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <strong>Videoaulas:</strong>
+                        <ul style="margin: 15px 0 15px 20px; color: #4a5568;">
+                            <li>5.1 - LGPD na Prática: O que Muda para Dados (60min)</li>
+                            <li>5.2 - Privacidade by Design (50min)</li>
+                            <li>5.3 - Ética em IA: Vieses e Fairness (55min)</li>
+                            <li>5.4 - Casos de Violação: O que Aprender (40min)</li>
+                            <li>5.5 - Anonimização e Pseudonimização (45min)</li>
+                            <li>5.6 - Dilemas Éticos: Discussão de Casos Polêmicos (30min)</li>
+                        </ul>
+                        <strong>Materiais:</strong> Checklist LGPD, Guia de anonimização, Framework de ética em IA
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-header">
+                    <div class="accordion-title">🚀 Módulo 6: Projeto Integrador (5h) - Clique para expandir</div>
+                    <div class="accordion-icon">▼</div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <strong>Videoaulas:</strong>
+                        <ul style="margin: 15px 0 15px 20px; color: #4a5568;">
+                            <li>6.1 - Briefing do Projeto Final (30min)</li>
+                            <li>6.2 - Metodologia: Design Thinking para Dados (50min)</li>
+                            <li>6.3 - Exemplos de Projetos Anteriores (60min)</li>
+                            <li>6.4 - Ferramentas para Documentação (Notion, Confluence) (40min)</li>
+                            <li>6.5 - Como Apresentar seu Projeto (Storytelling) (45min)</li>
+                            <li>6.6 - Sessão de Q&A e Dicas Finais (35min)</li>
+                        </ul>
+                        <strong>Materiais:</strong> Template de projeto, Rubrica de auto-avaliação, Exemplos completos em PDF
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip-box" style="margin-top: 30px;">
+                <strong>💡 Dica de Estruturação:</strong> Cada módulo segue o padrão: Teoria (40%) → Prática Demonstrada (40%) → Aplicação Guiada (20%). Isso mantém engajamento mesmo sem entregas formais!
+            </div>
+        </div>
+        
+        <!-- TAB 2: GUIA DE PRODUÇÃO -->
+        <div id="producao" class="tab-content">
+            <h2 style="margin-bottom: 20px; color: #2d3748;">🎬 Guia Completo de Produção</h2>
+            
+            <div class="section-box">
+                <div class="section-title">📝 Roteirização: Estrutura de Videoaula Ideal</div>
+                
+                <div style="background: #f7fafc; padding: 20px; border-radius: 10px; margin-top: 15px;">
+                    <h4 style="color: #2d3748; margin-bottom: 15px;">🎯 Template de Roteiro (Use para CADA vídeo)</h4>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong style="color: #667eea;">1. HOOK (Primeiros 30 segundos)</strong>
+                        <ul style="margin: 10px 0 0 20px; color: #4a5568;">
+                            <li>Pergunta provocativa ou estatística impactante</li>
+                            <li>Exemplo: "Você sabia que 60% dos projetos de dados falham por falta de governança?"</li>
+                            <li>Promessa clara: "Nos próximos 15 minutos você vai aprender..."</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong style="color: #667eea;">2. CONTEXTO (2-3 minutos)</strong>
+                        <ul style="margin: 10px 0 0 20px; color: #4a5568;">
+                            <li>Por que este tópico é importante</li>
+                            <li>Como se conecta com aulas anteriores</li>
+                            <li>Aplicação prática no dia a dia</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong style="color: #667eea;">3. CONTEÚDO PRINCIPAL (10-40 minutos)</strong>
+                        <ul style="margin: 10px 0 0 20px; color: #4a5568;">
+                            <li><strong>Chunking:</strong> Divida em 3-5 seções de 5-10min cada</li>
+                            <li>Use padrão: Explico → Exemplifico → Demonstro</li>
+                            <li>Intercale teoria com exemplos visuais a cada 3-5 minutos</li>
+                            <li>Inclua "pausas mentais": "Antes de continuar, reflita sobre..."</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong style="color: #667eea;">4. RECAPITULAÇÃO (2-3 minutos)</strong>
+                        <ul style="margin: 10px 0 0 20px; color: #4a5568;">
+                            <li>Resumo visual dos 3-5 pontos-chave</li>
+                            <li>"Se você lembrar de apenas uma coisa desta aula..."</li>
+                            <li>Conexão com próxima aula</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px;">
+                        <strong style="color: #667eea;">5. CALL-TO-ACTION (30 segundos)</strong>
+                        <ul style="margin: 10px 0 0 20px; color: #4a5568;">
+                            <li>"Agora faça o exercício X do material de apoio"</li>
+                            <li>"Compartilhe no fórum: como você aplicaria isso?"</li>
+                            <li>"Nos vemos na próxima aula sobre [tema]"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">🎥 Qualidade de Produção: Checklist</div>
+                
+                <div class="tool-grid">
+                    <div class="material-card">
+                        <div class="material-icon">🎤</div>
+                        <div class="material-title">Áudio (Prioridade #1)</div>
+                        <div class="material-desc">
+                            • Microfone USB ou lapela (mínimo)<br>
+                            • Ambiente silencioso<br>
+                            • Tratamento acústico básico<br>
+                            • Teste de áudio antes SEMPRE<br>
+                            • Volume consistente (-3dB a -6dB)
+                        </div>
+                    </div>
+                    
+                    <div class="material-card">
+                        <div class="material-icon">💡</div>
+                        <div class="material-title">Iluminação</div>
+                        <div class="material-desc">
+                            • Luz frontal (ring light ou janela)<br>
+                            • Evite backlight (janela atrás)<br>
+                            • Temperatura de cor consistente<br>
+                            • Teste em diferentes horários<br>
+                            • Softbox se possível
+                        </div>
+                    </div>
+                    
+                    <div class="material-card">
+                        <div class="material-icon">📹</div>
+                        <div class="material-title">Vídeo</div>
+                        <div class="material-desc">
+                            • 1080p mínimo (Full HD)<br>
+                            • 30fps estável<br>
+                            • Enquadramento: regra dos terços<br>
+                            • Background limpo/profissional<br>
+                            • Webcam boa ou câmera DSLR
+                        </div>
+                    </div>
+                    
+                    <div class="material-card">
+                        <div class="material-icon">🎨</div>
+                        <div class="material-title">Slides/Screen</div>
+                        <div class="material-desc">
+                            • Contraste alto (leitura fácil)<br>
+                            • Máximo 3-5 pontos por slide<br>
+                            • Fontes grandes (28pt+)<br>
+                            • Imagens em alta resolução<br>
+                            • Transições simples
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">⏱️ Workflow de Gravação Eficiente</div>
+                
+                <div style="background: #f7fafc; padding: 20px; border-radius: 10px; margin-top: 15px;">
+                    <h4 style="color: #2d3748; margin-bottom: 15px;">📅 Método Batch Recording</h4>
+                    <p style="color: #4a5568; margin-bottom: 15px;">Grave múltiplos vídeos no mesmo dia para manter consistência e economizar tempo de setup:</p>
+                    
+                    <ol style="margin-left: 20px; color: #4a5568; line-height: 2;">
+                        <li><strong>Dia 1 (Setup):</strong> Prepare roteiros de 4-5 vídeos, slides prontos, ambiente montado</li>
+                        <li><strong>Dia 2 (Gravação):</strong> Grave todos os 4-5 vídeos sequencialmente (6-8h de trabalho)</li>
+                        <li><strong>Dia 3-4 (Edição):</strong> Edite todos os vídeos, adicione intros/outros, legendas</li>
+                        <li><strong>Dia 5 (Revisão):</strong> Assista tudo, faça ajustes finais, exporte, upload</li>
+                    </ol>
+                    
+                    <div class="tip-box" style="margin-top: 20px;">
+                        <strong>⚡ Pro Tip:</strong> Com este método, você produz 5 horas de conteúdo editado em 1 semana. Para completar 30h: ~6 semanas de produção.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">✂️ Edição: Essenciais</div>
+                
+                <ul style="margin-left: 20px; color: #4a5568; line-height: 2;">
+                    <li>✅ Cortar pausas longas e gafes</li>
+                    <li>✅ Adicionar intro (5-10s) e outro (5-10s)</li>
+                    <li>✅ Lower thirds com seu nome/título quando falar</li>
+                    <li>✅ Destacar pontos-chave com text overlays</li>
+                    <li>✅ Zoom in em slides importantes</li>
+                    <li>✅ Música de fundo suave (opcional, baixo volume)</li>
+                    <li>✅ Legendas/closed captions (OBRIGATÓRIO para acessibilidade)</li>
+                    <li>❌ NÃO exagere em efeitos/transições (menos é mais)</li>
+                </ul>
+            </div>
+            
+            <div class="warning-box" style="margin-top: 25px;">
+                <strong>⚠️ Armadilhas Comuns a Evitar:</strong><br><br>
+                🚫 Gravar sem roteiro (resulta em vídeos longos e confusos)<br>
+                🚫 Aulas muito longas (máximo 60min, ideal 15-45min)<br>
+                🚫 Slides só com texto (boring!)<br>
+                🚫 Falar sem energia/entusiasmo<br>
+                🚫 Não testar áudio antes (erro #1 de iniciantes)<br>
+                🚫 Tentar fazer tudo perfeito na primeira gravação
+            </div>
+        </div>
+        
+        <!-- TAB 3: GERADORES DE MATERIAL -->
+        <div id="materiais" class="tab-content">
+            <h2 style="margin-bottom: 20px; color: #2d3748;">📄 Geradores de Material de Apoio</h2>
+            <p style="color: #718096; margin-bottom: 30px;">Use estes prompts com ChatGPT/Claude para criar materiais rapidamente:</p>
+            
+            <div class="material-card">
+                <div class="material-icon">📝</div>
+                <div class="material-title">Gerador de Glossário</div>
+                <div class="material-desc">
+                    Crie glossário de termos técnicos para cada módulo
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt1')">📋 Copiar Prompt</button>
+                <div id="prompt1" class="prompt-box" style="display:none;">
+Você é um especialista em Gestão Estratégica de Dados criando material didático para pós-graduação.
+
+TAREFA: Crie um glossário de 20-30 termos essenciais do módulo "[NOME DO MÓDULO]".
+
+FORMATO:
+- Termo (tradução em inglês se aplicável)
+- Definição clara e concisa (2-3 linhas)
+- Exemplo prático de uso no contexto corporativo
+- Relacionamento com outros termos do glossário quando relevante
+
+CRITÉRIOS:
+✅ Linguagem acessível mas precisa
+✅ Exemplos do mercado brasileiro quando possível
+✅ Evite jargões desnecessários
+✅ Organize alfabeticamente
+
+MÓDULO: [INSIRA O NOME DO MÓDULO AQUI]
+
+Exemplo de output esperado:
+
+**Data Steward**
+*Definição:* Profissional responsável pela qualidade, segurança e uso apropriado de dados em seu domínio específico (ex: dados de clientes, produtos, finanças).
+*Exemplo:* Na Magazine Luiza, cada vertical (marketplace, logística, financeiro) tem um Data Steward que define regras de qualidade e aprova mudanças em estruturas de dados.
+*Relacionado com:* Data Owner, Data Custodian, Governança de Dados
+                </div>
+            </div>
+            
+            <div class="material-card">
+                <div class="material-icon">📊</div>
+                <div class="material-title">Gerador de Exercícios Práticos</div>
+                <div class="material-desc">
+                    Crie exercícios auto-guiados para fixação de conceitos
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt2')">📋 Copiar Prompt</button>
+                <div id="prompt2" class="prompt-box" style="display:none;">
+Você é um designer instrucional criando exercícios para um curso de pós-graduação em Gestão Estratégica de Dados.
+
+TAREFA: Crie 3 exercícios práticos auto-guiados para o tópico "[TÓPICO ESPECÍFICO]".
+
+ESTRUTURA DE CADA EXERCÍCIO:
+1. **Título e Objetivo:** O que o aluno vai praticar
+2. **Contexto/Cenário:** Situação realista de uma empresa
+3. **Instruções Passo a Passo:** 5-8 passos claros
+4. **Entregável:** O que o aluno deve produzir
+5. **Critérios de Sucesso:** Como avaliar se fez bem (auto-avaliação)
+6. **Tempo Estimado:** Quanto tempo deve levar
+
+TIPOS DE EXERCÍCIO:
+- Exercício 1: Análise de caso real
+- Exercício 2: Aplicação de framework/ferramenta
+- Exercício 3: Criação de artefato (plano, dashboard mockup, etc)
+
+REQUISITOS:
+✅ Factível em 30-60 minutos por exercício
+✅ Relacionado com realidade do mercado brasileiro
+✅ Sem necessidade de softwares pagos
+✅ Autoguiado (não precisa de professor para corrigir)
+
+TÓPICO: [INSIRA O TÓPICO AQUI, ex: "OKRs para Dados"]
+                </div>
+            </div>
+            
+            <div class="material-card">
+                <div class="material-icon">🎨</div>
+                <div class="material-title">Gerador de Infográficos (Roteiro)</div>
+                <div class="material-desc">
+                    Crie roteiro/estrutura de infográfico visual para usar no Canva
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt3')">📋 Copiar Prompt</button>
+                <div id="prompt3" class="prompt-box" style="display:none;">
+Você é um designer instrucional especializado em comunicação visual para educação corporativa.
+
+TAREFA: Crie a estrutura/roteiro de um infográfico sobre "[TEMA]" que será produzido no Canva.
+
+OUTPUT ESPERADO:
+1. **Título Principal:** Chamativo e claro
+2. **Subtítulo:** Complementa o título
+3. **Estrutura Visual:** Descreva seções/blocos (3-5 seções)
+4. **Conteúdo de Cada Seção:**
+   - Título da seção
+   - Texto-chave (bullet points ou frase curta)
+   - Tipo de visual sugerido (ícone, gráfico, ilustração, fluxo, etc)
+   - Cor/estilo sugerido
+5. **Call-to-Action:** O que o aluno deve fazer depois
+6. **Rodapé:** Fonte, créditos, versão
+
+CRITÉRIOS:
+✅ Conteúdo denso mas visual (mais imagem, menos texto)
+✅ Fluxo lógico de leitura (esquerda→direita, cima→baixo)
+✅ Paleta de 3-4 cores no máximo
+✅ Deve caber em 1 página A4 ou formato social (1080x1080)
+
+TEMA: [INSIRA O TEMA, ex: "Roda DAMA Explicada"]
+
+Depois de gerar este roteiro, você pode pedir: "Agora me dê sugestões de templates do Canva que funcionariam bem para este infográfico"
+                </div>
+            </div>
+            
+            <div class="material-card">
+                <div class="material-icon">📋</div>
+                <div class="material-title">Gerador de Checklists</div>
+                <div class="material-desc">
+                    Crie checklists práticos e acionáveis
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt4')">📋 Copiar Prompt</button>
+                <div id="prompt4" class="prompt-box" style="display:none;">
+Você é um especialista em gestão de dados criando ferramentas práticas para profissionais.
+
+TAREFA: Crie um checklist completo e acionável sobre "[TEMA]".
+
+ESTRUTURA:
+1. **Título:** "[TEMA] - Checklist Definitivo"
+2. **Introdução:** Para quem é este checklist e quando usar (2-3 linhas)
+3. **Categorias:** Divida em 4-6 categorias lógicas
+4. **Items por Categoria:** 5-10 itens cada
+5. **Formato de Item:** [ ] Ação específica e verificável
+6. **Notas/Dicas:** Boxes com dicas extras após cada categoria
+
+CRITÉRIOS PARA CADA ITEM:
+✅ Começa com verbo de ação
+✅ É específico e mensurável
+✅ Pode ser marcado como "feito" claramente
+✅ Ordem lógica de execução
+
+EXEMPLO DE BOM ITEM:
+✅ [ ] Documente o esquema de dados em Confluence incluindo: tipos de dados, constraints, e owner
+❌ [ ] Fazer documentação (muito vago)
+
+TEMA: [INSIRA O TEMA, ex: "Implementação de Data Quality Checks"]
+
+FORMATO DE OUTPUT: Markdown com checkboxes [ ]
+                </div>
+            </div>
+            
+            <div class="material-card">
+                <div class="material-icon">📚</div>
+                <div class="material-title">Gerador de Estudos de Caso</div>
+                <div class="material-desc">
+                    Crie casos reais ou realistas para análise
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt5')">📋 Copiar Prompt</button>
+                <div id="prompt5" class="prompt-box" style="display:none;">
+Você é um professor de pós-graduação criando estudos de caso para análise crítica.
+
+TAREFA: Crie um estudo de caso realista sobre "[TEMA/SITUAÇÃO]".
+
+ESTRUTURA DO CASO:
+1. **Título Provocativo**
+2. **Contexto da Empresa:**
+   - Setor, tamanho, localização
+   - Situação competitiva
+   - Maturidade em dados (atual)
+3. **Problema/Desafio:**
+   - Descrição detalhada do problema
+   - Stakeholders envolvidos
+   - Impactos no negócio (quantifique quando possível)
+   - Tentativas anteriores de resolver (o que não funcionou)
+4. **Dados Disponíveis:**
+   - Informações relevantes para análise
+   - Constraints (orçamento, tempo, pessoas)
+   - Dados faltando (que o aluno precisaria buscar)
+5. **Perguntas para Análise:**
+   - 3-5 perguntas abertas que não têm resposta única
+   - Perguntas que exigem trade-offs
+   - Pelo menos 1 pergunta ética/de stakeholder management
+
+CRITÉRIOS:
+✅ Baseado em situações reais do mercado brasileiro
+✅ Complexidade suficiente para 45-60min de análise
+✅ Sem resposta óbvia (várias abordagens válidas)
+✅ Força aplicação de conceitos da aula
+
+TEMA: [INSIRA TEMA/SITUAÇÃO, ex: "Empresa de varejo implementando governança de dados mas enfrentando resistência"]
+
+Inclua ao final: **Notas para o Professor** com insights e possíveis caminhos de solução
+                </div>
+            </div>
+            
+            <div class="material-card">
+                <div class="material-icon">📈</div>
+                <div class="material-title">Gerador de Templates Excel/Google Sheets</div>
+                <div class="material-desc">
+                    Especificação de planilhas interativas
+                </div>
+                <button class="copy-button" onclick="copyPrompt('prompt6')">📋 Copiar Prompt</button>
+                <div id="prompt6" class="prompt-box" style="display:none;">
+Você é um especialista em criar ferramentas práticas para gestão de dados.
+
+TAREFA: Crie a especificação completa de um template Excel/Google Sheets sobre "[FERRAMENTA/PROPÓSITO]".
+
+ESTRUTURA:
+1. **Nome da Planilha**
+2. **Objetivo:** O que o usuário vai conseguir fazer
+3. **Abas Necessárias:** Liste cada aba e sua função
+4. **Por Aba, especifique:**
+   - Nome da aba
+   - Colunas (nome, tipo de dado, validação, fórmulas)
+   - Formatação condicional (quando aplicável)
+   - Tabelas dinâmicas ou gráficos
+   - Instruções de preenchimento
+5. **Fórmulas-Chave:** Explique as principais fórmulas
+6. **Exemplo de Dados:** 3-5 linhas de exemplo
+7. **Como Usar:** Instruções passo a passo
+
+REQUISITOS:
+✅ Deve funcionar em Excel E Google Sheets
+✅ Sem macros ou VBA (só fórmulas nativas)
+✅ Visual limpo e profissional
+✅ Auto-explicativo (com headers claros)
+
+FERRAMENTA: [INSIRA FERRAMENTA, ex: "Calculadora de ROI de Projetos de Dados"]
+
+FORMATO DE OUTPUT:
+- Especificação em markdown
+- Se possível, exemplos de fórmulas em código
+- Screenshot mockup (descrição textual) de como deve ficar
+
+Após gerar isto, posso te ajudar a criar as fórmulas específicas para cada coluna.
+                </div>
+            </div>
+            
+            <div class="tip-box" style="margin-top: 30px;">
+                <strong>💡 Como Usar Estes Prompts:</strong><br><br>
+                1. Clique em "Copiar Prompt"<br>
+                2. Cole no ChatGPT/Claude<br>
+                3. Substitua as partes em [COLCHETES] pelo seu conteúdo<br>
+                4. Refine o output conforme necessário<br>
+                5. Exporte para PDF ou formato desejado
+            </div>
+        </div>
+        
+        <!-- TAB 4: FERRAMENTAS & IA -->
+        <div id="ferramentas" class="tab-content">
+            <h2 style="margin-bottom: 20px; color: #2d3748;">🛠️ Stack de Ferramentas Recomendado</h2>
+            
+            <div class="section-box">
+                <div class="section-title">🎥 Gravação e Edição</div>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">📹</div>
+                            <div class="tool-name">OBS Studio</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito | Open Source</strong><br>
+                            Gravação de tela + webcam com qualidade profissional. Suporta múltiplas cenas, overlays, e streaming.
+                        </div>
+                        <a href="https://obsproject.com" class="tool-link" target="_blank">→ obsproject.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">✂️</div>
+                            <div class="tool-name">DaVinci Resolve</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito (versão completa)</strong><br>
+                            Editor profissional usado em Hollywood. Curva de aprendizado média, resultados excelentes.
+                        </div>
+                        <a href="https://www.blackmagicdesign.com/products/davinciresolve" class="tool-link" target="_blank">→ blackmagicdesign.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎬</div>
+                            <div class="tool-name">CapCut Desktop</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito | Fácil</strong><br>
+                            Editor rápido e intuitivo. Ótimo para quem está começando. Auto-legendas com IA.
+                        </div>
+                        <a href="https://www.capcut.com" class="tool-link" target="_blank">→ capcut.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎙️</div>
+                            <div class="tool-name">Audacity</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito | Edição de Áudio</strong><br>
+                            Para limpar ruído, normalizar volume, e editar áudio separadamente se necessário.
+                        </div>
+                        <a href="https://www.audacityteam.org" class="tool-link" target="_blank">→ audacityteam.org</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">🎨 Criação de Slides e Visuais</div>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">✨</div>
+                            <div class="tool-name">Canva</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Freemium</strong><br>
+                            Templates profissionais prontos. Ideal para quem não é designer. Versão gratuita é suficiente.
+                        </div>
+                        <a href="https://www.canva.com" class="tool-link" target="_blank">→ canva.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🤖</div>
+                            <div class="tool-name">Gamma App</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Freemium | IA</strong><br>
+                            Cria apresentações completas a partir de prompts. Economiza MUITO tempo. Design moderno.
+                        </div>
+                        <a href="https://gamma.app" class="tool-link" target="_blank">→ gamma.app</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">📊</div>
+                            <div class="tool-name">Beautiful.ai</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Pago (~$12/mês)</strong><br>
+                            IA que ajusta layout automaticamente. Resultados profissionais sem esforço.
+                        </div>
+                        <a href="https://www.beautiful.ai" class="tool-link" target="_blank">→ beautiful.ai</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎯</div>
+                            <div class="tool-name">Excalidraw</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito</strong><br>
+                            Para diagramas hand-drawn style. Ótimo para explicar conceitos de forma visual e friendly.
+                        </div>
+                        <a href="https://excalidraw.com" class="tool-link" target="_blank">→ excalidraw.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">🤖 IA para Produção de Conteúdo</div>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">💬</div>
+                            <div class="tool-name">ChatGPT / Claude</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Uso Principal:</strong> Roteiros, glossários, exercícios, estudos de caso. Use os prompts da aba "Geradores".
+                        </div>
+                        <a href="https://chat.openai.com" class="tool-link" target="_blank">→ ChatGPT</a> | 
+                        <a href="https://claude.ai" class="tool-link" target="_blank">Claude</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎨</div>
+                            <div class="tool-name">DALL-E / Midjourney</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Uso Principal:</strong> Criar imagens custom para slides quando stock photos não servem.
+                        </div>
+                        <a href="https://openai.com/dall-e" class="tool-link" target="_blank">→ DALL-E</a> | 
+                        <a href="https://midjourney.com" class="tool-link" target="_blank">Midjourney</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">📝</div>
+                            <div class="tool-name">Descript</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Pago (~$24/mês)</strong><br>
+                            Edição de vídeo baseada em transcrição. Remove "uhms", adiciona legendas automaticamente.
+                        </div>
+                        <a href="https://www.descript.com" class="tool-link" target="_blank">→ descript.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎤</div>
+                            <div class="tool-name">ElevenLabs</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Freemium</strong><br>
+                            Voz sintética realista. Útil para narrar materiais complementares ou demos.
+                        </div>
+                        <a href="https://elevenlabs.io" class="tool-link" target="_blank">→ elevenlabs.io</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-box" style="margin-top: 25px;">
+                <div class="section-title">🌐 LMS / Hospedagem do Curso</div>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎓</div>
+                            <div class="tool-name">Moodle</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Open Source</strong><br>
+                            Padrão em universidades. Completo mas interface datada. Requer servidor próprio ou hosting.
+                        </div>
+                        <a href="https://moodle.org" class="tool-link" target="_blank">→ moodle.org</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">📚</div>
+                            <div class="tool-name">Google Classroom</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Gratuito</strong><br>
+                            Simples e funcional. Bom para turmas pequenas. Integração nativa com G Suite.
+                        </div>
+                        <a href="https://classroom.google.com" class="tool-link" target="_blank">→ classroom.google.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🚀</div>
+                            <div class="tool-name">Teachable</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Pago ($39-$119/mês)</strong><br>
+                            Interface linda, fácil de usar. Aceita pagamentos. Ideal para cursos independentes.
+                        </div>
+                        <a href="https://teachable.com" class="tool-link" target="_blank">→ teachable.com</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-icon">🎯</div>
+                            <div class="tool-name">Canvas LMS</div>
+                        </div>
+                        <div class="tool-desc">
+                            <strong>Pago (enterprise)</strong><br>
+                            Moderno, analytics robustos. Usado por universidades e empresas grandes.
+                        </div>
+                        <a href="https://www.instructure.com/canvas" class="tool-link" target="_blank">→ instructure.com/canvas</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warning-box" style="margin-top: 30px;">
+                <strong>⚠️ Cuidado com Overengineering:</strong><br><br>
+                Você NÃO precisa das ferramentas mais caras para começar. Um setup básico eficaz:<br><br>
+                ✅ OBS Studio (gravação)<br>
+                ✅ CapCut (edição)<br>
+                ✅ Canva (slides)<br>
+                ✅ ChatGPT (materiais)<br>
+                ✅ Google Classroom ou Moodle (hospedagem)<br><br>
+                <strong>Total:</strong> R$ 0-50/mês
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        function openTab(tabName) {
+            const contents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            
+            const buttons = document.getElementsByClassName('tab-button');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        function toggleAccordion(element) {
+            element.classList.toggle('active');
+        }
+        
+        function copyPrompt(promptId) {
+            const promptBox = document.getElementById(promptId);
+            
+            // Toggle visibility
+            if (promptBox.style.display === 'none' || promptBox.style.display === '') {
+                promptBox.style.display = 'block';
+            } else {
+                promptBox.style.display = 'none';
+                return;
+            }
+            
+            // Copy to clipboard
+            const text = promptBox.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = '✅ Copiado!';
+                button.style.background = '#48bb78';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
