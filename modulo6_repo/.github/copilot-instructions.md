@@ -61,7 +61,7 @@ Ao final desta aula, o aluno será capaz de:
 ### Dados Disponíveis
 | Recurso | Descrição |
 |---------|-----------|
-| | |
+| [Nome do recurso] | [Descrição detalhada] |
 
 ### Restrições do Projeto
 - **Prazo:** 
@@ -111,7 +111,7 @@ Ao final desta aula, o aluno será capaz de:
 
 ### Code
 - Inline code with single backticks: `code`
-- Code blocks with triple backticks and language: ```python
+- Code blocks with triple backticks and language specification
 
 ### Tables
 - Always align pipes
