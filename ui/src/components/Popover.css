@@ -1,0 +1,91 @@
+.popover-content {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 260px;
+  background-color: white;
+  box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0 10px 20px -15px rgba(22, 23, 24, 0.2);
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.popover-content:focus {
+  outline: none;
+}
+
+.popover-content[data-state="open"][data-side="top"] {
+  animation-name: slideDownAndFade;
+}
+
+.popover-content[data-state="open"][data-side="right"] {
+  animation-name: slideLeftAndFade;
+}
+
+.popover-content[data-state="open"][data-side="bottom"] {
+  animation-name: slideUpAndFade;
+}
+
+.popover-content[data-state="open"][data-side="left"] {
+  animation-name: slideRightAndFade;
+}
+
+.popover-arrow {
+  fill: white;
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .popover-content {
+    background-color: #1e293b;
+    color: #f1f5f9;
+  }
+
+  .popover-arrow {
+    fill: #1e293b;
+  }
+}
