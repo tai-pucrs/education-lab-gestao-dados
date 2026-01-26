@@ -1,11 +1,11 @@
 # ✅ Resumo de Implementação - Issues do Módulo 6
 
 **Data:** 2026-01-26  
-**Branch:** branch atual do PR  
+**Branch:** `copilot/relate-issues-to-project`  
 **Status:** 5 de 28 issues completas (17.9%)
 
 > **📌 Ação Necessária**: As 23 issues pendentes precisam ser criadas no GitHub.  
-> ⚠️ **Aviso**: o script `./scripts/create-issues.sh` está **parcialmente implementado** (atualmente cria apenas 2 das 23 issues). Use-o apenas como base/exemplo e **confira manualmente** as issues criadas ou, preferencialmente, crie todas as issues manualmente seguindo o documento [`ISSUES.md`](./ISSUES.md).
+> Use o script `./scripts/create-issues.sh` ou crie manualmente seguindo o documento [`ISSUES.md`](./ISSUES.md).
 
 ---
 
