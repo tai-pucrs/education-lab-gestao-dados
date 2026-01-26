@@ -175,7 +175,7 @@ Adoramos contribuições! Aqui estão algumas formas de ajudar:
 - Corrigir erros ou imprecisões
 - Adicionar novos cases de empresas
 - Expandir o glossário
-- Traduzir terminologia técnica
+- Padronizar/revisar terminologia (sem traduzir termos consagrados em inglês)
 
 ### 🎨 Melhorias de UI/UX
 
