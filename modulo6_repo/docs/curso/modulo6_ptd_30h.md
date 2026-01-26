@@ -862,7 +862,7 @@ Ao final deste mÃ³dulo, o estudante serÃ¡ capaz de **planejar, executar e li
 
 12. **DAMA INTERNATIONAL.**  
     *DAMA-DMBOK2: Data Management Body of Knowledge* (2017)  
-    DisponÃ­vel em: https://www.dama.org
+    Disponível em: <https://www.dama.org>
 
 13. **McKinsey & Company.**  
     *Ten Red Flags Signaling Your Analytics Program Will Fail* (2018)  
@@ -871,17 +871,17 @@ Ao final deste mÃ³dulo, o estudante serÃ¡ capaz de **planejar, executar e li
 ### 7.4 Recursos Online
 
 14. **Data Hackers** - Comunidade brasileira de dados  
-    https://datahackers.com.br
+    <https://datahackers.com.br>
 
-15. **dbt (data build tool) - DocumentaÃ§Ã£o oficial**  
-    https://docs.getdbt.com
+15. **dbt (data build tool) - Documentação oficial**  
+    <https://docs.getdbt.com>
 
 16. **MLOps Community** - Boas prÃ¡ticas de MLOps  
     https://mlops.community  
     *(Alternativa: https://github.com/visenger/awesome-mlops)*
 
 17. **The Data Engineering Podcast**  
-    https://www.dataengineeringpodcast.com
+    <https://www.dataengineeringpodcast.com>
 
 ---
 
