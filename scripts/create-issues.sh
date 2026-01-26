@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Script para criar todas as issues pendentes do Módulo 6
 # Uso: ./scripts/create-issues.sh
