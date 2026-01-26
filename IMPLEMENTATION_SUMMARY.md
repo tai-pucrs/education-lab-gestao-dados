@@ -1,8 +1,11 @@
 # ✅ Resumo de Implementação - Issues do Módulo 6
 
 **Data:** 2026-01-26  
-**Branch:** `copilot/implement-ci-cd-validation`  
+**Branch:** `copilot/relate-issues-to-project`  
 **Status:** 5 de 28 issues completas (17.9%)
+
+> **📌 Ação Necessária**: As 23 issues pendentes precisam ser criadas no GitHub.  
+> Use o script `./scripts/create-issues.sh` ou crie manualmente seguindo o documento [`ISSUES.md`](./ISSUES.md).
 
 ---
 
@@ -17,6 +20,7 @@ Implementação bem-sucedida de **todas as 4 issues P0** (prioridade máxima) e 
 ### P0 - IMEDIATO (100% Completo)
 
 #### Issue #1: CI/CD para Validação de Conteúdo ✅
+**GitHub Issue:** [Criar issue no GitHub](#) <!-- TODO: Adicionar link após criação -->  
 **Arquivos criados:**
 - `.github/workflows/validate-content.yml` (workflow principal)
 - `.github/workflows/markdown-link-check.config.json` (configuração)
@@ -38,6 +42,7 @@ Implementação bem-sucedida de **todas as 4 issues P0** (prioridade máxima) e 
 ---
 
 #### Issue #2: Versionamento Semântico ✅
+**GitHub Issue:** [Criar issue no GitHub](#) <!-- TODO: Adicionar link após criação -->  
 **Arquivos criados:**
 - `CHANGELOG.md` (histórico de versões)
 
@@ -50,6 +55,7 @@ Implementação bem-sucedida de **todas as 4 issues P0** (prioridade máxima) e 
 ---
 
 #### Issue #3: Templates de Issue ✅
+**GitHub Issue:** [Criar issue no GitHub](#) <!-- TODO: Adicionar link após criação -->  
 **Arquivos criados:**
 - `.github/ISSUE_TEMPLATE/config.yml` (configuração geral)
 - `.github/ISSUE_TEMPLATE/aula-nova.yml` (Nova Aula/Vídeo)
@@ -68,6 +74,7 @@ Implementação bem-sucedida de **todas as 4 issues P0** (prioridade máxima) e 
 ---
 
 #### Issue #16: Modo Escuro Consistente ✅
+**GitHub Issue:** [Criar issue no GitHub](#) <!-- TODO: Adicionar link após criação -->  
 **Arquivos criados:**
 - `modulo6_repo/assets/js/dark-mode.js` (sistema de dark mode)
 
@@ -96,6 +103,7 @@ Implementação bem-sucedida de **todas as 4 issues P0** (prioridade máxima) e 
 ### P1 - CURTO PRAZO (12.5% Completo)
 
 #### Issue #7: Expandir Simuladores de IA ✅
+**GitHub Issue:** [Criar issue no GitHub](#) <!-- TODO: Adicionar link após criação -->  
 **Arquivos modificados:**
 - `modulo6_repo/docs/recursos/modulo6_simuladores_ia.md`
 
@@ -305,6 +313,122 @@ Conteúdo (simuladores):             15 linhas (1%)
 - [ ] Testes automatizados (Issue #19)
 - [ ] Testes de acessibilidade (Issue #17)
 - [ ] Testes de responsividade (Issue #18)
+
+---
+
+---
+
+## 📋 Issues Pendentes (23 Issues)
+
+As seguintes issues precisam ser criadas no GitHub. Consulte o arquivo [`ISSUES.md`](./ISSUES.md) para descrições completas.
+
+### Como Criar as Issues
+
+#### Opção 1: Script Automático (Recomendado)
+```bash
+# Executar o script que cria todas as issues automaticamente
+chmod +x scripts/create-issues.sh
+./scripts/create-issues.sh
+```
+
+#### Opção 2: Manual via GitHub CLI
+```bash
+# Para cada issue, use:
+gh issue create --repo tai-pucrs/education-lab-gestao-dados \
+  --title "Título da Issue" \
+  --label "label1,label2,priority" \
+  --body "Conteúdo da issue em Markdown"
+```
+
+#### Opção 3: Manual via Interface Web
+1. Acesse: https://github.com/tai-pucrs/education-lab-gestao-dados/issues/new/choose
+2. Consulte o arquivo [`MANUAL_ISSUE_CREATION.md`](./MANUAL_ISSUE_CREATION.md) com conteúdo completo para copiar/colar
+3. Preencha título, corpo e labels para cada issue
+
+---
+
+### 📊 P1 - CURTO PRAZO (7 Issues Pendentes)
+
+| # | Título | Labels | Status |
+|---|--------|--------|--------|
+| #4 | Adicionar sincronização em nuvem ao Dashboard do Aluno | `enhancement`, `student-experience`, `P1` | 📝 Criar no GitHub |
+| #5 | Dashboard produção - adicionar calendário visual | `enhancement`, `production`, `P1` | 📝 Criar no GitHub |
+| #6 | Framework - adicionar busca/filtro avançado | `enhancement`, `search`, `P1` | 📝 Criar no GitHub |
+| #8 | Rubrica de avaliação para simuladores | `content`, `assessment`, `P1` | 📝 Criar no GitHub |
+| #23 | Hospedar site estático via GitHub Pages | `deployment`, `distribution`, `P1` | 📝 Criar no GitHub |
+| #24 | Criar pacote NPM/PyPI para templates | `distribution`, `tools`, `P1` | 📝 Criar no GitHub |
+| #25 | Adicionar workflow de release automático | `automation`, `ci-cd`, `P1` | 📝 Criar no GitHub |
+
+---
+
+### 📚 P2 - MÉDIO PRAZO (11 Issues Pendentes)
+
+| # | Título | Labels | Status |
+|---|--------|--------|--------|
+| #9 | Atualizar glossário com termos de IA Generativa | `content`, `glossary`, `P2` | 📝 Criar no GitHub |
+| #10 | Criar seção de anti-patterns em gestão | `content`, `best-practices`, `P2` | 📝 Criar no GitHub |
+| #11 | Adicionar cases PBL de nível 'difícil' | `content`, `pbl`, `advanced`, `P2` | 📝 Criar no GitHub |
+| #12 | Criar diagramas interativos com Mermaid Live | `content`, `diagrams`, `interactive`, `P2` | 📝 Criar no GitHub |
+| #13 | Criar infográficos visuais (assets PNG/SVG) | `design`, `visual-assets`, `P2` | 📝 Criar no GitHub |
+| #17 | Melhorar acessibilidade para leitores de tela | `a11y`, `accessibility`, `P2` | 📝 Criar no GitHub |
+| #18 | Implementar responsividade mobile avançada | `ux`, `mobile`, `responsive`, `P2` | 📝 Criar no GitHub |
+| #19 | Criar testes automatizados para dashboards | `testing`, `quality`, `P2` | 📝 Criar no GitHub |
+| #20 | Adicionar validação de português com LanguageTool | `content`, `quality`, `language`, `P2` | 📝 Criar no GitHub |
+| #26 | Adicionar quiz interativo ao final de cada bloco | `assessment`, `interactive`, `gamification`, `P2` | 📝 Criar no GitHub |
+| #27 | Criar rotina de atualização de ferramentas | `maintenance`, `automation`, `P2` | 📝 Criar no GitHub |
+
+---
+
+### 🚀 P3 - LONGO PRAZO (5 Issues Pendentes - 6 listadas, 1 duplicada)
+
+| # | Título | Labels | Status |
+|---|--------|--------|--------|
+| #14 | Exportar conteúdo para LMS (SCORM/xAPI) | `integration`, `lms`, `P3` | 📝 Criar no GitHub |
+| #15 | Criar API REST para consulta de conteúdo | `feature`, `api`, `backend`, `P3` | 📝 Criar no GitHub |
+| #21 | Criar guia de onboarding para contribuidores | `documentation`, `community`, `P3` | 📝 Criar no GitHub |
+| #22 | Adicionar ADR (Architecture Decision Records) | `documentation`, `architecture`, `P3` | 📝 Criar no GitHub |
+| #25 | ~~Implementar sistema de conquistas elaborado~~ | `gamification`, `engagement`, `P3` | ⚠️ **DUPLICADA** - Issue #25 já existe em P1 |
+| #28 | Implementar analytics de uso (opcional, anônimo) | `analytics`, `insights`, `privacy`, `P3` | 📝 Criar no GitHub |
+
+**Nota**: A Issue #25 está duplicada no `ISSUES.md` (aparece em P1 como "release automático" e em P3 como "conquistas"). A correta é a de P1.
+
+---
+
+## 🔗 Relacionamento com GitHub Projects
+
+### Criar ou Vincular ao Projeto
+
+1. **Acessar Projects**: https://github.com/tai-pucrs/education-lab-gestao-dados/projects
+
+2. **Criar novo Project** (se não existir):
+   - Nome: "Módulo 6 - Roadmap de Evolução"
+   - Descrição: "Planejamento e acompanhamento das 28 issues do Módulo 6"
+   - Template: "Board" (Kanban)
+
+3. **Configurar Colunas**:
+   - 📝 Backlog (23 issues pendentes)
+   - 🚀 Em Progresso
+   - 👀 Em Revisão
+   - ✅ Concluído (5 issues completas)
+
+4. **Adicionar Issues ao Project**:
+   ```bash
+   # Via GitHub CLI
+   gh project item-add <PROJECT_NUMBER> --owner tai-pucrs --url <ISSUE_URL>
+   ```
+
+5. **Configurar Filtros e Views**:
+   - View "Por Prioridade" (P0, P1, P2, P3)
+   - View "Por Categoria" (content, enhancement, automation, etc.)
+   - View "Por Status" (backlog, in-progress, done)
+
+### Automação Sugerida
+
+Adicionar automações no GitHub Projects:
+- Issue criada → Move para "Backlog"
+- Issue com assignee → Move para "Em Progresso"
+- Pull Request linked → Move para "Em Revisão"
+- Issue fechada → Move para "Concluído"
 
 ---
 
