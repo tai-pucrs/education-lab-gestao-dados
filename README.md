@@ -14,7 +14,7 @@
 **🚀 Em breve:** Plataforma navegável via GitHub Pages  
 📍 URL futura: `https://tai-pucrs.github.io/education-lab-gestao-dados/`
 
-[📋 Acompanhe a Issue #23 - Hospedar site estático via GitHub Pages](https://github.com/tai-pucrs/education-lab-gestao-dados/issues)
+[📋 Veja detalhes da Issue #23 no ISSUES.md](./ISSUES.md) - Hospedar site estático via GitHub Pages
 
 ### 📦 Recursos Interativos Disponíveis
 
