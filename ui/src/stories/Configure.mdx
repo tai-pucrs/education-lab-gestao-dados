@@ -33,50 +33,50 @@ export const RightArrow = () => <svg
   />
 </svg>
 
-<Meta title="Configure your project" />
+<Meta title="Configure seu projeto" />
 
 <div className="sb-container">
-  <h1 className='sb-section-title'>
-    Configure your project
+  <div className='sb-section-title'>
+    # Configure seu projeto
 
-    Because Storybook works separately from your app, you'll need to configure it for your specific stack and setup. Below, explore guides for configuring Storybook with popular frameworks and tools. If you get stuck, learn how you can ask for help from our community.
-  </h1>
+    Como o Storybook funciona separadamente da sua aplicação, você precisa configurá-lo para o seu stack e setup específicos. Abaixo, explore os guias para configurar o Storybook com frameworks e ferramentas populares. Se ficar em dúvida em algum passo, veja como pedir ajuda para a nossa comunidade.
+  </div>
   <div className="sb-section">
     <div className="sb-section-item">
       <img
         src={Styling}
-        alt="A wall of logos representing different styling technologies"
+        alt="Uma parede de logotipos representando diferentes tecnologias de styling"
       />
-      <h4 className="sb-section-item-heading">Add styling and CSS</h4>
-      <p className="sb-section-item-paragraph">Like with web applications, there are many ways to include CSS within Storybook. Learn more about setting up styling within Storybook.</p>
+      <h4 className="sb-section-item-heading">Adicionar styling e CSS</h4>
+      <p className="sb-section-item-paragraph">Assim como em aplicações web, existem várias maneiras de incluir CSS dentro do Storybook. Saiba mais sobre como configurar styling no Storybook.</p>
       <a
         href="https://storybook.js.org/docs/configure/styling-and-css/?renderer={{renderer}}&ref=configure"
         target="_blank"
-      >Learn more<RightArrow /></a>
+      >Saiba mais<RightArrow /></a>
     </div>
     <div className="sb-section-item">
       <img
         src={Context}
-        alt="An abstraction representing the composition of data for a component"
+        alt="Uma abstração representando a composição de dados para um componente"
       />
-      <h4 className="sb-section-item-heading">Provide context and mocking</h4>
-      <p className="sb-section-item-paragraph">Often when a story doesn't render, it's because your component is expecting a specific environment or context (like a theme provider) to be available.</p>
+      <h4 className="sb-section-item-heading">Fornecer contexto e mocking</h4>
+      <p className="sb-section-item-paragraph">Com frequência, quando uma story não renderiza é porque o componente espera que um ambiente ou contexto específico (como um theme provider) esteja disponível.</p>
       <a
         href="https://storybook.js.org/docs/writing-stories/decorators/?renderer={{renderer}}&ref=configure#context-for-mocking"
         target="_blank"
-      >Learn more<RightArrow /></a>
+      >Saiba mais<RightArrow /></a>
     </div>
     <div className="sb-section-item">
-      <img src={Assets} alt="A representation of typography and image assets" />
+      <img src={Assets} alt="Uma representação de tipografia e assets de imagem" />
       <div>
-        <h4 className="sb-section-item-heading">Load assets and resources</h4>
-        <p className="sb-section-item-paragraph">To link static files (like fonts) to your projects and stories, use the
-        `staticDirs` configuration option to specify folders to load when
-        starting Storybook.</p>
+        <h4 className="sb-section-item-heading">Carregar assets e recursos</h4>
+        <p className="sb-section-item-paragraph">Para vincular arquivos estáticos (como fontes) aos seus projetos e stories, use a opção de configuração
+        `staticDirs` para especificar as pastas que devem ser carregadas ao
+        iniciar o Storybook.</p>
         <a
           href="https://storybook.js.org/docs/configure/images-and-assets/?renderer={{renderer}}&ref=configure"
           target="_blank"
-        >Learn more<RightArrow /></a>
+        >Saiba mais<RightArrow /></a>
       </div>
     </div>
   </div>
