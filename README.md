@@ -15,7 +15,7 @@
 **🚀 Em breve:** Plataforma navegável via GitHub Pages  
 📍 URL futura: `https://tai-pucrs.github.io/education-lab-gestao-dados/`
 
-[📋 Acompanhe a Issue #23 - Hospedar site estático via GitHub Pages](./ISSUES.md#-issue-23-hospedar-site-estático-via-github-pages)
+[📋 Acompanhe a Issue #23 - Hospedar site estático via GitHub Pages](https://github.com/tai-pucrs/education-lab-gestao-dados/issues)
 
 ### 📦 Recursos Interativos Disponíveis
 
@@ -157,11 +157,11 @@ Para o conteúdo completo do módulo, acesse o diretório [`modulo6_repo/`](./mo
 
 ### 🔥 Próximas Prioridades (P1 - 1-2 meses)
 
-- 📍 **Issue #23:** [Hospedar site estático via GitHub Pages](./ISSUES.md#-issue-23-hospedar-site-estático-via-github-pages)
-- 🔄 **Issue #4:** [Sincronização em nuvem do Dashboard do Aluno](./ISSUES.md#-issue-4-adicionar-sincronização-em-nuvem-ao-dashboard-do-aluno)
-- 📊 **Issue #5:** [Calendário visual no Dashboard de Produção](./ISSUES.md#-issue-5-dashboard-produção---adicionar-calendário-visual)
-- 🔍 **Issue #6:** [Busca/filtro avançado no Framework](./ISSUES.md#-issue-6-framework---adicionar-buscafiltro-avançado)
-- 📝 **Issue #8:** [Rubrica de avaliação para simuladores](./ISSUES.md#-issue-8-rubrica-de-avaliação-para-simuladores)
+- 📍 **Issue #23:** Hospedar site estático via GitHub Pages
+- 🔄 **Issue #4:** Sincronização em nuvem do Dashboard do Aluno
+- 📊 **Issue #5:** Calendário visual no Dashboard de Produção
+- 🔍 **Issue #6:** Busca/filtro avançado no Framework
+- 📝 **Issue #8:** Rubrica de avaliação para simuladores
 
 **📋 [Ver todas as 28 issues no ISSUES.md](./ISSUES.md)**
 
