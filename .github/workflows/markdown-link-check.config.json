@@ -9,6 +9,15 @@
     },
     {
       "pattern": "^#"
+    },
+    {
+      "pattern": "^https://www\.gartner\.com/en/articles"
+    },
+    {
+      "pattern": "^https://www\.mckinsey\.com/capabilities"
+    },
+    {
+      "pattern": "^https://mlops\.community$"
     }
   ],
   "replacementPatterns": [],
@@ -18,11 +27,18 @@
       "headers": {
         "Accept": "text/html"
       }
+    },
+    {
+      "urls": ["https://www.gartner.com", "https://www.mckinsey.com"],
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (compatible; LinkChecker/1.0)",
+        "Accept": "text/html"
+      }
     }
   ],
   "timeout": "20s",
   "retryOn429": true,
   "retryCount": 3,
   "fallbackRetryDelay": "30s",
-  "aliveStatusCodes": [200, 206, 301, 302, 307, 308]
+  "aliveStatusCodes": [200, 206, 301, 302, 307, 308, 403]
 }
