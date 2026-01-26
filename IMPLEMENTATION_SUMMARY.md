@@ -379,7 +379,7 @@ gh issue create --repo tai-pucrs/education-lab-gestao-dados \
 
 ---
 
-### 🚀 P3 - LONGO PRAZO (6 Issues Pendentes - 1 duplicada)
+### 🚀 P3 - LONGO PRAZO (5 Issues Pendentes - 6 listadas, 1 duplicada)
 
 | # | Título | Labels | Status |
 |---|--------|--------|--------|
