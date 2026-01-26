@@ -85,7 +85,7 @@ gh auth login
 
 **Erro de permissão no repositório**:
 - Verificar se você tem permissão de escrita no repositório
-- Contactar administrador do repositório
+- Contatar administrador do repositório
 
 **Rate limit atingido**:
 - Aguardar 1 hora
