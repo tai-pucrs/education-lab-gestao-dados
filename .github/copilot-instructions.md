@@ -193,7 +193,7 @@ Ao final desta aula, o aluno será capaz de:
     <p class="card-description"></p>
   </div>
   <div class="card-footer">
-    <button class="btn btn-primary" onclick="">
+    <button type="button" class="btn btn-primary" onclick="">
       Ação
     </button>
   </div>
