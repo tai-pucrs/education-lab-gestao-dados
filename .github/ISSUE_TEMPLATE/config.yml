@@ -1,0 +1,9 @@
+name: 📦 Issue Template Configuration
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussões
+    url: https://github.com/tai-pucrs/education-lab-gestao-dados/discussions
+    about: Para perguntas gerais e discussões sobre o conteúdo
+  - name: 📚 Wiki
+    url: https://github.com/tai-pucrs/education-lab-gestao-dados/wiki
+    about: Documentação completa e guias de contribuição
