@@ -1,7 +1,7 @@
 # ✅ Resumo de Implementação - Issues do Módulo 6
 
 **Data:** 2026-01-26  
-**Branch:** `copilot/relate-issues-to-project`  
+**Branch:** branch atual do PR  
 **Status:** 5 de 28 issues completas (17.9%)
 
 > **📌 Ação Necessária**: As 23 issues pendentes precisam ser criadas no GitHub.  
