@@ -342,8 +342,8 @@ gh issue create --repo tai-pucrs/education-lab-gestao-dados \
 
 #### Opção 3: Manual via Interface Web
 1. Acesse: https://github.com/tai-pucrs/education-lab-gestao-dados/issues/new/choose
-2. Selecione o template apropriado
-3. Preencha os campos com base no `ISSUES.md`
+2. Consulte o arquivo [`MANUAL_ISSUE_CREATION.md`](./MANUAL_ISSUE_CREATION.md) com conteúdo completo para copiar/colar
+3. Preencha título, corpo e labels para cada issue
 
 ---
 
