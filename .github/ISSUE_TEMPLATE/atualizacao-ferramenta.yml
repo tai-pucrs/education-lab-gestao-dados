@@ -1,0 +1,125 @@
+name: 🔧 Atualização de Ferramenta
+description: Propor atualização de ferramenta ou tecnologia mencionada no conteúdo
+title: "[UPDATE] "
+labels: ["enhancement", "tools", "maintenance"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔧 Atualização de Ferramenta
+        
+        O ecossistema de dados evolui rapidamente. 
+        Ajude-nos a manter o conteúdo atualizado reportando ferramentas desatualizadas!
+
+  - type: input
+    id: ferramenta
+    attributes:
+      label: Ferramenta Desatualizada
+      description: Nome da ferramenta/tecnologia que precisa ser atualizada
+      placeholder: "Ex: dbt, Airflow, Snowflake, etc."
+    validations:
+      required: true
+
+  - type: input
+    id: versao_atual
+    attributes:
+      label: Versão Atual (no conteúdo)
+      description: Qual versão está mencionada atualmente?
+      placeholder: "Ex: dbt 0.21, Airflow 2.5, ou 'não especificada'"
+    validations:
+      required: true
+
+  - type: input
+    id: versao_nova
+    attributes:
+      label: Versão Nova (sugerida)
+      description: Qual versão deveria ser mencionada?
+      placeholder: "Ex: dbt 1.7, Airflow 2.8"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mudancas
+    attributes:
+      label: Principais Mudanças
+      description: Quais são as mudanças relevantes desta nova versão?
+      placeholder: |
+        - Nova feature X que muda...
+        - Deprecation de Y...
+        - Melhoria de performance em Z...
+    validations:
+      required: true
+
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto no Conteúdo
+      description: Como essa atualização afeta o conteúdo do módulo?
+      placeholder: |
+        - Arquivos afetados: ...
+        - Seções a revisar: ...
+        - Exemplos que precisam atualização: ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: Urgência
+      description: Quão urgente é esta atualização?
+      options:
+        - "🔴 Alta (versão atual deprecated ou com vulnerabilidades)"
+        - "🟡 Média (mudanças significativas mas não críticas)"
+        - "🟢 Baixa (melhorias incrementais)"
+      default: 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: arquivos
+    attributes:
+      label: Arquivos Afetados
+      description: Liste os arquivos que precisam ser atualizados
+      placeholder: |
+        - modulo6_repo/docs/recursos/modulo6_guia_ferramentas.md
+        - modulo6_repo/docs/curso/modulo6_storyboards.md (Aula 2.4)
+    validations:
+      required: false
+
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências
+      description: Links para release notes, documentação, artigos
+      placeholder: |
+        - Release notes: https://...
+        - Documentação: https://...
+        - Artigo sobre mudanças: https://...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tipo_atualizacao
+    attributes:
+      label: Tipo de Atualização
+      description: Que tipo de mudança é necessária?
+      options:
+        - label: Atualizar número de versão
+        - label: Atualizar exemplos de código
+        - label: Atualizar screenshots/imagens
+        - label: Atualizar links de documentação
+        - label: Adicionar novas features
+        - label: Remover features deprecated
+        - label: Atualizar comparações com outras ferramentas
+
+  - type: checkboxes
+    id: verificacao
+    attributes:
+      label: Verificação
+      options:
+        - label: Confirmei que a nova versão está oficialmente lançada (não beta)
+          required: true
+        - label: Verifiquei que não há issue aberta sobre esta atualização
+          required: true
