@@ -1,11 +1,11 @@
-import type { ReactNode } from "react";
+import type { ReactNode, ReactElement } from "react";
 import { Dialog as RadixDialog } from "radix-ui";
 import "./Dialog.css";
 
 export interface DialogProps {
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
-  trigger?: ReactNode;
+  trigger?: ReactElement;
   title: string;
   description?: string;
   children: ReactNode;
