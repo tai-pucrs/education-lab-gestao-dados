@@ -24,7 +24,7 @@ export const RightArrow = () => <svg
       display: 'inline-block',
       shapeRendering: 'inherit',
       verticalAlign: 'middle',
-      fill: 'currentColor',
+      fill: 'currentColor'
     }}
 >
   <path
@@ -37,9 +37,8 @@ export const RightArrow = () => <svg
 
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Configure seu projeto
-
-    Como o Storybook funciona separadamente da sua aplicação, você precisa configurá-lo para o seu stack e setup específicos. Abaixo, explore os guias para configurar o Storybook com frameworks e ferramentas populares. Se ficar em dúvida em algum passo, veja como pedir ajuda para a nossa comunidade.
+    <h1>Configure seu projeto</h1>
+    <p>Como o Storybook funciona separadamente da sua aplicação, você precisa configurá-lo para o seu stack e setup específicos. Abaixo, explore os guias para configurar o Storybook com frameworks e ferramentas populares. Se ficar em dúvida em algum passo, veja como pedir ajuda para a nossa comunidade.</p>
   </div>
   <div className="sb-section">
     <div className="sb-section-item">
@@ -52,6 +51,7 @@ export const RightArrow = () => <svg
       <a
         href="https://storybook.js.org/docs/configure/styling-and-css/?renderer={{renderer}}&ref=configure"
         target="_blank"
+        rel="noopener noreferrer"
       >Saiba mais<RightArrow /></a>
     </div>
     <div className="sb-section-item">
@@ -64,6 +64,7 @@ export const RightArrow = () => <svg
       <a
         href="https://storybook.js.org/docs/writing-stories/decorators/?renderer={{renderer}}&ref=configure#context-for-mocking"
         target="_blank"
+        rel="noopener noreferrer"
       >Saiba mais<RightArrow /></a>
     </div>
     <div className="sb-section-item">
@@ -76,6 +77,7 @@ export const RightArrow = () => <svg
         <a
           href="https://storybook.js.org/docs/configure/images-and-assets/?renderer={{renderer}}&ref=configure"
           target="_blank"
+          rel="noopener noreferrer"
         >Saiba mais<RightArrow /></a>
       </div>
     </div>
@@ -83,69 +85,71 @@ export const RightArrow = () => <svg
 </div>
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Do more with Storybook
-
-    Now that you know the basics, let's explore other parts of Storybook that will improve your experience. This list is just to get you started. You can customise Storybook in many ways to fit your needs.
+    <h1>Faça mais com o Storybook</h1>
+    <p>Agora que você conhece o básico, vamos explorar outras partes do Storybook que vão melhorar sua experiência. Esta lista é apenas para começar. Você pode customizar o Storybook de muitas maneiras para atender suas necessidades.</p>
   </div>
 
   <div className="sb-section">
     <div className="sb-features-grid">
       <div className="sb-grid-item">
-        <img src={Docs} alt="A screenshot showing the autodocs tag being set, pointing a docs page being generated" />
+        <img src={Docs} alt="Uma captura de tela mostrando a tag autodocs sendo configurada, apontando para uma página de docs sendo gerada" />
         <h4 className="sb-section-item-heading">Autodocs</h4>
-        <p className="sb-section-item-paragraph">Auto-generate living,
-          interactive reference documentation from your components and stories.</p>
+        <p className="sb-section-item-paragraph">Gere automaticamente documentação de referência interativa e atualizada a partir dos seus componentes e stories.</p>
         <a
           href="https://storybook.js.org/docs/writing-docs/autodocs/?renderer={{renderer}}&ref=configure"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
-        <img src={Share} alt="A browser window showing a Storybook being published to a chromatic.com URL" />
-        <h4 className="sb-section-item-heading">Publish to Chromatic</h4>
-        <p className="sb-section-item-paragraph">Publish your Storybook to review and collaborate with your entire team.</p>
+        <img src={Share} alt="Uma janela de navegador mostrando um Storybook sendo publicado em uma URL chromatic.com" />
+        <h4 className="sb-section-item-heading">Publicar no Chromatic</h4>
+        <p className="sb-section-item-paragraph">Publique seu Storybook para revisar e colaborar com todo o seu time.</p>
         <a
           href="https://storybook.js.org/docs/sharing/publish-storybook/?renderer={{renderer}}&ref=configure#publish-storybook-with-chromatic"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
-        <img src={FigmaPlugin} alt="Windows showing the Storybook plugin in Figma" />
-        <h4 className="sb-section-item-heading">Figma Plugin</h4>
-        <p className="sb-section-item-paragraph">Embed your stories into Figma to cross-reference the design and live
-          implementation in one place.</p>
+        <img src={FigmaPlugin} alt="Janelas mostrando o plugin do Storybook no Figma" />
+        <h4 className="sb-section-item-heading">Plugin do Figma</h4>
+        <p className="sb-section-item-paragraph">Incorpore suas stories no Figma para fazer referência cruzada entre o design e a implementação em um único lugar.</p>
         <a
           href="https://storybook.js.org/docs/sharing/design-integrations/?renderer={{renderer}}&ref=configure#embed-storybook-in-figma-with-the-plugin"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
-        <img src={Testing} alt="Screenshot of tests passing and failing" />
-        <h4 className="sb-section-item-heading">Testing</h4>
-        <p className="sb-section-item-paragraph">Use stories to test a component in all its variations, no matter how
-          complex.</p>
+        <img src={Testing} alt="Captura de tela de testes passando e falhando" />
+        <h4 className="sb-section-item-heading">Testes</h4>
+        <p className="sb-section-item-paragraph">Use stories para testar um componente em todas as suas variações, não importa quão complexo seja.</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/?renderer={{renderer}}&ref=configure"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
-        <img src={Accessibility} alt="Screenshot of accessibility tests passing and failing" />
-        <h4 className="sb-section-item-heading">Accessibility</h4>
-        <p className="sb-section-item-paragraph">Automatically test your components for a11y issues as you develop.</p>
+        <img src={Accessibility} alt="Captura de tela de testes de acessibilidade passando e falhando" />
+        <h4 className="sb-section-item-heading">Acessibilidade</h4>
+        <p className="sb-section-item-paragraph">Teste automaticamente seus componentes para problemas de acessibilidade enquanto você desenvolve.</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/accessibility-testing/?renderer={{renderer}}&ref=configure"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
       <div className="sb-grid-item">
-        <img src={Theming} alt="Screenshot of Storybook in light and dark mode" />
-        <h4 className="sb-section-item-heading">Theming</h4>
-        <p className="sb-section-item-paragraph">Theme Storybook's UI to personalize it to your project.</p>
+        <img src={Theming} alt="Captura de tela do Storybook em modo claro e escuro" />
+        <h4 className="sb-section-item-heading">Temas</h4>
+        <p className="sb-section-item-paragraph">Personalize a UI do Storybook para adaptá-la ao seu projeto.</p>
         <a
           href="https://storybook.js.org/docs/configure/theming/?renderer={{renderer}}&ref=configure"
           target="_blank"
-        >Learn more<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Saiba mais<RightArrow /></a>
       </div>
     </div>
   </div>
@@ -153,57 +157,62 @@ export const RightArrow = () => <svg
 <div className='sb-addon'>
   <div className='sb-addon-text'>
     <h4>Addons</h4>
-    <p className="sb-section-item-paragraph">Integrate your tools with Storybook to connect workflows.</p>
+    <p className="sb-section-item-paragraph">Integre suas ferramentas com o Storybook para conectar workflows.</p>
     <a
         href="https://storybook.js.org/addons/?ref=configure"
         target="_blank"
-      >Discover all addons<RightArrow /></a>
+        rel="noopener noreferrer"
+      >Descubra todos os addons<RightArrow /></a>
   </div>
   <div className='sb-addon-img'>
-    <img src={AddonLibrary} alt="Integrate your tools with Storybook to connect workflows." />
+    <img src={AddonLibrary} alt="Integre suas ferramentas com o Storybook para conectar workflows." />
   </div>
 </div>
 
 <div className="sb-section sb-socials">
     <div className="sb-section-item">
-      <img src={Github} alt="Github logo" className="sb-explore-image"/>
-      Join our contributors building the future of UI development.
+      <img src={GitHub} alt="Logo do GitHub" className="sb-explore-image"/>
+      Junte-se aos nossos contribuidores construindo o futuro do desenvolvimento de UI.
 
       <a
         href="https://github.com/storybookjs/storybook"
         target="_blank"
-      >Star on GitHub<RightArrow /></a>
+        rel="noopener noreferrer"
+      >Dar Star no GitHub<RightArrow /></a>
     </div>
     <div className="sb-section-item">
-      <img src={Discord} alt="Discord logo" className="sb-explore-image"/>
+      <img src={Discord} alt="Logo do Discord" className="sb-explore-image"/>
       <div>
-        Get support and chat with frontend developers.
+        Obtenha suporte e converse com desenvolvedores frontend.
 
         <a
           href="https://discord.gg/storybook"
           target="_blank"
-        >Join Discord server<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Entrar no servidor Discord<RightArrow /></a>
       </div>
     </div>
     <div className="sb-section-item">
-      <img src={Youtube} alt="Youtube logo" className="sb-explore-image"/>
+      <img src={Youtube} alt="Logo do YouTube" className="sb-explore-image"/>
       <div>
-        Watch tutorials, feature previews and interviews.
+        Assista tutoriais, prévias de funcionalidades e entrevistas.
 
         <a
           href="https://www.youtube.com/@chromaticui"
           target="_blank"
-        >Watch on YouTube<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Assistir no YouTube<RightArrow /></a>
       </div>
     </div>
     <div className="sb-section-item">
-      <img src={Tutorials} alt="A book" className="sb-explore-image"/>
-      <p>Follow guided walkthroughs on for key workflows.</p>
+      <img src={Tutorials} alt="Um livro" className="sb-explore-image"/>
+      <p>Siga passo a passo guiado para workflows chave.</p>
 
       <a
           href="https://storybook.js.org/tutorials/?ref=configure"
           target="_blank"
-        >Discover tutorials<RightArrow /></a>
+          rel="noopener noreferrer"
+        >Descobrir tutoriais<RightArrow /></a>
     </div>
 </div>
 
