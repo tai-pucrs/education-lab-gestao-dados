@@ -592,8 +592,8 @@
 ### Online
 - Data Hackers: https://datahackers.com.br
 - dbt docs: https://docs.getdbt.com
-- MLOps Community: https://mlops.community
-- Data Engineering Podcast
+- MLOps Community: https://mlops.community (Alternativa: https://github.com/visenger/awesome-mlops)
+- Data Engineering Podcast: https://www.dataengineeringpodcast.com
 
 ---
 

@@ -100,7 +100,7 @@ Sistema universal de modo escuro.
 <script src="../js/dark-mode.js"></script>
 ```
 
-**Documentação:** Ver [`docs/recursos/dark-mode-guide.md`](../../docs/recursos/dark-mode-guide.md)
+**Documentação:** Ver [`docs/recursos/dark-mode-guide.md`](../docs/recursos/dark-mode-guide.md)
 
 ---
 

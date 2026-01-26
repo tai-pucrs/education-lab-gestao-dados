@@ -857,7 +857,8 @@ Ao final deste mÃ³dulo, o estudante serÃ¡ capaz de **planejar, executar e li
 
 11. **GARTNER.**  
     *How to Build a Data-Driven Culture* (2023)  
-    DisponÃ­vel em: https://www.gartner.com
+    Disponível em: https://www.gartner.com/en/articles/how-to-build-a-data-driven-culture  
+    *(Requer assinatura Gartner para acesso completo)*
 
 12. **DAMA INTERNATIONAL.**  
     *DAMA-DMBOK2: Data Management Body of Knowledge* (2017)  
@@ -865,7 +866,7 @@ Ao final deste mÃ³dulo, o estudante serÃ¡ capaz de **planejar, executar e li
 
 13. **McKinsey & Company.**  
     *Ten Red Flags Signaling Your Analytics Program Will Fail* (2018)  
-    DisponÃ­vel em: https://www.mckinsey.com
+    Disponível em: https://www.mckinsey.com/capabilities/quantumblack/our-insights/ten-red-flags-signaling-your-analytics-program-will-fail
 
 ### 7.4 Recursos Online
 
@@ -876,7 +877,8 @@ Ao final deste mÃ³dulo, o estudante serÃ¡ capaz de **planejar, executar e li
     https://docs.getdbt.com
 
 16. **MLOps Community** - Boas prÃ¡ticas de MLOps  
-    https://mlops.community
+    https://mlops.community  
+    *(Alternativa: https://github.com/visenger/awesome-mlops)*
 
 17. **The Data Engineering Podcast**  
     https://www.dataengineeringpodcast.com
