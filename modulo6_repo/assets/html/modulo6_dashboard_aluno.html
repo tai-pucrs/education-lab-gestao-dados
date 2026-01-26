@@ -650,7 +650,7 @@
     </style>
 </head>
 <body>
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Alternar modo escuro">ðŸŒ™</button>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Alternar modo escuro" type="button">ðŸŒ™</button>
 
     <header class="header">
         <h1>ðŸ“Š MÃ³dulo 6: GestÃ£o de Projetos e Equipes de Dados</h1>
@@ -692,9 +692,9 @@
             <h2>â±ï¸ CronÃ´metro de Estudo</h2>
             <div class="timer-display" id="timerDisplay">00:00:00</div>
             <div class="timer-buttons">
-                <button class="timer-btn start" onclick="startTimer()">â–¶ï¸ Iniciar</button>
-                <button class="timer-btn pause" onclick="pauseTimer()">â¸ï¸ Pausar</button>
-                <button class="timer-btn reset" onclick="resetTimer()">ðŸ”„ Resetar</button>
+                <button class="timer-btn start" onclick="startTimer()" type="button">â–¶ï¸ Iniciar</button>
+                <button class="timer-btn pause" onclick="pauseTimer()" type="button">â¸ï¸ Pausar</button>
+                <button class="timer-btn reset" onclick="resetTimer()" type="button">ðŸ”„ Resetar</button>
             </div>
         </div>
 
@@ -703,16 +703,16 @@
             <h2 class="section-title">ðŸ“ˆ Progresso Geral</h2>
             <div class="overall-progress">
                 <div class="progress-bar-container">
-                    <div class="progress-bar" id="overallProgressBar" style="width: 0%"></div>
+                    <div class="progress-bar" id="overallProgressBar"></div>
                 </div>
                 <div class="progress-text"><span id="overallProgressText">0</span>% concluÃ­do</div>
             </div>
 
             <!-- Filters -->
             <div class="filters">
-                <button class="filter-btn active" onclick="filterVideos('all')">Todos</button>
-                <button class="filter-btn" onclick="filterVideos('pending')">Pendentes</button>
-                <button class="filter-btn" onclick="filterVideos('completed')">ConcluÃ­dos</button>
+                <button class="filter-btn active" onclick="filterVideos('all')" type="button">Todos</button>
+                <button class="filter-btn" onclick="filterVideos('pending')" type="button">Pendentes</button>
+                <button class="filter-btn" onclick="filterVideos('completed')" type="button">ConcluÃ­dos</button>
             </div>
 
             <!-- Submodules -->
