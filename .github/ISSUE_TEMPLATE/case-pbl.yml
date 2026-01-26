@@ -1,0 +1,150 @@
+name: 📚 Novo Case PBL
+description: Propor um novo case para Problem-Based Learning
+title: "[CASE] "
+labels: ["enhancement", "content", "pbl"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Proposta de Novo Case PBL
+        
+        Obrigado por contribuir com um novo case! 
+        Cases de empresas reais ou fictícias enriquecem a experiência de aprendizagem.
+
+  - type: input
+    id: empresa
+    attributes:
+      label: Empresa
+      description: Nome da empresa (real ou fictícia)
+      placeholder: "Ex: Nubank, iFood, Empresa XYZ (fictícia)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo_empresa
+    attributes:
+      label: Tipo de Empresa
+      description: A empresa é real ou fictícia?
+      options:
+        - "Real (com dados públicos)"
+        - "Fictícia (inspirada em casos reais)"
+        - "Real (com dados anonimizados)"
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto da Empresa
+      description: Breve descrição da empresa e seu contexto de negócio
+      placeholder: |
+        - Setor: Fintech
+        - Tamanho: 5000+ funcionários
+        - Contexto: Crescimento acelerado...
+    validations:
+      required: true
+
+  - type: textarea
+    id: desafio
+    attributes:
+      label: Desafio Principal
+      description: Qual é o desafio de gestão de dados que o case aborda?
+      placeholder: |
+        Descreva o problema ou situação que precisa ser resolvida...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: submodulo
+    attributes:
+      label: Submódulo Relacionado
+      description: A qual submódulo este case está mais relacionado?
+      options:
+        - "6.1 - Papéis e Carreira em Dados"
+        - "6.2 - Metodologias Ágeis para Dados"
+        - "6.3 - Gestão de Projetos de Dados"
+        - "6.4 - Liderança de Equipes de Dados"
+        - "6.5 - Cultura Data-Driven"
+        - "Transversal (múltiplos submódulos)"
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dificuldade
+    attributes:
+      label: Nível de Dificuldade
+      description: Qual o nível de complexidade deste case?
+      options:
+        - "Básico (conceitos fundamentais)"
+        - "Intermediário (aplicação prática)"
+        - "Avançado (análise complexa)"
+      default: 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivos
+    attributes:
+      label: Objetivos de Aprendizagem
+      description: O que os alunos devem aprender com este case?
+      placeholder: |
+        - Aplicar conceitos de...
+        - Analisar trade-offs entre...
+        - Tomar decisões sobre...
+    validations:
+      required: true
+
+  - type: textarea
+    id: informacoes
+    attributes:
+      label: Informações Fornecidas
+      description: Quais informações/dados estarão disponíveis no case?
+      placeholder: |
+        - Estrutura organizacional
+        - Métricas de desempenho
+        - Constraints técnicos
+        - Budget disponível
+    validations:
+      required: true
+
+  - type: textarea
+    id: questoes
+    attributes:
+      label: Questões para Análise
+      description: Quais questões os alunos deverão responder?
+      placeholder: |
+        1. Como você priorizaria...?
+        2. Qual abordagem você recomendaria...?
+        3. Quais riscos você identifica...?
+    validations:
+      required: true
+
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências
+      description: Links ou referências sobre a empresa/situação (se aplicável)
+      placeholder: |
+        - https://...
+        - Artigo/blog post sobre...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: aspectos
+    attributes:
+      label: Aspectos Abordados
+      description: Quais aspectos de gestão este case aborda?
+      options:
+        - label: Gestão de stakeholders
+        - label: Priorização de projetos
+        - label: Estruturação de equipes
+        - label: Processos e metodologias
+        - label: Tecnologias e ferramentas
+        - label: Cultura e mudança organizacional
+        - label: Métricas e KPIs
+        - label: Riscos e compliance
