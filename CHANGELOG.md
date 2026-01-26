@@ -20,9 +20,19 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
   - Template para Atualização de Ferramenta
 - Badge de status do CI no README principal
 - Sistema de modo escuro para dashboards HTML
+  - Toggle flutuante persistente
+  - Atalho de teclado (Ctrl+Shift+D)
+  - Transição suave entre temas
+- 4 novos cenários de roleplay com IA
+  - Roleplay 11: Negociação de Orçamento - CFO Resistente
+  - Roleplay 12: Apresentação para Board
+  - Roleplay 13: Mediação de Conflito Técnico
+  - Roleplay 14: Onboarding de Novo Líder
+- Documento ISSUES.md com descrição completa das 28 issues planejadas
 
 ### Modificado
 - README principal atualizado com badges e informações de status
+- Simuladores de IA expandidos (10 → 14 cenários)
 
 ## [1.0.0] - 2026-01-26
 
