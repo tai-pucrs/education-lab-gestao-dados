@@ -1,0 +1,242 @@
+# Instruções do GitHub Copilot - Education Lab Gestão de Dados
+
+## 🎯 Contexto do Repositório
+
+Este é o repositório **Education Lab** da **PUCRS** para desenvolvimento de material didático de **Gestão de Dados**. O repositório contém módulos educacionais para cursos de pós-graduação focados em profissionais de dados e gestores.
+
+## 🌐 Regras de Idioma
+
+- **TODO O CONTEÚDO EM PORTUGUÊS BRASILEIRO**
+- Mantenha termos técnicos em inglês: pipeline, deploy, sprint, stakeholder, backlog, data engineer, data scientist, analytics engineer, ML, BI, ETL, ELT
+- Descrições e explicações SEMPRE em português
+- Comentários de código em português
+- Mensagens de commit em português
+
+## 📁 Estrutura do Repositório
+
+```
+education-lab-gestao-dados/
+├── README.md                  # Visão geral do repositório
+├── .github/                   # Configurações GitHub e instruções
+│   └── copilot-instructions.md  # Este arquivo
+└── modulo6_repo/              # Módulo 6 - Gestão de Projetos e Equipes
+    ├── .github/               # Instruções específicas do módulo
+    ├── docs/                  # Documentação pedagógica
+    ├── assets/                # Recursos (HTML, CSS, JS)
+    ├── templates/             # Templates reutilizáveis
+    ├── guides/                # Guias de uso
+    └── references/            # Material de referência
+```
+
+## 🎓 Público-Alvo do Material
+
+### Perfil 1: Técnico → Gestor
+- Data Engineers, Data Scientists, Analytics Engineers
+- 3-5 anos de experiência técnica
+- Primeira experiência em liderança
+
+### Perfil 2: Gestor → Dados
+- Gestores de TI, Produto, Operações
+- Assumindo equipes de dados
+- Necessidade de vocabulário técnico
+
+## 📝 Padrões de Markdown
+
+### Headers
+- Use ATX headers (# ## ###) com espaço após #
+- Não use Setext headers (estilo sublinhado)
+
+### Listas
+- Use hífens (-) para listas não ordenadas
+- Não misture * e - no mesmo documento
+- Mantenha consistência
+
+### Código
+- Código inline com backticks simples: `código`
+- Blocos de código com triple backticks e especificação de linguagem:
+
+```python
+# Exemplo de código Python
+def exemplo():
+    pass
+```
+
+### Tabelas
+- Sempre alinhe os pipes (|)
+- Inclua linha separadora de cabeçalho
+- Exemplo:
+
+| Coluna 1 | Coluna 2 |
+|----------|----------|
+| Valor 1  | Valor 2  |
+
+### Citações
+- Use > para exemplos e destaques
+- Útil para citações de empresas em cases
+
+## 💻 Padrões de Código
+
+### HTML
+- **Vanilla JavaScript apenas** - sem frameworks (React, Vue, Angular)
+- IDs em kebab-case
+- Classes em kebab-case ou BEM
+- Data attributes para JavaScript: data-*
+- Indentação: 2 espaços
+- Arquivos HTML devem ser standalone (abrir direto no navegador)
+
+### CSS
+- **Mobile-first** - escreva CSS para mobile primeiro
+- Use CSS custom properties (variáveis)
+- Evite !important
+- Prefira classes a IDs para estilo
+- Indentação: 2 espaços
+- Organize propriedades por categoria: Layout → Box Model → Visual → Tipografia
+
+### JavaScript
+- Vanilla JavaScript ES6+
+- Funções: camelCase
+- Constantes: UPPER_SNAKE_CASE
+- Classes: PascalCase
+- Preferir const > let > var nunca
+- Arrow functions para callbacks
+- Template literals para strings complexas
+- Event delegation quando apropriado
+- LocalStorage para persistência (não APIs externas)
+
+## 🚫 O Que Evitar
+
+```
+❌ Frameworks JS (React, Vue, Angular, Svelte)
+❌ CSS frameworks (Tailwind, Bootstrap)
+❌ Traduzir termos técnicos para português
+❌ Dependências npm/yarn - HTMLs são standalone
+❌ Fetch para APIs externas - tudo local/localStorage
+❌ ES modules em HTML (usar script tradicional)
+❌ Criar arquivos temporários no repositório (use /tmp)
+```
+
+## ✅ O Que Preferir
+
+```
+✅ Vanilla JavaScript ES6+
+✅ CSS custom properties (variáveis)
+✅ Semântica HTML5
+✅ Acessibilidade (ARIA quando necessário)
+✅ Mobile-first responsive
+✅ LocalStorage para persistência
+✅ Template literals para HTML dinâmico
+✅ Event delegation
+✅ Conteúdo educacional prático e aplicável
+```
+
+## 🔧 Termos de Domínio
+
+### Tecnologias e Ferramentas
+- Data Engineering, Data Science, Analytics Engineering
+- Pipeline, ETL, ELT, Data Warehouse, Data Lake, Data Mesh
+- dbt, Airflow, Dagster, Prefect, Spark
+- Snowflake, Databricks, BigQuery, Redshift
+- Great Expectations, Monte Carlo, Soda (qualidade de dados)
+- Git, GitHub Actions, GitLab CI, Docker, Kubernetes
+
+### Metodologias e Frameworks
+- Agile, Scrum, Kanban, SAFe
+- CRISP-DM, TDSP (Team Data Science Process)
+- DataOps, MLOps, DevOps
+- MoSCoW, RICE, ICE (priorização)
+- RACI, DACI (responsabilidades)
+
+### Métricas e Indicadores
+- KPI, OKR, SLA, SLO, SLI
+- Sprint, Backlog, Velocity, Burndown
+- Stakeholder, Tech Lead, Data Manager
+
+### Visualização e BI
+- Metabase, Looker, Power BI, Tableau
+- Dashboard, Report, Analytics
+
+## 🏢 Empresas Comumente Referenciadas
+
+### Brasil
+- Nubank (fintech, dados em tempo real)
+- iFood (analytics, real-time)
+- Mercado Livre (ML platform, escala)
+- Magazine Luiza (data mesh, transformação digital)
+- PicPay (pagamentos, fraude)
+
+### Internacional
+- Uber (data platform, geolocalização)
+- Netflix (recomendação, personalização)
+- Airbnb (data science, pricing)
+- Spotify (ML, personalização)
+- Meta/Facebook (big data, analytics)
+
+## 🎯 Diretrizes de Contribuição
+
+### Commits
+- Mensagens em português
+- Use verbos no imperativo: "Adicionar", "Corrigir", "Atualizar"
+- Seja descritivo mas conciso
+
+### Documentação
+- Todo novo módulo deve ter README.md
+- Documente casos de uso e exemplos práticos
+- Inclua objetivos de aprendizagem quando aplicável
+
+### Código
+- Comente código complexo em português
+- Use nomes de variáveis e funções descritivos
+- Mantenha funções pequenas e focadas
+- Teste manualmente HTMLs interativos
+
+## 📚 Estrutura de Conteúdo Educacional
+
+### Aulas
+- Objetivos de aprendizagem claros
+- Conteúdo principal com subtópicos
+- Exemplos práticos de empresas reais
+- Exercícios aplicáveis
+- Recursos complementares
+- Tempo estimado (vídeo + exercício)
+
+### Cases (PBL)
+- Contexto empresarial real ou adaptado
+- Desafio específico e mensurável
+- Dados disponíveis documentados
+- Restrições realistas (prazo, budget, equipe)
+- Perguntas para discussão (estratégia, técnica, liderança)
+- Solução real em detalhes expandíveis
+
+### Glossário
+- Definição clara em português
+- Uso específico em projetos de dados
+- Exemplo contextualizado
+- Termos relacionados
+- Categoria (metodologia, ferramenta, métrica, etc.)
+
+## 🔐 Segurança
+
+- Nunca commitar secrets ou credenciais
+- Dados de exemplo devem ser fictícios
+- Não incluir informações pessoais reais
+- URLs de APIs devem ser exemplos ou localhost
+
+## 🚀 Onboarding - Como Começar
+
+1. **Explore o repositório**: Comece pelo README.md de cada módulo
+2. **Entenda o público**: Material para profissionais em transição para gestão
+3. **Siga os padrões**: Use este arquivo como guia
+4. **Seja prático**: Foco em aplicação imediata, não apenas teoria
+5. **Mantenha português**: Exceto termos técnicos padronizados
+6. **Teste localmente**: HTMLs devem funcionar sem servidor
+
+## 📞 Módulos Específicos
+
+Para instruções detalhadas de módulos específicos, consulte:
+- `modulo6_repo/.github/copilot-instructions.md` - Instruções do Módulo 6
+
+Cada módulo pode ter instruções adicionais em seu próprio diretório `.github/`.
+
+---
+
+*Última atualização: Janeiro 2026*
