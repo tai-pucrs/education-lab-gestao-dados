@@ -2,7 +2,6 @@
 
 ![CI Status](https://github.com/tai-pucrs/education-lab-gestao-dados/workflows/🔍%20Validação%20de%20Conteúdo/badge.svg)
 [![GitHub issues](https://img.shields.io/github/issues/tai-pucrs/education-lab-gestao-dados)](https://github.com/tai-pucrs/education-lab-gestao-dados/issues)
-[![GitHub license](https://img.shields.io/github/license/tai-pucrs/education-lab-gestao-dados)](https://github.com/tai-pucrs/education-lab-gestao-dados/blob/main/LICENSE)
 ![GitHub stars](https://img.shields.io/github/stars/tai-pucrs/education-lab-gestao-dados?style=social)
 
 > **Plataforma educacional aberta para Gestão de Projetos e Equipes de Dados**  
@@ -270,7 +269,6 @@ Agradecemos especialmente:
 
 - 🐛 **Issues:** [GitHub Issues](https://github.com/tai-pucrs/education-lab-gestao-dados/issues)
 - 📧 **Email:** Consulte o coordenador do curso
-- 🌐 **Website:** [PUCRS](https://www.pucrs.br)
 
 ---
 
