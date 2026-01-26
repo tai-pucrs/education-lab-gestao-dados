@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode, ReactElement } from "react";
 import { Popover as RadixPopover } from "radix-ui";
 import "./Popover.css";
 
 export interface PopoverProps {
-  trigger: ReactNode;
+  trigger: ReactElement;
   children: ReactNode;
   side?: "top" | "right" | "bottom" | "left";
   align?: "start" | "center" | "end";
