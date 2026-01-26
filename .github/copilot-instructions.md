@@ -158,7 +158,7 @@ Ao final desta aula, o aluno será capaz de:
 [Problema específico - máximo 1 parágrafo]
 
 ### Dados Disponíveis
-| Recurso | Descricao |
+| Recurso | Descrição |
 |---------|-----------|
 | | |
 
