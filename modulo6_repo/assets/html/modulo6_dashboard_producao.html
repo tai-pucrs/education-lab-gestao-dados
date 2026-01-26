@@ -272,6 +272,10 @@
             color: white;
         }
 
+        .table-container {
+            overflow-x: auto;
+        }
+
         .videos-table {
             width: 100%;
             border-collapse: collapse;
@@ -510,7 +514,7 @@
         <div class="progress-section">
             <h2>ðŸ“Š Progresso Geral</h2>
             <div class="overall-progress">
-                <div class="overall-progress-bar" id="overall-bar" style="width: 0%">0%</div>
+                <div class="overall-progress-bar" id="overall-bar">0%</div>
             </div>
             <div class="phase-progress">
                 <div class="phase-item">
@@ -519,7 +523,7 @@
                         <span class="phase-count" id="phase-roteiro">0/60</span>
                     </div>
                     <div class="phase-bar">
-                        <div class="phase-bar-fill roteiro" id="bar-roteiro" style="width: 0%"></div>
+                        <div class="phase-bar-fill roteiro" id="bar-roteiro"></div>
                     </div>
                 </div>
                 <div class="phase-item">
@@ -528,7 +532,7 @@
                         <span class="phase-count" id="phase-gravacao">0/60</span>
                     </div>
                     <div class="phase-bar">
-                        <div class="phase-bar-fill gravacao" id="bar-gravacao" style="width: 0%"></div>
+                        <div class="phase-bar-fill gravacao" id="bar-gravacao"></div>
                     </div>
                 </div>
                 <div class="phase-item">
@@ -537,7 +541,7 @@
                         <span class="phase-count" id="phase-edicao">0/60</span>
                     </div>
                     <div class="phase-bar">
-                        <div class="phase-bar-fill edicao" id="bar-edicao" style="width: 0%"></div>
+                        <div class="phase-bar-fill edicao" id="bar-edicao"></div>
                     </div>
                 </div>
                 <div class="phase-item">
@@ -546,7 +550,7 @@
                         <span class="phase-count" id="phase-publicado">0/60</span>
                     </div>
                     <div class="phase-bar">
-                        <div class="phase-bar-fill publicado" id="bar-publicado" style="width: 0%"></div>
+                        <div class="phase-bar-fill publicado" id="bar-publicado"></div>
                     </div>
                 </div>
             </div>
@@ -570,15 +574,15 @@
             <div class="videos-header">
                 <h2>ðŸ“‹ Lista de VÃ­deos</h2>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="todos">Todos (60)</button>
-                    <button class="filter-btn" data-filter="pendente">Pendentes</button>
-                    <button class="filter-btn" data-filter="roteiro">Roteiro OK</button>
-                    <button class="filter-btn" data-filter="gravando">Gravando</button>
-                    <button class="filter-btn" data-filter="editando">Em EdiÃ§Ã£o</button>
-                    <button class="filter-btn" data-filter="publicado">Publicados</button>
+                    <button class="filter-btn active" data-filter="todos" type="button">Todos (60)</button>
+                    <button class="filter-btn" data-filter="pendente" type="button">Pendentes</button>
+                    <button class="filter-btn" data-filter="roteiro" type="button">Roteiro OK</button>
+                    <button class="filter-btn" data-filter="gravando" type="button">Gravando</button>
+                    <button class="filter-btn" data-filter="editando" type="button">Em EdiÃ§Ã£o</button>
+                    <button class="filter-btn" data-filter="publicado" type="button">Publicados</button>
                 </div>
             </div>
-            <div style="overflow-x: auto;">
+            <div class="table-container">
                 <table class="videos-table">
                     <thead>
                         <tr>
@@ -617,8 +621,8 @@
             <label>ObservaÃ§Ãµes</label>
             <input type="text" id="modal-obs" placeholder="Notas sobre o vÃ­deo">
             <div class="modal-buttons">
-                <button class="cancel" onclick="closeModal()">Cancelar</button>
-                <button class="save" onclick="saveVideo()">Salvar</button>
+                <button class="cancel" onclick="closeModal()" type="button">Cancelar</button>
+                <button class="save" onclick="saveVideo()" type="button">Salvar</button>
             </div>
         </div>
     </div>
@@ -868,8 +872,8 @@
                     <td>${v.duracao} min</td>
                     <td><span class="status-badge ${v.status}">${getStatusLabel(v.status)}</span></td>
                     <td>
-                        <button class="action-btn next" onclick="advanceStatus('${v.id}')">AvanÃ§ar</button>
-                        <button class="action-btn" style="background: #eee;" onclick="openModal('${v.id}')">âœï¸</button>
+                        <button class="action-btn next" onclick="advanceStatus(\'${v.id}\')" type="button">AvanÃ§ar</button>
+                        <button class="action-btn" onclick="openModal('${v.id}')">âœï¸</button>
                     </td>
                 `;
                 tbody.appendChild(row);
