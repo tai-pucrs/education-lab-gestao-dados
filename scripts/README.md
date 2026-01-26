@@ -74,6 +74,7 @@ chmod +x scripts/create-issues.sh
 - #22: ADR
 - #28: Analytics
 
+> Nota: a issue `#25` é duplicada e deve ser desconsiderada na contagem de P3, conforme `IMPLEMENTATION_SUMMARY.md`.
 ### Solução de Problemas
 
 **Erro de autenticação**:
