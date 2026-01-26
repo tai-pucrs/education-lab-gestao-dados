@@ -54,7 +54,7 @@ Este é o repositório principal para desenvolvimento e evolução do **Módulo 
 - ✅ **Cases brasileiros** (Nubank, iFood, Mercado Livre, Magazine Luiza)
 - ✅ **14 simuladores de IA** para prática de cenários reais
 - ✅ **Dashboards interativos** com progresso e badges
-- ✅ **Material 100% aberto** e reutilizável
+- ✅ **Material acessível para estudo** e apoio à gestão de dados
 
 ---
 
