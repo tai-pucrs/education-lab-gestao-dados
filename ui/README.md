@@ -30,12 +30,12 @@ npm run build-storybook
 
 ## Componentes Disponíveis
 
-| Componente | Descrição | Radix Primitive |
-|------------|-----------|-----------------|
-| `Button` | Botão com variantes e tamanhos | - |
-| `Dialog` | Modal dialog acessível | Dialog |
-| `Popover` | Popover com posicionamento automático | Popover |
-| `Tabs` | Navegação por abas | Tabs |
+| Componente | Descrição                             | Radix Primitive |
+| ---------- | ------------------------------------- | --------------- |
+| `Button`   | Botão com variantes e tamanhos        | -               |
+| `Dialog`   | Modal dialog acessível                | Dialog          |
+| `Popover`  | Popover com posicionamento automático | Popover         |
+| `Tabs`     | Navegação por abas                    | Tabs            |
 
 ## Uso
 
