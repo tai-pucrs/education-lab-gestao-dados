@@ -61,7 +61,7 @@ jobs:
             ui/node_modules
             ui/.vite
           # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}-${{ hashFiles('ui/**/*.[jt]s', 'ui/**/*.[jt]sx') }}
+          key: ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}-${{ hashFiles('ui/**/*.js', 'ui/**/*.ts', 'ui/**/*.jsx', 'ui/**/*.tsx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}-
