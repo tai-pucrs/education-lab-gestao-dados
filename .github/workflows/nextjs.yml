@@ -59,11 +59,10 @@ jobs:
         with:
           path: |
             ui/.vite
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}-${{ hashFiles('ui/src/**/*') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
+          # Generate a new cache whenever packages change.
+          key: ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-vite-${{ hashFiles('ui/package-lock.json', 'ui/yarn.lock') }}-
+            ${{ runner.os }}-vite-
       - name: Install dependencies
         working-directory: ui
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
